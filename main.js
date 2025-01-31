@@ -62,3 +62,10 @@ function goToNextQuestion(){
         alert('no more question')
     }
 }
+
+// Initialization
+document.getElementById('answer-form').addEventListener('submit', handleAnswerSubmit);
+document.getElementById('next-button').addEventListener('click', goToNextQuestion);
+
+// First question
+displayQuestion();
