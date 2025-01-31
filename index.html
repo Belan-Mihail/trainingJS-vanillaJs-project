@@ -9,6 +9,21 @@
     <script defer src="./main.js"></script>
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>Good by</p>
+    <div class="container">
+        <h1>JS Trainnng</h1>
+
+        <div class="question-container">
+            <h2 class="question"></h2>
+            <p class="expected-result"></p>
+        </div>
+
+        <div id="result"></div>
+
+        <form id="answer_form">
+            <textarea placeholder="Enter you answer" id="user_answer"></textarea>
+            <button>Check result</button>
+        </form>
+
+        <button id="next_question" style="display: none;">Next Question</button>
+    </div>
 </body>
