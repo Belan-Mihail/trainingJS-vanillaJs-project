@@ -22,3 +22,13 @@ function displayCurrentQuestion() {
 
     nextButton.style.display = 'none'
 }
+
+function handleAnswerSubmit(event) {
+    event.preventDefault()
+
+    const userAnswer = document.getElementById('user_answer').value
+    const currentQuestion = question[currentQuestionIndex]
+
+    const result = document.qetElemantById('result')
+    const nextButton = document.getElementById('next_question')
+}
