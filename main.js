@@ -52,3 +52,13 @@ function handleAnswerSubmit(event) {
         
     }
 }
+
+// Function to move to the next question
+function goToNextQuestion(){
+    currentQuestionIndex++
+    if (currentQuestionIndex < question.length) {
+        displayCurrentQuestion()
+    } else {
+        alert('no more question')
+    }
+}
