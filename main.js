@@ -10,4 +10,15 @@ function displayCurrentQuestion() {
     const result = document.qetElemantById('result')
     const nextButton = document.getElementById('next_question')
     const answerForm = document.getElementById('answer_form')
+
+    const currentQuestion = question[currentQuestionIndex]
+
+    questionElement.textContent = currentQuestion.question
+
+    expectedResult.textContent = `${JSON.stringify(currentQuestion.expected)}`
+
+    answerForm.reset()
+    result.textContent = ''
+
+    nextButton.style.display = 'none'
 }
