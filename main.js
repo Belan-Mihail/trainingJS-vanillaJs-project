@@ -1,5 +1,7 @@
 import { question } from './question.js';
 
+console.log(question)
+
 let currentQuestionIndex = 0;
 
 // Function to display the current question
@@ -10,12 +12,16 @@ function displayCurrentQuestion() {
     const result = document.getElementById('result')
     const nextButton = document.getElementById('next_question')
     const answerForm = document.getElementById('answer_form')
+    const dataElement = document.getElementById('data');
 
     const currentQuestion = question[currentQuestionIndex]
 
     questionElement.textContent = currentQuestion.question
 
-    expectedResult.textContent = `${JSON.stringify(currentQuestion.expected)}`
+    expectedResult.textContent = `${JSON.stringify(currentQuestion.expected_result)}`
+
+     
+     dataElement.textContent = `${JSON.stringify(currentQuestion.data)}`;
 
     answerForm.reset()
     result.textContent = ''
@@ -29,14 +35,14 @@ function handleAnswerSubmit(event) {
     const userAnswer = document.getElementById('user_answer').value
     const currentQuestion = question[currentQuestionIndex]
 
-    const result = document.qetElemantById('result')
+    const result = document.getElementById('result')
     const nextButton = document.getElementById('next_question')
 
     try {
         
         const userSolution = new Function('data', `return ${userAnswer}`)(currentQuestion.data)
 
-        if (JSON.stringify(userSolution) === JSON.stringify(currentQuestion.expected)) {
+        if (JSON.stringify(userSolution) === JSON.stringify(currentQuestion.expected_result)) {
             result.textContent = 'You are right!'
             result.style.color = 'green'
         } else {
@@ -47,8 +53,8 @@ function handleAnswerSubmit(event) {
         nextButton.style.display = 'inline-block'
 
     } catch (error) {
-        resultElement.textContent = 'Syntax error';
-        resultElement.style.color = 'red';
+        result.textContent = 'Syntax error';
+        result.style.color = 'red';
         
     }
 }
@@ -64,8 +70,8 @@ function goToNextQuestion(){
 }
 
 // Initialization
-document.getElementById('answer-form').addEventListener('submit', handleAnswerSubmit);
-document.getElementById('next-button').addEventListener('click', goToNextQuestion);
+document.getElementById('answer_form').addEventListener('submit', handleAnswerSubmit);
+document.getElementById('next_question').addEventListener('click', goToNextQuestion);
 
 // First question
 displayCurrentQuestion();
