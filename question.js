@@ -7,7 +7,7 @@ export const question = [{
 {
     question: "Double all numbers in an array",
     data: [5, 10, 15],
-    expected: [10, 20, 30],
+    expected_result: [10, 20, 30],
     solution: "data.map(x => x * 2)"
 },
 

@@ -51,6 +51,8 @@ function handleAnswerSubmit(event) {
         }
 
         nextButton.style.display = 'inline-block'
+        nextButton.classList.add('next');
+        
 
     } catch (error) {
         result.textContent = 'Syntax error';
