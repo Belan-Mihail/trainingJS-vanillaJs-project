@@ -31,4 +31,24 @@ function handleAnswerSubmit(event) {
 
     const result = document.qetElemantById('result')
     const nextButton = document.getElementById('next_question')
+
+    try {
+        
+        const userSolution = new Function('data', `return ${userAnswer}`)(currentQuestion.data)
+
+        if (JSON.stringify(userSolution) === JSON.stringify(currentQuestion.expected)) {
+            result.textContent = 'You are right!'
+            result.style.color = 'green'
+        } else {
+            result.textContent = 'You are false'
+            result.style.coloe = 'red'
+        }
+
+        nextButton.style.display = 'inline-block'
+
+    } catch (error) {
+        resultElement.textContent = 'Syntax error';
+        resultElement.style.color = 'red';
+        
+    }
 }
