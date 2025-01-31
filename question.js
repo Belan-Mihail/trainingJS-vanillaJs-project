@@ -1,4 +1,4 @@
-const question = [{
+export const question = [{
     question: 'Double the elements of an array',
     data: [1, 2, 3, 4],
     expected_result: [2, 4, 6, 8],
