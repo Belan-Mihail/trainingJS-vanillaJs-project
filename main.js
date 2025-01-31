@@ -7,7 +7,7 @@ function displayCurrentQuestion() {
     const questionContainer = document.getElementById('question-container')
     const questionElement = document.getElementById('question')
     const expectedResult = document.getElementById('expected-result')
-    const result = document.qetElemantById('result')
+    const result = document.getElementById('result')
     const nextButton = document.getElementById('next_question')
     const answerForm = document.getElementById('answer_form')
 
@@ -41,7 +41,7 @@ function handleAnswerSubmit(event) {
             result.style.color = 'green'
         } else {
             result.textContent = 'You are false'
-            result.style.coloe = 'red'
+            result.style.color = 'red'
         }
 
         nextButton.style.display = 'inline-block'
@@ -68,4 +68,4 @@ document.getElementById('answer-form').addEventListener('submit', handleAnswerSu
 document.getElementById('next-button').addEventListener('click', goToNextQuestion);
 
 // First question
-displayQuestion();
+displayCurrentQuestion();
