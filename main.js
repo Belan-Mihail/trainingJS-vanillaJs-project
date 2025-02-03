@@ -46,6 +46,11 @@ function handleAnswerSubmit(event) {
             result.textContent = 'You are right!'
             result.style.color = 'green'
         } else {
+            setTimeout(() => {
+                
+                result.textContent = currentQuestion.solution
+                result.style.color = 'black'
+            }, [1500])
             result.textContent = 'You are false'
             result.style.color = 'red'
         }
