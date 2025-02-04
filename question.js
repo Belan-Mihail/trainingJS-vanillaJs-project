@@ -69,6 +69,41 @@ export const question = [
     solution: 'data.map(x => x % 2 === 0 ? x * 2 : x)',
     category: 'map'
 },
+{
+    question: 'Get the length of the array',
+    data: [1, 2, 3, 4],
+    expected_result: [],
+    solution: 'data.length',
+    category: 'length'
+},
+{
+    question: 'Get the length of the longest string in the array',
+    data: ['apple', 'banana', 'pear', 'grape'],
+    expected_result: [],
+    solution: 'Math.max(...data.map(x => x.length))',
+    category: 'length'
+},
+{
+    question: 'How many elements are in the array?',
+    data: ['dog', 'cat', 'bird'],
+    expected_result: [],
+    solution: 'data.length',
+    category: 'length'
+},
+{
+    question: 'What is the length of the array of arrays?',
+    data: [[1, 2], [3, 4, 5], [6]],
+    expected_result: [],
+    solution: 'data.length',
+    category: 'length'
+},
+{
+    question: 'How many words are in the sentence split into an array?',
+    data: 'The quick brown fox jumps over the lazy dog'.split(' '),
+    expected_result: [],
+    solution: 'data.length',
+    category: 'length'
+},
 
 
 ]
