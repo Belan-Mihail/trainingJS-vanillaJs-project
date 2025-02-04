@@ -545,6 +545,148 @@ export const question = [
     solution: 'data.filter(x => x >= (data.reduce((a, b) => a + b) / data.length))',
     category: 'filter'
 },
+{
+    question: 'Check if all numbers in the array are positive',
+    data: [1, 2, 3, 4, 5],
+    expected_result: true,
+    solution: 'data.every(x => x > 0)',
+    category: 'every'
+},
+{
+    question: 'Check if all strings in the array have a length greater than 3',
+    data: ["apple", "banana", "cherry", "date"],
+    expected_result: true,
+    solution: 'data.every(x => x.length > 3)',
+    category: 'every'
+},
+{
+    question: 'Check if all numbers are divisible by 2',
+    data: [2, 4, 6, 8],
+    expected_result: true,
+    solution: 'data.every(x => x % 2 === 0)',
+    category: 'every'
+},
+{
+    question: 'Check if all numbers in the array are greater than 10',
+    data: [12, 15, 20],
+    expected_result: true,
+    solution: 'data.every(x => x > 10)',
+    category: 'every'
+},
+{
+    question: 'Check if all elements in the array are strings',
+    data: ["apple", "banana", "cherry"],
+    expected_result: true,
+    solution: 'data.every(x => typeof x === "string")',
+    category: 'every'
+},
+{
+    question: 'Check if all numbers are odd',
+    data: [1, 3, 5, 7],
+    expected_result: true,
+    solution: 'data.every(x => x % 2 !== 0)',
+    category: 'every'
+},
+{
+    question: 'Check if all elements are less than 100',
+    data: [99, 50, 30, 70],
+    expected_result: true,
+    solution: 'data.every(x => x < 100)',
+    category: 'every'
+},
+{
+    question: 'Check if all objects have the property "status" with the value "active"',
+    data: [{name: "John", status: "active"}, {name: "Jane", status: "active"}, {name: "Mike", status: "active"}],
+    expected_result: true,
+    solution: 'data.every(x => x.status === "active")',
+    category: 'every'
+},
+{
+    question: 'Check if all numbers are between 1 and 10',
+    data: [2, 3, 5, 8],
+    expected_result: true,
+    solution: 'data.every(x => x >= 1 && x <= 10)',
+    category: 'every'
+},
+{
+    question: 'Check if all elements in the array are even numbers',
+    data: [2, 4, 6, 8],
+    expected_result: true,
+    solution: 'data.every(x => x % 2 === 0)',
+    category: 'every'
+},
+{
+    question: 'Check if there are any positive numbers in the array',
+    data: [-1, -2, 3, -4, -5],
+    expected_result: true,
+    solution: 'data.some(x => x > 0)',
+    category: 'some'
+},
+{
+    question: 'Check if any string in the array has a length greater than 6',
+    data: ["apple", "banana", "cherry", "date"],
+    expected_result: true,
+    solution: 'data.some(x => x.length > 6)',
+    category: 'some'
+},
+{
+    question: 'Check if any number in the array is divisible by 3',
+    data: [2, 4, 5, 6, 8],
+    expected_result: true,
+    solution: 'data.some(x => x % 3 === 0)',
+    category: 'some'
+},
+{
+    question: 'Check if any string in the array contains the letter "a"',
+    data: ["apple", "banana", "cherry", "kiwi"],
+    expected_result: true,
+    solution: 'data.some(x => x.includes("a"))',
+    category: 'some'
+},
+{
+    question: 'Check if any number in the array is less than 0',
+    data: [1, 2, 3, -4, 5],
+    expected_result: true,
+    solution: 'data.some(x => x < 0)',
+    category: 'some'
+},
+{
+    question: 'Check if any number in the array is an odd number',
+    data: [2, 4, 6, 7, 8],
+    expected_result: true,
+    solution: 'data.some(x => x % 2 !== 0)',
+    category: 'some'
+},
+{
+    question: 'Check if any element in the array is a string',
+    data: [1, 2, "hello", 4],
+    expected_result: true,
+    solution: 'data.some(x => typeof x === "string")',
+    category: 'some'
+},
+{
+    question: 'Check if any object in the array has the property "status" equal to "inactive"',
+    data: [{name: "John", status: "active"}, {name: "Jane", status: "inactive"}, {name: "Mike", status: "active"}],
+    expected_result: true,
+    solution: 'data.some(x => x.status === "inactive")',
+    category: 'some'
+},
+{
+    question: 'Check if any element in the array is greater than 100',
+    data: [50, 75, 200, 10],
+    expected_result: true,
+    solution: 'data.some(x => x > 100)',
+    category: 'some'
+},
+{
+    question: 'Check if any number in the array is equal to 0',
+    data: [1, 2, 3, 0, 5],
+    expected_result: true,
+    solution: 'data.some(x => x === 0)',
+    category: 'some'
+},
+
+
 
 
 
