@@ -370,6 +370,183 @@ export const question = [
     solution: 'data.includes("hello")',
     category: 'includes'
 },
+{
+    question: 'Filter all even numbers from the array',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [2, 4],
+    solution: 'data.filter(x => x % 2 === 0)',
+    category: 'filter'
+},
+{
+    question: 'Filter all numbers greater than 3 from the array',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [4, 5],
+    solution: 'data.filter(x => x > 3)',
+    category: 'filter'
+},
+{
+    question: 'Filter all strings that start with the letter "a"',
+    data: ["apple", "banana", "avocado", "cherry"],
+    expected_result: ["apple", "avocado"],
+    solution: 'data.filter(x => x.startsWith("a"))',
+    category: 'filter'
+},
+{
+    question: 'Filter all strings with length greater than 5',
+    data: ["apple", "banana", "avocado", "cherry"],
+    expected_result: ["banana", "avocado"],
+    solution: 'data.filter(x => x.length > 5)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all elements that are not numbers',
+    data: [1, "apple", 3, "banana", 5],
+    expected_result: [1, 3, 5],
+    solution: 'data.filter(x => typeof x === "number")',
+    category: 'filter'
+},
+{
+    question: 'Filter all numbers less than or equal to 2',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1, 2],
+    solution: 'data.filter(x => x <= 2)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all odd numbers from the array',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [2, 4],
+    solution: 'data.filter(x => x % 2 === 0)',
+    category: 'filter'
+},
+{
+    question: 'Filter strings that contain the letter "e"',
+    data: ["apple", "banana", "cherry", "date"],
+    expected_result: ["apple", "cherry", "date"],
+    solution: 'data.filter(x => x.includes("e"))',
+    category: 'filter'
+},
+{
+    question: 'Filter out all negative numbers',
+    data: [-1, 2, -3, 4, -5],
+    expected_result: [2, 4],
+    solution: 'data.filter(x => x >= 0)',
+    category: 'filter'
+},
+{
+    question: 'Filter all numbers that are divisible by 3',
+    data: [1, 2, 3, 4, 5, 6],
+    expected_result: [3, 6],
+    solution: 'data.filter(x => x % 3 === 0)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all empty strings from the array',
+    data: ["apple", "", "banana", "", "cherry"],
+    expected_result: ["apple", "banana", "cherry"],
+    solution: 'data.filter(x => x !== "")',
+    category: 'filter'
+},
+{
+    question: 'Filter out all numbers that are even',
+    data: [1, 2, 3, 4, 5, 6],
+    expected_result: [1, 3, 5],
+    solution: 'data.filter(x => x % 2 !== 0)',
+    category: 'filter'
+},
+{
+    question: 'Filter all strings that are longer than 4 characters',
+    data: ["cat", "dog", "elephant", "bat", "lion"],
+    expected_result: ["elephant"],
+    solution: 'data.filter(x => x.length > 4)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all falsy values from the array',
+    data: [0, 1, false, true, "", "hello", NaN],
+    expected_result: [1, true, "hello"],
+    solution: 'data.filter(Boolean)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all numbers that are not divisible by 2 or 3',
+    data: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    expected_result: [2, 3, 6],
+    solution: 'data.filter(x => x % 2 === 0 || x % 3 === 0)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all elements containing the letter "b"',
+    data: ["apple", "banana", "cherry", "blueberry", "grape"],
+    expected_result: ["apple", "cherry", "grape"],
+    solution: 'data.filter(x => !x.includes("b"))',
+    category: 'filter'
+},
+{
+    question: 'Filter all numbers greater than or equal to 10',
+    data: [5, 12, 7, 20, 8],
+    expected_result: [12, 20],
+    solution: 'data.filter(x => x >= 10)',
+    category: 'filter'
+},
+{
+    question: 'Filter all strings that do not contain the letter "a"',
+    data: ["apple", "banana", "cherry", "grape"],
+    expected_result: ["cherry", "grape"],
+    solution: 'data.filter(x => !x.includes("a"))',
+    category: 'filter'
+},
+{
+    question: 'Filter out all objects with a missing "name" property',
+    data: [{name: "John"}, {age: 30}, {name: "Jane"}, {city: "Berlin"}],
+    expected_result: [{name: "John"}, {name: "Jane"}],
+    solution: 'data.filter(x => x.name)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all undefined values',
+    data: [1, undefined, 2, undefined, 3],
+    expected_result: [1, 2, 3],
+    solution: 'data.filter(x => x !== undefined)',
+    category: 'filter'
+},
+{
+    question: 'Filter all strings that start with the letter "a"',
+    data: ["apple", "banana", "apricot", "cherry", "avocado"],
+    expected_result: ["apple", "apricot", "avocado"],
+    solution: 'data.filter(x => x.startsWith("a"))',
+    category: 'filter'
+},
+{
+    question: 'Filter out all objects that have a property "age" less than 18',
+    data: [{name: "John", age: 22}, {name: "Jane", age: 16}, {name: "Mike", age: 30}],
+    expected_result: [{name: "Jane", age: 16}],
+    solution: 'data.filter(x => x.age <= 18)',
+    category: 'filter'
+},
+{
+    question: 'Filter out all elements that are not numbers',
+    data: [1, "apple", 3, "banana", 5, "cherry"],
+    expected_result: [1, 3, 5],
+    solution: 'data.filter(x => typeof x === "number")',
+    category: 'filter'
+},
+{
+    question: 'Filter out all objects with a property "status" equal to "inactive"',
+    data: [{name: "John", status: "active"}, {name: "Jane", status: "inactive"}, {name: "Mike", status: "active"}],
+    expected_result: [{name: "John", status: "active"}, {name: "Mike", status: "active"}],
+    solution: 'data.filter(x => x.status !== "inactive")',
+    category: 'filter'
+},
+{
+    question: 'Filter all numbers greater than or equal to the average of the array',
+    data: [2, 4, 6, 8, 10],
+    expected_result: [6, 8, 10],
+    solution: 'data.filter(x => x >= (data.reduce((a, b) => a + b) / data.length))',
+    category: 'filter'
+},
+
+
 
 
 
