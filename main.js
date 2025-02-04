@@ -13,6 +13,7 @@ function displayRandomQuestion() {
     const nextButton = document.getElementById('next_question');
     const answerForm = document.getElementById('answer_form');
     const dataElement = document.getElementById('data');
+    const availableQuestions = document.getElementById('available-questions')
 
     
     const randomIndex = Math.floor(Math.random() * question.length);
@@ -22,6 +23,7 @@ function displayRandomQuestion() {
 
     
     questionElement.textContent = currentQuestion.question;
+    availableQuestions.textContent = question.length
     expectedResult.textContent = `${JSON.stringify(currentQuestion.expected_result)}`;
     dataElement.textContent = `${JSON.stringify(currentQuestion.data)}`;
 
