@@ -236,7 +236,37 @@ export const question = [
     expected_result: [true, false, true],
     solution: 'data.unshift(true)',
     category: 'unshift'
-}
+},
+{
+    question: 'Get the first element from the array using the `at` method',
+    data: [1, 2, 3, 4],
+    expected_result: [1],
+    solution: 'data.at(0)',
+    category: 'at'
+},
+{
+    question: 'Get the last element from the array using the `at` method',
+    data: ['apple', 'banana', 'cherry'],
+    expected_result: ['cherry'],
+    solution: 'data.at(-1)',
+    category: 'at'
+},
+{
+    question: 'Get the second element from the array using the `at` method',
+    data: [10, 20, 30, 40],
+    expected_result: [20],
+    solution: 'data.at(1)',
+    category: 'at'
+},
+{
+    question: 'Get the third-to-last element from the array using the `at` method',
+    data: [5, 10, 15, 20, 25],
+    expected_result: [15],
+    solution: 'data.at(-3)',
+    category: 'at'
+},
+
+
 
 
 ]
