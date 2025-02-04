@@ -138,6 +138,104 @@ export const question = [
     expected_result: [true, false, true],
     solution: 'data.push(true)',
     category: 'push'
+},
+{
+    question: 'Remove the first element from the array',
+    data: [1, 2, 3],
+    expected_result: [2, 3],
+    solution: 'data.shift()',
+    category: 'shift'
+},
+{
+    question: 'Remove the first string from an array of strings',
+    data: ['apple', 'banana', 'cherry'],
+    expected_result: ['banana', 'cherry'],
+    solution: 'data.shift()',
+    category: 'shift'
+},
+{
+    question: 'Remove the first element from an array of numbers',
+    data: [10, 20, 30],
+    expected_result: [20, 30],
+    solution: 'data.shift()',
+    category: 'shift'
+},
+{
+    question: 'Remove the first element from an array of boolean values',
+    data: [true, false, true],
+    expected_result: [false, true],
+    solution: 'data.shift()',
+    category: 'shift'
+},
+{
+    question: 'Remove the last element from the array',
+    data: [1, 2, 3],
+    expected_result: [1, 2],
+    solution: 'data.pop()',
+    category: 'pop'
+},
+{
+    question: 'Remove the last element from an array of strings',
+    data: ['apple', 'banana', 'cherry'],
+    expected_result: ['apple', 'banana'],
+    solution: 'data.pop()',
+    category: 'pop'
+},
+{
+    question: 'Remove the last element from an array and return it',
+    data: [5, 6, 7, 8],
+    expected_result: [5, 6, 7],
+    solution: 'data.pop()',
+    category: 'pop'
+},
+{
+    question: 'Remove the last element from an array with a single item',
+    data: ['lastElement'],
+    expected_result: [],
+    solution: 'data.pop()',
+    category: 'pop'
+},
+{
+    question: 'Remove the last number from an array of numbers',
+    data: [1, 2, 3, 4],
+    expected_result: [1, 2, 3],
+    solution: 'data.pop()',
+    category: 'pop'
+},
+{
+    question: 'Add a number to the beginning of the array',
+    data: [2, 3, 4],
+    expected_result: [1, 2, 3, 4],
+    solution: 'data.unshift(1)',
+    category: 'unshift'
+},
+{
+    question: 'Add a string to the beginning of the array',
+    data: ['apple', 'banana'],
+    expected_result: ['orange', 'apple', 'banana'],
+    solution: 'data.unshift("orange")',
+    category: 'unshift'
+},
+{
+    question: 'Add multiple elements to the beginning of the array',
+    data: [3, 4],
+    expected_result: [1, 2, 3, 4],
+    solution: 'data.unshift(1, 2)',
+    category: 'unshift'
+},
+{
+    question: 'Add an array element to the beginning of an empty array',
+    data: [],
+    expected_result: [10],
+    solution: 'data.unshift(10)',
+    category: 'unshift'
+},
+{
+    question: 'Add a boolean value to the beginning of the array',
+    data: [false, true],
+    expected_result: [true, false, true],
+    solution: 'data.unshift(true)',
+    category: 'unshift'
 }
 
 
