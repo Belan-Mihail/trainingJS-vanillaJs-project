@@ -265,6 +265,41 @@ export const question = [
     solution: 'data.at(-3)',
     category: 'at'
 },
+{
+    question: 'Find the index of the element 3 in the array',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [2],
+    solution: 'data.indexOf(3)',
+    category: 'indexOf'
+},
+{
+    question: 'Find the index of the element "banana" in the array',
+    data: ['apple', 'banana', 'cherry'],
+    expected_result: [1],
+    solution: 'data.indexOf("banana")',
+    category: 'indexOf'
+},
+{
+    question: 'Find the index of the element 10 in the array (element not present)',
+    data: [5, 15, 20, 25],
+    expected_result: [-1],
+    solution: 'data.indexOf(10)',
+    category: 'indexOf'
+},
+{
+    question: 'Find the index of the element "orange" in the array (element not present)',
+    data: ['apple', 'banana', 'cherry'],
+    expected_result: [-1],
+    solution: 'data.indexOf("orange")',
+    category: 'indexOf'
+},
+{
+    question: 'Find the index of the first occurrence of 4 in the array',
+    data: [1, 2, 3, 4, 4, 5],
+    expected_result: [3],
+    solution: 'data.indexOf(4)',
+    category: 'indexOf'
+},
 
 
 
