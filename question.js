@@ -685,6 +685,77 @@ export const question = [
     solution: 'data.some(x => x === 0)',
     category: 'some'
 },
+{
+    question: 'Fill the array with the number 5',
+    data: [1, 2, 3, 4],
+    expected_result: [5, 5, 5, 5],
+    solution: 'data.fill(5)',
+    category: 'fill'
+},
+{
+    question: 'Fill the first 3 elements of the array with the value "x"',
+    data: [1, 2, 3, 4, 5],
+    expected_result: ['x', 'x', 'x', 4, 5],
+    solution: 'data.fill("x", 0, 3)',
+    category: 'fill'
+},
+{
+    question: 'Fill the entire array with the value true',
+    data: [false, false, false],
+    expected_result: [true, true, true],
+    solution: 'data.fill(true)',
+    category: 'fill'
+},
+{
+    question: 'Fill the array starting from index 2 with the number 0',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1, 2, 0, 0, 0],
+    solution: 'data.fill(0, 2)',
+    category: 'fill'
+},
+{
+    question: 'Fill the array from index 1 to index 3 with the string "filled"',
+    data: ['apple', 'banana', 'cherry', 'date'],
+    expected_result: ['apple', 'filled', 'filled', 'date'],
+    solution: 'data.fill("filled", 1, 3)',
+    category: 'fill'
+},
+{
+    question: 'Fill all the elements of the array with "N/A"',
+    data: [null, null, null],
+    expected_result: ['N/A', 'N/A', 'N/A'],
+    solution: 'data.fill("N/A")',
+    category: 'fill'
+},
+{
+    question: 'Fill the array with the value 0 for the first 4 elements',
+    data: [10, 20, 30, 40, 50],
+    expected_result: [0, 0, 0, 0, 50],
+    solution: 'data.fill(0, 0, 4)',
+    category: 'fill'
+},
+{
+    question: 'Fill the entire array with the number 100',
+    data: [1, 2, 3, 4, 5, 6],
+    expected_result: [100, 100, 100, 100, 100, 100],
+    solution: 'data.fill(100)',
+    category: 'fill'
+},
+{
+    question: 'Fill the array from index 2 to the end with the string "empty"',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1, 2, 'empty', 'empty', 'empty'],
+    solution: 'data.fill("empty", 2)',
+    category: 'fill'
+},
+{
+    question: 'Fill the first 2 elements of the array with 0',
+    data: [7, 8, 9],
+    expected_result: [0, 0, 9],
+    solution: 'data.fill(0, 0, 2)',
+    category: 'fill'
+},
+
 
 
 
