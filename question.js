@@ -104,6 +104,41 @@ export const question = [
     solution: 'data.length',
     category: 'length'
 },
+{
+    question: 'Add a number to the end of the array',
+    data: [1, 2, 3],
+    expected_result: [1, 2, 3, 4],
+    solution: 'data.push(4)',
+    category: 'push'
+},
+{
+    question: 'Add a string to the end of the array',
+    data: ['apple', 'banana'],
+    expected_result: ['apple', 'banana', 'orange'],
+    solution: 'data.push("orange")',
+    category: 'push'
+},
+{
+    question: 'Add multiple elements to the array',
+    data: [1, 2],
+    expected_result: [1, 2, 3, 4, 5],
+    solution: 'data.push(3, 4, 5)',
+    category: 'push'
+},
+{
+    question: 'Add an array element to an empty array',
+    data: [],
+    expected_result: [10],
+    solution: 'data.push(10)',
+    category: 'push'
+},
+{
+    question: 'Add a boolean value to the end of the array',
+    data: [true, false],
+    expected_result: [true, false, true],
+    solution: 'data.push(true)',
+    category: 'push'
+}
 
 
 ]
