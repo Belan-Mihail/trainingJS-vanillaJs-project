@@ -40,39 +40,33 @@ function displayRandomQuestion() {
 function handleAnswerSubmit(event) {
     event.preventDefault();
 
-    
     if (!currentQuestion) {
         return;
     }
 
-    const userAnswer = document.getElementById('user_answer').value;
+    const userAnswer = document.getElementById('user_answer').value.trim(); 
     const result = document.getElementById('result');
     const nextButton = document.getElementById('next_question');
 
-    try {
-        
-        const userSolution = new Function('data', `return ${userAnswer}`)(currentQuestion.data);
+    
+    const correctSolution = currentQuestion.solution.trim(); 
 
-        if (JSON.stringify(userSolution) === JSON.stringify(currentQuestion.expected_result)) {
-            result.textContent = 'You are right!';
-            result.style.color = 'green';
-        } else {
-            setTimeout(() => {
-                result.textContent = currentQuestion.solution;
-                result.style.color = 'black';
-            }, 1500);
-            result.textContent = 'You are false';
-            result.style.color = 'red';
-        }
-
-        
-        nextButton.style.display = 'inline-block';
-        nextButton.classList.add('next');
-    } catch (error) {
-        result.textContent = 'Syntax error';
+    if (userAnswer === correctSolution) {
+        result.textContent = 'You are right!';
+        result.style.color = 'green';
+    } else {
+        setTimeout(() => {
+            result.textContent = currentQuestion.solution;
+            result.style.color = 'black';
+        }, 1500);
+        result.textContent = 'You are false';
         result.style.color = 'red';
     }
+
+    nextButton.style.display = 'inline-block';
+    nextButton.classList.add('next');
 }
+
 
 
 function goToNextQuestion() {
