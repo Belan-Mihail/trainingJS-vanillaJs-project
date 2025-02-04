@@ -300,6 +300,77 @@ export const question = [
     solution: 'data.indexOf(4)',
     category: 'indexOf'
 },
+{
+    question: 'Check if the array contains the number 3',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [true],
+    solution: 'data.includes(3)',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the number 6',
+    data: [1, 2, 3, 4, 5],
+    expected_result: [false],
+    solution: 'data.includes(6)',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the string "banana"',
+    data: ["apple", "banana", "cherry"],
+    expected_result: [true],
+    solution: 'data.includes("banana")',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the string "orange"',
+    data: ["apple", "banana", "cherry"],
+    expected_result: [false],
+    solution: 'data.includes("orange")',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the number 4',
+    data: [10, 20, 30, 40, 50],
+    expected_result: [true],
+    solution: 'data.includes(4)',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the number 100',
+    data: [10, 20, 30, 40, 50],
+    expected_result: [false],
+    solution: 'data.includes(100)',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the boolean value true',
+    data: [true, false, false],
+    expected_result: [true],
+    solution: 'data.includes(true)',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the boolean value false',
+    data: [true, false, false],
+    expected_result: [true],
+    solution: 'data.includes(false)',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the number 0',
+    data: [0, 1, 2, 3, 4],
+    expected_result: [true],
+    solution: 'data.includes(0)',
+    category: 'includes'
+},
+{
+    question: 'Check if the array contains the string "hello"',
+    data: ["hi", "hello", "world"],
+    expected_result: [true],
+    solution: 'data.includes("hello")',
+    category: 'includes'
+},
+
 
 
 
