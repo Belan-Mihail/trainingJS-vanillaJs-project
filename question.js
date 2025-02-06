@@ -3817,6 +3817,120 @@ export const question = [
                                 solution: 'data.replaceAll("quick", "slow")',
                                 category: 'replaceAll'
                             },
+                            
+                                {
+                                    question: 'Remove leading and trailing spaces from the string "   Hello World   ".',
+                                    data: '   Hello World   ',
+                                    expected_result: 'Hello World',
+                                    solution: 'data.trim()',
+                                    category: 'trim'
+                                },
+                                {
+                                    question: 'Remove leading and trailing spaces from the string "   JavaScript   ".',
+                                    data: '   JavaScript   ',
+                                    expected_result: 'JavaScript',
+                                    solution: 'data.trim()',
+                                    category: 'trim'
+                                },
+                                {
+                                    question: 'Remove spaces from the string "    abc    ".',
+                                    data: '    abc    ',
+                                    expected_result: 'abc',
+                                    solution: 'data.trim()',
+                                    category: 'trim'
+                                },
+                                {
+                                    question: 'Remove leading and trailing spaces from the string "    hello    world    ".',
+                                    data: '    hello    world    ',
+                                    expected_result: 'hello    world',
+                                    solution: 'data.trim()',
+                                    category: 'trim'
+                                },
+                                {
+                                    question: 'Remove spaces from the string "     12345     ".',
+                                    data: '     12345     ',
+                                    expected_result: '12345',
+                                    solution: 'data.trim()',
+                                    category: 'trim'
+                                },
+                                
+                                    {
+                                        question: 'Remove leading spaces from the string "   Hello World".',
+                                        data: '   Hello World',
+                                        expected_result: 'Hello World',
+                                        solution: 'data.trimStart()',
+                                        category: 'trimStart'
+                                    },
+                                    {
+                                        question: 'Remove leading spaces from the string "   JavaScript".',
+                                        data: '   JavaScript',
+                                        expected_result: 'JavaScript',
+                                        solution: 'data.trimStart()',
+                                        category: 'trimStart'
+                                    },
+                                    {
+                                        question: 'Remove leading spaces from the string "   abc".',
+                                        data: '   abc',
+                                        expected_result: 'abc',
+                                        solution: 'data.trimStart()',
+                                        category: 'trimStart'
+                                    },
+                                    {
+                                        question: 'Remove leading spaces from the string "    hello world".',
+                                        data: '    hello world',
+                                        expected_result: 'hello world',
+                                        solution: 'data.trimStart()',
+                                        category: 'trimStart'
+                                    },
+                                    {
+                                        question: 'Remove leading spaces from the string "     12345".',
+                                        data: '     12345',
+                                        expected_result: '12345',
+                                        solution: 'data.trimStart()',
+                                        category: 'trimStart'
+                                    },
+                                    
+                                        {
+                                            question: 'Remove trailing spaces from the string "Hello World   ".',
+                                            data: 'Hello World   ',
+                                            expected_result: 'Hello World',
+                                            solution: 'data.trimEnd()',
+                                            category: 'trimEnd'
+                                        },
+                                        {
+                                            question: 'Remove trailing spaces from the string "JavaScript   ".',
+                                            data: 'JavaScript   ',
+                                            expected_result: 'JavaScript',
+                                            solution: 'data.trimEnd()',
+                                            category: 'trimEnd'
+                                        },
+                                        {
+                                            question: 'Remove trailing spaces from the string "abc    ".',
+                                            data: 'abc    ',
+                                            expected_result: 'abc',
+                                            solution: 'data.trimEnd()',
+                                            category: 'trimEnd'
+                                        },
+                                        {
+                                            question: 'Remove trailing spaces from the string "hello world    ".',
+                                            data: 'hello world    ',
+                                            expected_result: 'hello world',
+                                            solution: 'data.trimEnd()',
+                                            category: 'trimEnd'
+                                        },
+                                        {
+                                            question: 'Remove trailing spaces from the string "12345     ".',
+                                            data: '12345     ',
+                                            expected_result: '12345',
+                                            solution: 'data.trimEnd()',
+                                            category: 'trimEnd'
+                                        },
+                                    
+                                    
+                                
+                                
+                            
+                            
                         
                         
                     
