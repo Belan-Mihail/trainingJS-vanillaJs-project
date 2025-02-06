@@ -1621,4 +1621,213 @@ export const question = [
     solution: "data.flat(2)",
     category: "flat",
   },
+    {
+        question: 'Find the first even number in an array of numbers',
+        data: [1, 3, 5, 7, 8, 10],
+        expected_result: 8,
+        solution: 'data.find(num => num % 2 === 0)',
+        category: 'find'
+    },
+    {
+        question: 'Find the first string that starts with the letter "a" in an array of strings',
+        data: ['banana', 'apple', 'cherry', 'grape'],
+        expected_result: 'apple',
+        solution: 'data.find(str => str.startsWith("a"))',
+        category: 'find'
+    },
+    {
+        question: 'Find the first number greater than 10 in an array of numbers',
+        data: [5, 8, 12, 3, 9],
+        expected_result: 12,
+        solution: 'data.find(num => num > 10)',
+        category: 'find'
+    },
+    {
+        question: 'Find the first object in an array that has a specific property value (name: "John")',
+        data: [{name: 'Alice'}, {name: 'John'}, {name: 'Bob'}],
+        expected_result: {name: 'John'},
+        solution: 'data.find(obj => obj.name === "John")',
+        category: 'find'
+    },
+    {
+        question: 'Find the first element in an array of numbers that is divisible by 3',
+        data: [4, 5, 9, 12],
+        expected_result: 9,
+        solution: 'data.find(num => num % 3 === 0)',
+        category: 'find'
+    },
+    {
+        question: 'Find the first person older than 30 from an array of people objects',
+        data: [{name: 'John', age: 28}, {name: 'Jane', age: 35}, {name: 'Bob', age: 40}],
+        expected_result: {name: 'Jane', age: 35},
+        solution: 'data.find(person => person.age > 30)',
+        category: 'find'
+    },
+    {
+        question: 'Find the first number in an array that is a perfect square',
+        data: [2, 3, 4, 5, 9],
+        expected_result: 4,
+        solution: 'data.find(num => Math.sqrt(num) % 1 === 0)',
+        category: 'find'
+    },
+    {
+        question: 'Find the first object with a "price" property greater than 100',
+        data: [{item: 'apple', price: 50}, {item: 'banana', price: 120}, {item: 'cherry', price: 80}],
+        expected_result: {item: 'banana', price: 120},
+        solution: 'data.find(obj => obj.price > 100)',
+        category: 'find'
+    },
+    {
+        question: 'Find the first string with more than 5 characters in an array of strings',
+        data: ['cat', 'elephant', 'dog', 'giraffe'],
+        expected_result: 'elephant',
+        solution: 'data.find(str => str.length > 5)',
+        category: 'find'
+    },
+    {
+        question: 'Find the first negative number in an array of mixed numbers',
+        data: [7, 8, -3, 2, 5],
+        expected_result: -3,
+        solution: 'data.find(num => num < 0)',
+        category: 'find'
+    },
+    
+        {
+            question: 'Find the first negative number in an array of numbers',
+            data: [1, 3, 7, -5, 9],
+            expected_result: -5,
+            solution: 'data.find(num => num < 0)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first string that contains the letter "z" in an array of strings',
+            data: ['apple', 'banana', 'zebra', 'cherry'],
+            expected_result: 'zebra',
+            solution: 'data.find(str => str.includes("z"))',
+            category: 'find'
+        },
+        {
+            question: 'Find the first object in an array of objects with a "completed" status set to true',
+            data: [{task: 'Do laundry', completed: false}, {task: 'Buy groceries', completed: true}, {task: 'Clean room', completed: false}],
+            expected_result: {task: 'Buy groceries', completed: true},
+            solution: 'data.find(obj => obj.completed === true)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first number in an array that is divisible by both 2 and 3',
+            data: [5, 6, 8, 12, 15],
+            expected_result: 6,
+            solution: 'data.find(num => num % 2 === 0 && num % 3 === 0)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first element in an array of objects that has a property "price" less than 50',
+            data: [{item: 'apple', price: 40}, {item: 'banana', price: 60}, {item: 'cherry', price: 30}],
+            expected_result: {item: 'apple', price: 40},
+            solution: 'data.find(obj => obj.price < 50)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first string in an array with more than 6 characters',
+            data: ['apple', 'banana', 'grape', 'kiwi'],
+            expected_result: 'banana',
+            solution: 'data.find(str => str.length > 6)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first even number greater than 10 in an array of numbers',
+            data: [5, 3, 12, 8, 20],
+            expected_result: 12,
+            solution: 'data.find(num => num > 10 && num % 2 === 0)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first number greater than 100 in an array of numbers',
+            data: [45, 60, 120, 150],
+            expected_result: 120,
+            solution: 'data.find(num => num > 100)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first object in an array with a "name" property starting with "A"',
+            data: [{name: 'John'}, {name: 'Alice'}, {name: 'Bob'}],
+            expected_result: {name: 'Alice'},
+            solution: 'data.find(obj => obj.name.startsWith("A"))',
+            category: 'find'
+        },
+        {
+            question: 'Find the first number in an array that is a multiple of 7',
+            data: [1, 2, 3, 14, 21],
+            expected_result: 14,
+            solution: 'data.find(num => num % 7 === 0)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first odd number in an array of numbers',
+            data: [2, 4, 6, 7, 8],
+            expected_result: 7,
+            solution: 'data.find(num => num % 2 !== 0)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first element in an array of strings that contains "cat"',
+            data: ['dog', 'cat', 'rabbit', 'bird'],
+            expected_result: 'cat',
+            solution: 'data.find(str => str.includes("cat"))',
+            category: 'find'
+        },
+        {
+            question: 'Find the first object in an array that has a "name" property with value "Jane"',
+            data: [{name: 'John'}, {name: 'Jane'}, {name: 'Alice'}],
+            expected_result: {name: 'Jane'},
+            solution: 'data.find(obj => obj.name === "Jane")',
+            category: 'find'
+        },
+        {
+            question: 'Find the first number divisible by 5 in an array of numbers',
+            data: [7, 9, 10, 15, 20],
+            expected_result: 10,
+            solution: 'data.find(num => num % 5 === 0)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first element in an array of objects where the "status" property is false',
+            data: [{task: 'Do homework', status: true}, {task: 'Buy groceries', status: false}, {task: 'Clean room', status: true}],
+            expected_result: {task: 'Buy groceries', status: false},
+            solution: 'data.find(obj => obj.status === false)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first string in an array that has more than 3 vowels',
+            data: ['apple', 'banana', 'grape'],
+            expected_result: 'banana',
+            solution: 'data.find(str => (str.match(/[aeiou]/gi) || []).length > 3)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first object that has a "completed" property set to false',
+            data: [{task: 'Do laundry', completed: true}, {task: 'Buy groceries', completed: false}],
+            expected_result: {task: 'Buy groceries', completed: false},
+            solution: 'data.find(obj => obj.completed === false)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first string with a length of exactly 5 characters',
+            data: ['apple', 'banana', 'kiwi', 'grape'],
+            expected_result: 'apple',
+            solution: 'data.find(str => str.length === 5)',
+            category: 'find'
+        },
+        {
+            question: 'Find the first number that is greater than 50 and less than 100 in an array',
+            data: [25, 45, 60, 105],
+            expected_result: 60,
+            solution: 'data.find(num => num > 50 && num < 100)',
+            category: 'find'
+        },
+        
+    
+    
+
+
 ];
