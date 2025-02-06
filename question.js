@@ -1826,6 +1826,79 @@ export const question = [
             category: 'find'
         },
         
+            {
+                question: 'Find the index of the first even number in an array of numbers',
+                data: [1, 3, 5, 7, 8, 10],
+                expected_result: 4,
+                solution: 'data.findIndex(num => num % 2 === 0)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first string that starts with "a" in an array of strings',
+                data: ['banana', 'apple', 'cherry', 'grape'],
+                expected_result: 1,
+                solution: 'data.findIndex(str => str.startsWith("a"))',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first number greater than 10 in an array of numbers',
+                data: [5, 8, 12, 3, 9],
+                expected_result: 2,
+                solution: 'data.findIndex(num => num > 10)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first object in an array with a "completed" property set to true',
+                data: [{task: 'Do laundry', completed: false}, {task: 'Buy groceries', completed: true}, {task: 'Clean room', completed: false}],
+                expected_result: 1,
+                solution: 'data.findIndex(obj => obj.completed === true)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first number divisible by both 2 and 3',
+                data: [5, 6, 8, 12, 15],
+                expected_result: 1,
+                solution: 'data.findIndex(num => num % 2 === 0 && num % 3 === 0)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first person older than 30 from an array of people objects',
+                data: [{name: 'John', age: 28}, {name: 'Jane', age: 35}, {name: 'Bob', age: 40}],
+                expected_result: 1,
+                solution: 'data.findIndex(person => person.age > 30)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first element in an array that is a multiple of 7',
+                data: [1, 2, 3, 14, 21],
+                expected_result: 3,
+                solution: 'data.findIndex(num => num % 7 === 0)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first string in an array with more than 6 characters',
+                data: ['apple', 'banana', 'grape', 'kiwi'],
+                expected_result: 1,
+                solution: 'data.findIndex(str => str.length > 6)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first object in an array where the "price" property is greater than 100',
+                data: [{item: 'apple', price: 50}, {item: 'banana', price: 120}, {item: 'cherry', price: 80}],
+                expected_result: 1,
+                solution: 'data.findIndex(obj => obj.price > 100)',
+                category: 'findIndex'
+            },
+            {
+                question: 'Find the index of the first object in an array that has a "name" property with value "Jane"',
+                data: [{name: 'John'}, {name: 'Jane'}, {name: 'Alice'}],
+                expected_result: 1,
+                solution: 'data.findIndex(obj => obj.name === "Jane")',
+                category: 'findIndex'
+            }
+        
+        
+
     
     
 
