@@ -1621,715 +1621,865 @@ export const question = [
     solution: "data.flat(2)",
     category: "flat",
   },
-    {
-        question: 'Find the first even number in an array of numbers',
-        data: [1, 3, 5, 7, 8, 10],
-        expected_result: 8,
-        solution: 'data.find(num => num % 2 === 0)',
-        category: 'find'
-    },
-    {
-        question: 'Find the first string that starts with the letter "a" in an array of strings',
-        data: ['banana', 'apple', 'cherry', 'grape'],
-        expected_result: 'apple',
-        solution: 'data.find(str => str.startsWith("a"))',
-        category: 'find'
-    },
-    {
-        question: 'Find the first number greater than 10 in an array of numbers',
-        data: [5, 8, 12, 3, 9],
-        expected_result: 12,
-        solution: 'data.find(num => num > 10)',
-        category: 'find'
-    },
-    {
-        question: 'Find the first object in an array that has a specific property value (name: "John")',
-        data: [{name: 'Alice'}, {name: 'John'}, {name: 'Bob'}],
-        expected_result: {name: 'John'},
-        solution: 'data.find(obj => obj.name === "John")',
-        category: 'find'
-    },
-    {
-        question: 'Find the first element in an array of numbers that is divisible by 3',
-        data: [4, 5, 9, 12],
-        expected_result: 9,
-        solution: 'data.find(num => num % 3 === 0)',
-        category: 'find'
-    },
-    {
-        question: 'Find the first person older than 30 from an array of people objects',
-        data: [{name: 'John', age: 28}, {name: 'Jane', age: 35}, {name: 'Bob', age: 40}],
-        expected_result: {name: 'Jane', age: 35},
-        solution: 'data.find(person => person.age > 30)',
-        category: 'find'
-    },
-    {
-        question: 'Find the first number in an array that is a perfect square',
-        data: [2, 3, 4, 5, 9],
-        expected_result: 4,
-        solution: 'data.find(num => Math.sqrt(num) % 1 === 0)',
-        category: 'find'
-    },
-    {
-        question: 'Find the first object with a "price" property greater than 100',
-        data: [{item: 'apple', price: 50}, {item: 'banana', price: 120}, {item: 'cherry', price: 80}],
-        expected_result: {item: 'banana', price: 120},
-        solution: 'data.find(obj => obj.price > 100)',
-        category: 'find'
-    },
-    {
-        question: 'Find the first string with more than 5 characters in an array of strings',
-        data: ['cat', 'elephant', 'dog', 'giraffe'],
-        expected_result: 'elephant',
-        solution: 'data.find(str => str.length > 5)',
-        category: 'find'
-    },
-    {
-        question: 'Find the first negative number in an array of mixed numbers',
-        data: [7, 8, -3, 2, 5],
-        expected_result: -3,
-        solution: 'data.find(num => num < 0)',
-        category: 'find'
-    },
-    
-        {
-            question: 'Find the first negative number in an array of numbers',
-            data: [1, 3, 7, -5, 9],
-            expected_result: -5,
-            solution: 'data.find(num => num < 0)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first string that contains the letter "z" in an array of strings',
-            data: ['apple', 'banana', 'zebra', 'cherry'],
-            expected_result: 'zebra',
-            solution: 'data.find(str => str.includes("z"))',
-            category: 'find'
-        },
-        {
-            question: 'Find the first object in an array of objects with a "completed" status set to true',
-            data: [{task: 'Do laundry', completed: false}, {task: 'Buy groceries', completed: true}, {task: 'Clean room', completed: false}],
-            expected_result: {task: 'Buy groceries', completed: true},
-            solution: 'data.find(obj => obj.completed === true)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first number in an array that is divisible by both 2 and 3',
-            data: [5, 6, 8, 12, 15],
-            expected_result: 6,
-            solution: 'data.find(num => num % 2 === 0 && num % 3 === 0)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first element in an array of objects that has a property "price" less than 50',
-            data: [{item: 'apple', price: 40}, {item: 'banana', price: 60}, {item: 'cherry', price: 30}],
-            expected_result: {item: 'apple', price: 40},
-            solution: 'data.find(obj => obj.price < 50)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first string in an array with more than 6 characters',
-            data: ['apple', 'banana', 'grape', 'kiwi'],
-            expected_result: 'banana',
-            solution: 'data.find(str => str.length > 6)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first even number greater than 10 in an array of numbers',
-            data: [5, 3, 12, 8, 20],
-            expected_result: 12,
-            solution: 'data.find(num => num > 10 && num % 2 === 0)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first number greater than 100 in an array of numbers',
-            data: [45, 60, 120, 150],
-            expected_result: 120,
-            solution: 'data.find(num => num > 100)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first object in an array with a "name" property starting with "A"',
-            data: [{name: 'John'}, {name: 'Alice'}, {name: 'Bob'}],
-            expected_result: {name: 'Alice'},
-            solution: 'data.find(obj => obj.name.startsWith("A"))',
-            category: 'find'
-        },
-        {
-            question: 'Find the first number in an array that is a multiple of 7',
-            data: [1, 2, 3, 14, 21],
-            expected_result: 14,
-            solution: 'data.find(num => num % 7 === 0)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first odd number in an array of numbers',
-            data: [2, 4, 6, 7, 8],
-            expected_result: 7,
-            solution: 'data.find(num => num % 2 !== 0)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first element in an array of strings that contains "cat"',
-            data: ['dog', 'cat', 'rabbit', 'bird'],
-            expected_result: 'cat',
-            solution: 'data.find(str => str.includes("cat"))',
-            category: 'find'
-        },
-        {
-            question: 'Find the first object in an array that has a "name" property with value "Jane"',
-            data: [{name: 'John'}, {name: 'Jane'}, {name: 'Alice'}],
-            expected_result: {name: 'Jane'},
-            solution: 'data.find(obj => obj.name === "Jane")',
-            category: 'find'
-        },
-        {
-            question: 'Find the first number divisible by 5 in an array of numbers',
-            data: [7, 9, 10, 15, 20],
-            expected_result: 10,
-            solution: 'data.find(num => num % 5 === 0)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first element in an array of objects where the "status" property is false',
-            data: [{task: 'Do homework', status: true}, {task: 'Buy groceries', status: false}, {task: 'Clean room', status: true}],
-            expected_result: {task: 'Buy groceries', status: false},
-            solution: 'data.find(obj => obj.status === false)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first string in an array that has more than 3 vowels',
-            data: ['apple', 'banana', 'grape'],
-            expected_result: 'banana',
-            solution: 'data.find(str => (str.match(/[aeiou]/gi) || []).length > 3)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first object that has a "completed" property set to false',
-            data: [{task: 'Do laundry', completed: true}, {task: 'Buy groceries', completed: false}],
-            expected_result: {task: 'Buy groceries', completed: false},
-            solution: 'data.find(obj => obj.completed === false)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first string with a length of exactly 5 characters',
-            data: ['apple', 'banana', 'kiwi', 'grape'],
-            expected_result: 'apple',
-            solution: 'data.find(str => str.length === 5)',
-            category: 'find'
-        },
-        {
-            question: 'Find the first number that is greater than 50 and less than 100 in an array',
-            data: [25, 45, 60, 105],
-            expected_result: 60,
-            solution: 'data.find(num => num > 50 && num < 100)',
-            category: 'find'
-        },
-        
-            {
-                question: 'Find the index of the first even number in an array of numbers',
-                data: [1, 3, 5, 7, 8, 10],
-                expected_result: 4,
-                solution: 'data.findIndex(num => num % 2 === 0)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first string that starts with "a" in an array of strings',
-                data: ['banana', 'apple', 'cherry', 'grape'],
-                expected_result: 1,
-                solution: 'data.findIndex(str => str.startsWith("a"))',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first number greater than 10 in an array of numbers',
-                data: [5, 8, 12, 3, 9],
-                expected_result: 2,
-                solution: 'data.findIndex(num => num > 10)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first object in an array with a "completed" property set to true',
-                data: [{task: 'Do laundry', completed: false}, {task: 'Buy groceries', completed: true}, {task: 'Clean room', completed: false}],
-                expected_result: 1,
-                solution: 'data.findIndex(obj => obj.completed === true)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first number divisible by both 2 and 3',
-                data: [5, 6, 8, 12, 15],
-                expected_result: 1,
-                solution: 'data.findIndex(num => num % 2 === 0 && num % 3 === 0)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first person older than 30 from an array of people objects',
-                data: [{name: 'John', age: 28}, {name: 'Jane', age: 35}, {name: 'Bob', age: 40}],
-                expected_result: 1,
-                solution: 'data.findIndex(person => person.age > 30)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first element in an array that is a multiple of 7',
-                data: [1, 2, 3, 14, 21],
-                expected_result: 3,
-                solution: 'data.findIndex(num => num % 7 === 0)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first string in an array with more than 6 characters',
-                data: ['apple', 'banana', 'grape', 'kiwi'],
-                expected_result: 1,
-                solution: 'data.findIndex(str => str.length > 6)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first object in an array where the "price" property is greater than 100',
-                data: [{item: 'apple', price: 50}, {item: 'banana', price: 120}, {item: 'cherry', price: 80}],
-                expected_result: 1,
-                solution: 'data.findIndex(obj => obj.price > 100)',
-                category: 'findIndex'
-            },
-            {
-                question: 'Find the index of the first object in an array that has a "name" property with value "Jane"',
-                data: [{name: 'John'}, {name: 'Jane'}, {name: 'Alice'}],
-                expected_result: 1,
-                solution: 'data.findIndex(obj => obj.name === "Jane")',
-                category: 'findIndex'
-            },
-            
-                {
-                    question: 'Convert an array of numbers to a string representation',
-                    data: [1, 2, 3, 4, 5],
-                    expected_result: '1,2,3,4,5',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert an array of strings to a string representation',
-                    data: ['apple', 'banana', 'cherry'],
-                    expected_result: 'apple,banana,cherry',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert a number to its string representation',
-                    data: 12345,
-                    expected_result: '12345',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert a boolean value to a string representation',
-                    data: true,
-                    expected_result: 'true',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert a date object to a string representation',
-                    data: new Date('2025-02-06'),
-                    expected_result: 'Fri Feb 06 2025 00:00:00 GMT+0000 (Coordinated Universal Time)',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert an array of numbers and strings to a string representation',
-                    data: [1, 'apple', 2, 'banana'],
-                    expected_result: '1,apple,2,banana',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert a string with special characters to a string representation',
-                    data: 'Hello, World!',
-                    expected_result: 'Hello, World!',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert a number to a string with a specific radix',
-                    data: (255).toString(16),
-                    expected_result: 'ff',
-                    solution: 'data.toString(16)',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert an array of nested arrays to a string representation',
-                    data: [[1, 2], [3, 4]],
-                    expected_result: '1,2,3,4',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                {
-                    question: 'Convert a number in scientific notation to a string representation',
-                    data: 1.23e5,
-                    expected_result: '123000',
-                    solution: 'data.toString()',
-                    category: 'toString'
-                },
-                
-                    {
-                        question: 'Create a new array containing the first 3 elements from the original array',
-                        data: [1, 2, 3, 4, 5],
-                        expected_result: [1, 2, 3],
-                        solution: 'data.slice(0, 3)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing elements from index 2 to the end of the array',
-                        data: [10, 20, 30, 40, 50],
-                        expected_result: [30, 40, 50],
-                        solution: 'data.slice(2)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array with the last 2 elements of the array',
-                        data: [1, 2, 3, 4, 5],
-                        expected_result: [4, 5],
-                        solution: 'data.slice(-2)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing elements from index 1 to 4',
-                        data: ['apple', 'banana', 'cherry', 'date', 'elderberry'],
-                        expected_result: ['banana', 'cherry', 'date'],
-                        solution: 'data.slice(1, 4)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing the last 3 elements from the original array',
-                        data: [7, 8, 9, 10, 11],
-                        expected_result: [9, 10, 11],
-                        solution: 'data.slice(-3)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array with elements from index 2 to 5 (inclusive)',
-                        data: [100, 200, 300, 400, 500, 600],
-                        expected_result: [300, 400, 500],
-                        solution: 'data.slice(2, 5)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array from index 3 to the end, using negative indexing',
-                        data: [5, 10, 15, 20, 25, 30],
-                        expected_result: [20, 25, 30],
-                        solution: 'data.slice(3)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing the first 4 elements from the original array',
-                        data: [1, 2, 3, 4, 5],
-                        expected_result: [1, 2, 3, 4],
-                        solution: 'data.slice(0, 4)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array with the elements from index 1 to 3',
-                        data: ['apple', 'banana', 'cherry', 'date', 'elderberry'],
-                        expected_result: ['banana', 'cherry', 'date'],
-                        solution: 'data.slice(1, 4)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing only the last element of the array',
-                        data: ['a', 'b', 'c', 'd', 'e'],
-                        expected_result: ['e'],
-                        solution: 'data.slice(-1)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing elements from index 0 to index 2',
-                        data: [10, 20, 30, 40, 50],
-                        expected_result: [10, 20, 30],
-                        solution: 'data.slice(0, 3)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing elements from the 3rd index to the 6th index',
-                        data: [1, 2, 3, 4, 5, 6, 7, 8],
-                        expected_result: [4, 5, 6],
-                        solution: 'data.slice(3, 6)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array with the first 2 elements removed',
-                        data: ['apple', 'banana', 'cherry', 'date'],
-                        expected_result: ['cherry', 'date'],
-                        solution: 'data.slice(2)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array that contains the first 5 elements of a string',
-                        data: 'hello world',
-                        expected_result: ['h', 'e', 'l', 'l', 'o'],
-                        solution: 'data.split("").slice(0, 5)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array from index -3 to the end of the array',
-                        data: [1, 2, 3, 4, 5, 6],
-                        expected_result: [4, 5, 6],
-                        solution: 'data.slice(-3)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array that contains the elements from index -2 to the end',
-                        data: [11, 12, 13, 14, 15, 16],
-                        expected_result: [15, 16],
-                        solution: 'data.slice(-2)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array that contains all elements except the last one',
-                        data: [1, 2, 3, 4, 5],
-                        expected_result: [1, 2, 3, 4],
-                        solution: 'data.slice(0, -1)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing elements from index 4 to 6 (inclusive)',
-                        data: [2, 4, 6, 8, 10, 12],
-                        expected_result: [10, 12],
-                        solution: 'data.slice(4, 6)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing elements from index 0 to index 5, but skip index 2',
-                        data: [10, 20, 30, 40, 50],
-                        expected_result: [10, 20, 40, 50],
-                        solution: 'data.slice(0, 2).concat(data.slice(3))',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array that skips the first element and includes all elements after it',
-                        data: ['a', 'b', 'c', 'd'],
-                        expected_result: ['b', 'c', 'd'],
-                        solution: 'data.slice(1)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array that includes the last 4 elements of the array',
-                        data: [1, 2, 3, 4, 5, 6],
-                        expected_result: [3, 4, 5, 6],
-                        solution: 'data.slice(-4)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing the first 6 elements of a string',
-                        data: 'abcdefgh',
-                        expected_result: ['a', 'b', 'c', 'd', 'e', 'f'],
-                        solution: 'data.split("").slice(0, 6)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array that includes the last 5 characters from a string',
-                        data: 'Hello World!',
-                        expected_result: ['o', ' ', 'W', 'o', 'r'],
-                        solution: 'data.slice(-5).split("")',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array containing the middle 3 elements of an array',
-                        data: [1, 2, 3, 4, 5, 6, 7],
-                        expected_result: [3, 4, 5],
-                        solution: 'data.slice(2, 5)',
-                        category: 'slice'
-                    },
-                    {
-                        question: 'Create a new array that includes the first and last elements of the original array',
-                        data: [10, 20, 30, 40, 50],
-                        expected_result: [10, 50],
-                        solution: 'data.slice(0, 1).concat(data.slice(-1))',
-                        category: 'slice'
-                    },
-                    
-                        {
-                            question: 'Remove 2 elements starting from index 1 in the array',
-                            data: [10, 20, 30, 40, 50],
-                            expected_result: [20, 30],
-                            solution: 'data.splice(1, 2)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove the first element of the array',
-                            data: [1, 2, 3, 4, 5],
-                            expected_result: [1],
-                            solution: 'data.splice(0, 1)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Add 100 and 200 starting at index 2',
-                            data: [1, 2, 3, 4, 5],
-                            expected_result: [3, 4, 5],
-                            solution: 'data.splice(2, 0, 100, 200)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Replace the element at index 1 with "banana"',
-                            data: ['apple', 'orange', 'grape'],
-                            expected_result: ['orange'],
-                            solution: 'data.splice(1, 1, "banana")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 3 elements starting from index 2',
-                            data: [10, 20, 30, 40, 50],
-                            expected_result: [30, 40, 50],
-                            solution: 'data.splice(2, 3)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove the last element from the array',
-                            data: [10, 20, 30, 40, 50],
-                            expected_result: [50],
-                            solution: 'data.splice(-1, 1)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Add the element "apple" at the beginning of the array',
-                            data: ['banana', 'cherry'],
-                            expected_result: ['banana', 'cherry'],
-                            solution: 'data.splice(0, 0, "apple")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 4 elements starting from index 3',
-                            data: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
-                            expected_result: ['d', 'e', 'f', 'g'],
-                            solution: 'data.splice(3, 4)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Add "pear" and "peach" starting at index 1',
-                            data: ['apple', 'banana', 'cherry'],
-                            expected_result: ['banana', 'cherry'],
-                            solution: 'data.splice(1, 0, "pear", "peach")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 2 elements from index 2 and replace them with "kiwi" and "mango"',
-                            data: ['apple', 'orange', 'banana', 'grape'],
-                            expected_result: ['banana', 'grape'],
-                            solution: 'data.splice(2, 2, "kiwi", "mango")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Add "blueberry" at index 0',
-                            data: ['apple', 'banana'],
-                            expected_result: ['apple', 'banana'],
-                            solution: 'data.splice(0, 0, "blueberry")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 1 element from the second-to-last index',
-                            data: [10, 20, 30, 40, 50],
-                            expected_result: [40],
-                            solution: 'data.splice(-2, 1)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Add "watermelon" and "grape" at the end of the array',
-                            data: ['apple', 'orange'],
-                            expected_result: ['apple', 'orange'],
-                            solution: 'data.splice(data.length, 0, "watermelon", "grape")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 3 elements from index 1 and add "peach" at the end',
-                            data: ['apple', 'banana', 'cherry', 'date', 'elderberry'],
-                            expected_result: ['banana', 'cherry', 'date'],
-                            solution: 'data.splice(1, 3, "peach")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove the first 2 elements from the array',
-                            data: [1, 2, 3, 4, 5],
-                            expected_result: [1, 2],
-                            solution: 'data.splice(0, 2)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove elements from index 1 to the second-to-last index',
-                            data: [1, 2, 3, 4, 5],
-                            expected_result: [2, 3, 4],
-                            solution: 'data.splice(1, 3)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 1 element from index 2 and replace it with "blue" and "green"',
-                            data: ['red', 'yellow', 'orange', 'pink'],
-                            expected_result: ['orange'],
-                            solution: 'data.splice(2, 1, "blue", "green")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 2 elements from index 2 and replace them with "purple" and "violet"',
-                            data: ['red', 'yellow', 'green', 'blue', 'orange'],
-                            expected_result: ['green', 'blue'],
-                            solution: 'data.splice(2, 2, "purple", "violet")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Add "orange" at index 2 in the array',
-                            data: ['apple', 'banana', 'cherry'],
-                            expected_result: ['apple', 'banana', 'cherry'],
-                            solution: 'data.splice(2, 0, "orange")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 4 elements starting from index 1 in the array',
-                            data: [1, 2, 3, 4, 5, 6, 7],
-                            expected_result: [2, 3, 4, 5],
-                            solution: 'data.splice(1, 4)',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Add "grape" and "kiwi" at index 3',
-                            data: ['apple', 'banana', 'cherry', 'date'],
-                            expected_result: ['date'],
-                            solution: 'data.splice(3, 0, "grape", "kiwi")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove the last element of the array and replace it with "peach"',
-                            data: ['apple', 'banana', 'cherry'],
-                            expected_result: ['cherry'],
-                            solution: 'data.splice(-1, 1, "peach")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 2 elements from index 1 and add "kiwi", "mango", and "papaya"',
-                            data: ['apple', 'banana', 'cherry', 'date'],
-                            expected_result: ['banana', 'cherry'],
-                            solution: 'data.splice(1, 2, "kiwi", "mango", "papaya")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove elements from index 0 and replace them with "a", "b", and "c"',
-                            data: ['x', 'y', 'z'],
-                            expected_result: ['x', 'y', 'z'],
-                            solution: 'data.splice(0, 3, "a", "b", "c")',
-                            category: 'splice'
-                        },
-                        {
-                            question: 'Remove 2 elements from index 3 and replace them with "watermelon" and "melon"',
-                            data: [10, 20, 30, 40, 50],
-                            expected_result: [40, 50],
-                            solution: 'data.splice(3, 2, "watermelon", "melon")',
-                            category: 'splice'
-                        },
-                    
-                    
-                
-                
-            
-            
-        
-        
+  {
+    question: "Find the first even number in an array of numbers",
+    data: [1, 3, 5, 7, 8, 10],
+    expected_result: 8,
+    solution: "data.find(num => num % 2 === 0)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first string that starts with the letter "a" in an array of strings',
+    data: ["banana", "apple", "cherry", "grape"],
+    expected_result: "apple",
+    solution: 'data.find(str => str.startsWith("a"))',
+    category: "find",
+  },
+  {
+    question: "Find the first number greater than 10 in an array of numbers",
+    data: [5, 8, 12, 3, 9],
+    expected_result: 12,
+    solution: "data.find(num => num > 10)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first object in an array that has a specific property value (name: "John")',
+    data: [{ name: "Alice" }, { name: "John" }, { name: "Bob" }],
+    expected_result: { name: "John" },
+    solution: 'data.find(obj => obj.name === "John")',
+    category: "find",
+  },
+  {
+    question:
+      "Find the first element in an array of numbers that is divisible by 3",
+    data: [4, 5, 9, 12],
+    expected_result: 9,
+    solution: "data.find(num => num % 3 === 0)",
+    category: "find",
+  },
+  {
+    question:
+      "Find the first person older than 30 from an array of people objects",
+    data: [
+      { name: "John", age: 28 },
+      { name: "Jane", age: 35 },
+      { name: "Bob", age: 40 },
+    ],
+    expected_result: { name: "Jane", age: 35 },
+    solution: "data.find(person => person.age > 30)",
+    category: "find",
+  },
+  {
+    question: "Find the first number in an array that is a perfect square",
+    data: [2, 3, 4, 5, 9],
+    expected_result: 4,
+    solution: "data.find(num => Math.sqrt(num) % 1 === 0)",
+    category: "find",
+  },
+  {
+    question: 'Find the first object with a "price" property greater than 100',
+    data: [
+      { item: "apple", price: 50 },
+      { item: "banana", price: 120 },
+      { item: "cherry", price: 80 },
+    ],
+    expected_result: { item: "banana", price: 120 },
+    solution: "data.find(obj => obj.price > 100)",
+    category: "find",
+  },
+  {
+    question:
+      "Find the first string with more than 5 characters in an array of strings",
+    data: ["cat", "elephant", "dog", "giraffe"],
+    expected_result: "elephant",
+    solution: "data.find(str => str.length > 5)",
+    category: "find",
+  },
+  {
+    question: "Find the first negative number in an array of mixed numbers",
+    data: [7, 8, -3, 2, 5],
+    expected_result: -3,
+    solution: "data.find(num => num < 0)",
+    category: "find",
+  },
 
-    
-    
+  {
+    question: "Find the first negative number in an array of numbers",
+    data: [1, 3, 7, -5, 9],
+    expected_result: -5,
+    solution: "data.find(num => num < 0)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first string that contains the letter "z" in an array of strings',
+    data: ["apple", "banana", "zebra", "cherry"],
+    expected_result: "zebra",
+    solution: 'data.find(str => str.includes("z"))',
+    category: "find",
+  },
+  {
+    question:
+      'Find the first object in an array of objects with a "completed" status set to true',
+    data: [
+      { task: "Do laundry", completed: false },
+      { task: "Buy groceries", completed: true },
+      { task: "Clean room", completed: false },
+    ],
+    expected_result: { task: "Buy groceries", completed: true },
+    solution: "data.find(obj => obj.completed === true)",
+    category: "find",
+  },
+  {
+    question:
+      "Find the first number in an array that is divisible by both 2 and 3",
+    data: [5, 6, 8, 12, 15],
+    expected_result: 6,
+    solution: "data.find(num => num % 2 === 0 && num % 3 === 0)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first element in an array of objects that has a property "price" less than 50',
+    data: [
+      { item: "apple", price: 40 },
+      { item: "banana", price: 60 },
+      { item: "cherry", price: 30 },
+    ],
+    expected_result: { item: "apple", price: 40 },
+    solution: "data.find(obj => obj.price < 50)",
+    category: "find",
+  },
+  {
+    question: "Find the first string in an array with more than 6 characters",
+    data: ["apple", "banana", "grape", "kiwi"],
+    expected_result: "banana",
+    solution: "data.find(str => str.length > 6)",
+    category: "find",
+  },
+  {
+    question:
+      "Find the first even number greater than 10 in an array of numbers",
+    data: [5, 3, 12, 8, 20],
+    expected_result: 12,
+    solution: "data.find(num => num > 10 && num % 2 === 0)",
+    category: "find",
+  },
+  {
+    question: "Find the first number greater than 100 in an array of numbers",
+    data: [45, 60, 120, 150],
+    expected_result: 120,
+    solution: "data.find(num => num > 100)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first object in an array with a "name" property starting with "A"',
+    data: [{ name: "John" }, { name: "Alice" }, { name: "Bob" }],
+    expected_result: { name: "Alice" },
+    solution: 'data.find(obj => obj.name.startsWith("A"))',
+    category: "find",
+  },
+  {
+    question: "Find the first number in an array that is a multiple of 7",
+    data: [1, 2, 3, 14, 21],
+    expected_result: 14,
+    solution: "data.find(num => num % 7 === 0)",
+    category: "find",
+  },
+  {
+    question: "Find the first odd number in an array of numbers",
+    data: [2, 4, 6, 7, 8],
+    expected_result: 7,
+    solution: "data.find(num => num % 2 !== 0)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first element in an array of strings that contains "cat"',
+    data: ["dog", "cat", "rabbit", "bird"],
+    expected_result: "cat",
+    solution: 'data.find(str => str.includes("cat"))',
+    category: "find",
+  },
+  {
+    question:
+      'Find the first object in an array that has a "name" property with value "Jane"',
+    data: [{ name: "John" }, { name: "Jane" }, { name: "Alice" }],
+    expected_result: { name: "Jane" },
+    solution: 'data.find(obj => obj.name === "Jane")',
+    category: "find",
+  },
+  {
+    question: "Find the first number divisible by 5 in an array of numbers",
+    data: [7, 9, 10, 15, 20],
+    expected_result: 10,
+    solution: "data.find(num => num % 5 === 0)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first element in an array of objects where the "status" property is false',
+    data: [
+      { task: "Do homework", status: true },
+      { task: "Buy groceries", status: false },
+      { task: "Clean room", status: true },
+    ],
+    expected_result: { task: "Buy groceries", status: false },
+    solution: "data.find(obj => obj.status === false)",
+    category: "find",
+  },
+  {
+    question: "Find the first string in an array that has more than 3 vowels",
+    data: ["apple", "banana", "grape"],
+    expected_result: "banana",
+    solution: "data.find(str => (str.match(/[aeiou]/gi) || []).length > 3)",
+    category: "find",
+  },
+  {
+    question:
+      'Find the first object that has a "completed" property set to false',
+    data: [
+      { task: "Do laundry", completed: true },
+      { task: "Buy groceries", completed: false },
+    ],
+    expected_result: { task: "Buy groceries", completed: false },
+    solution: "data.find(obj => obj.completed === false)",
+    category: "find",
+  },
+  {
+    question: "Find the first string with a length of exactly 5 characters",
+    data: ["apple", "banana", "kiwi", "grape"],
+    expected_result: "apple",
+    solution: "data.find(str => str.length === 5)",
+    category: "find",
+  },
+  {
+    question:
+      "Find the first number that is greater than 50 and less than 100 in an array",
+    data: [25, 45, 60, 105],
+    expected_result: 60,
+    solution: "data.find(num => num > 50 && num < 100)",
+    category: "find",
+  },
 
+  {
+    question: "Find the index of the first even number in an array of numbers",
+    data: [1, 3, 5, 7, 8, 10],
+    expected_result: 4,
+    solution: "data.findIndex(num => num % 2 === 0)",
+    category: "findIndex",
+  },
+  {
+    question:
+      'Find the index of the first string that starts with "a" in an array of strings',
+    data: ["banana", "apple", "cherry", "grape"],
+    expected_result: 1,
+    solution: 'data.findIndex(str => str.startsWith("a"))',
+    category: "findIndex",
+  },
+  {
+    question:
+      "Find the index of the first number greater than 10 in an array of numbers",
+    data: [5, 8, 12, 3, 9],
+    expected_result: 2,
+    solution: "data.findIndex(num => num > 10)",
+    category: "findIndex",
+  },
+  {
+    question:
+      'Find the index of the first object in an array with a "completed" property set to true',
+    data: [
+      { task: "Do laundry", completed: false },
+      { task: "Buy groceries", completed: true },
+      { task: "Clean room", completed: false },
+    ],
+    expected_result: 1,
+    solution: "data.findIndex(obj => obj.completed === true)",
+    category: "findIndex",
+  },
+  {
+    question: "Find the index of the first number divisible by both 2 and 3",
+    data: [5, 6, 8, 12, 15],
+    expected_result: 1,
+    solution: "data.findIndex(num => num % 2 === 0 && num % 3 === 0)",
+    category: "findIndex",
+  },
+  {
+    question:
+      "Find the index of the first person older than 30 from an array of people objects",
+    data: [
+      { name: "John", age: 28 },
+      { name: "Jane", age: 35 },
+      { name: "Bob", age: 40 },
+    ],
+    expected_result: 1,
+    solution: "data.findIndex(person => person.age > 30)",
+    category: "findIndex",
+  },
+  {
+    question:
+      "Find the index of the first element in an array that is a multiple of 7",
+    data: [1, 2, 3, 14, 21],
+    expected_result: 3,
+    solution: "data.findIndex(num => num % 7 === 0)",
+    category: "findIndex",
+  },
+  {
+    question:
+      "Find the index of the first string in an array with more than 6 characters",
+    data: ["apple", "banana", "grape", "kiwi"],
+    expected_result: 1,
+    solution: "data.findIndex(str => str.length > 6)",
+    category: "findIndex",
+  },
+  {
+    question:
+      'Find the index of the first object in an array where the "price" property is greater than 100',
+    data: [
+      { item: "apple", price: 50 },
+      { item: "banana", price: 120 },
+      { item: "cherry", price: 80 },
+    ],
+    expected_result: 1,
+    solution: "data.findIndex(obj => obj.price > 100)",
+    category: "findIndex",
+  },
+  {
+    question:
+      'Find the index of the first object in an array that has a "name" property with value "Jane"',
+    data: [{ name: "John" }, { name: "Jane" }, { name: "Alice" }],
+    expected_result: 1,
+    solution: 'data.findIndex(obj => obj.name === "Jane")',
+    category: "findIndex",
+  },
 
+  {
+    question: "Convert an array of numbers to a string representation",
+    data: [1, 2, 3, 4, 5],
+    expected_result: "1,2,3,4,5",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question: "Convert an array of strings to a string representation",
+    data: ["apple", "banana", "cherry"],
+    expected_result: "apple,banana,cherry",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question: "Convert a number to its string representation",
+    data: 12345,
+    expected_result: "12345",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question: "Convert a boolean value to a string representation",
+    data: true,
+    expected_result: "true",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question: "Convert a date object to a string representation",
+    data: new Date("2025-02-06"),
+    expected_result:
+      "Fri Feb 06 2025 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question:
+      "Convert an array of numbers and strings to a string representation",
+    data: [1, "apple", 2, "banana"],
+    expected_result: "1,apple,2,banana",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question:
+      "Convert a string with special characters to a string representation",
+    data: "Hello, World!",
+    expected_result: "Hello, World!",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question: "Convert a number to a string with a specific radix",
+    data: (255).toString(16),
+    expected_result: "ff",
+    solution: "data.toString(16)",
+    category: "toString",
+  },
+  {
+    question: "Convert an array of nested arrays to a string representation",
+    data: [
+      [1, 2],
+      [3, 4],
+    ],
+    expected_result: "1,2,3,4",
+    solution: "data.toString()",
+    category: "toString",
+  },
+  {
+    question:
+      "Convert a number in scientific notation to a string representation",
+    data: 1.23e5,
+    expected_result: "123000",
+    solution: "data.toString()",
+    category: "toString",
+  },
+
+  {
+    question:
+      "Create a new array containing the first 3 elements from the original array",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1, 2, 3],
+    solution: "data.slice(0, 3)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array containing elements from index 2 to the end of the array",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [30, 40, 50],
+    solution: "data.slice(2)",
+    category: "slice",
+  },
+  {
+    question: "Create a new array with the last 2 elements of the array",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [4, 5],
+    solution: "data.slice(-2)",
+    category: "slice",
+  },
+  {
+    question: "Create a new array containing elements from index 1 to 4",
+    data: ["apple", "banana", "cherry", "date", "elderberry"],
+    expected_result: ["banana", "cherry", "date"],
+    solution: "data.slice(1, 4)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array containing the last 3 elements from the original array",
+    data: [7, 8, 9, 10, 11],
+    expected_result: [9, 10, 11],
+    solution: "data.slice(-3)",
+    category: "slice",
+  },
+  {
+    question: "Create a new array with elements from index 2 to 5 (inclusive)",
+    data: [100, 200, 300, 400, 500, 600],
+    expected_result: [300, 400, 500],
+    solution: "data.slice(2, 5)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array from index 3 to the end, using negative indexing",
+    data: [5, 10, 15, 20, 25, 30],
+    expected_result: [20, 25, 30],
+    solution: "data.slice(3)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array containing the first 4 elements from the original array",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1, 2, 3, 4],
+    solution: "data.slice(0, 4)",
+    category: "slice",
+  },
+  {
+    question: "Create a new array with the elements from index 1 to 3",
+    data: ["apple", "banana", "cherry", "date", "elderberry"],
+    expected_result: ["banana", "cherry", "date"],
+    solution: "data.slice(1, 4)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array containing only the last element of the array",
+    data: ["a", "b", "c", "d", "e"],
+    expected_result: ["e"],
+    solution: "data.slice(-1)",
+    category: "slice",
+  },
+  {
+    question: "Create a new array containing elements from index 0 to index 2",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [10, 20, 30],
+    solution: "data.slice(0, 3)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array containing elements from the 3rd index to the 6th index",
+    data: [1, 2, 3, 4, 5, 6, 7, 8],
+    expected_result: [4, 5, 6],
+    solution: "data.slice(3, 6)",
+    category: "slice",
+  },
+  {
+    question: "Create a new array with the first 2 elements removed",
+    data: ["apple", "banana", "cherry", "date"],
+    expected_result: ["cherry", "date"],
+    solution: "data.slice(2)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array that contains the first 5 elements of a string",
+    data: "hello world",
+    expected_result: ["h", "e", "l", "l", "o"],
+    solution: 'data.split("").slice(0, 5)',
+    category: "slice",
+  },
+  {
+    question: "Create a new array from index -3 to the end of the array",
+    data: [1, 2, 3, 4, 5, 6],
+    expected_result: [4, 5, 6],
+    solution: "data.slice(-3)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array that contains the elements from index -2 to the end",
+    data: [11, 12, 13, 14, 15, 16],
+    expected_result: [15, 16],
+    solution: "data.slice(-2)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array that contains all elements except the last one",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1, 2, 3, 4],
+    solution: "data.slice(0, -1)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array containing elements from index 4 to 6 (inclusive)",
+    data: [2, 4, 6, 8, 10, 12],
+    expected_result: [10, 12],
+    solution: "data.slice(4, 6)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array containing elements from index 0 to index 5, but skip index 2",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [10, 20, 40, 50],
+    solution: "data.slice(0, 2).concat(data.slice(3))",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array that skips the first element and includes all elements after it",
+    data: ["a", "b", "c", "d"],
+    expected_result: ["b", "c", "d"],
+    solution: "data.slice(1)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array that includes the last 4 elements of the array",
+    data: [1, 2, 3, 4, 5, 6],
+    expected_result: [3, 4, 5, 6],
+    solution: "data.slice(-4)",
+    category: "slice",
+  },
+  {
+    question: "Create a new array containing the first 6 elements of a string",
+    data: "abcdefgh",
+    expected_result: ["a", "b", "c", "d", "e", "f"],
+    solution: 'data.split("").slice(0, 6)',
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array that includes the last 5 characters from a string",
+    data: "Hello World!",
+    expected_result: ["o", " ", "W", "o", "r"],
+    solution: 'data.slice(-5).split("")',
+    category: "slice",
+  },
+  {
+    question: "Create a new array containing the middle 3 elements of an array",
+    data: [1, 2, 3, 4, 5, 6, 7],
+    expected_result: [3, 4, 5],
+    solution: "data.slice(2, 5)",
+    category: "slice",
+  },
+  {
+    question:
+      "Create a new array that includes the first and last elements of the original array",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [10, 50],
+    solution: "data.slice(0, 1).concat(data.slice(-1))",
+    category: "slice",
+  },
+
+  {
+    question: "Remove 2 elements starting from index 1 in the array",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [20, 30],
+    solution: "data.splice(1, 2)",
+    category: "splice",
+  },
+  {
+    question: "Remove the first element of the array",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1],
+    solution: "data.splice(0, 1)",
+    category: "splice",
+  },
+  {
+    question: "Add 100 and 200 starting at index 2",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [3, 4, 5],
+    solution: "data.splice(2, 0, 100, 200)",
+    category: "splice",
+  },
+  {
+    question: 'Replace the element at index 1 with "banana"',
+    data: ["apple", "orange", "grape"],
+    expected_result: ["orange"],
+    solution: 'data.splice(1, 1, "banana")',
+    category: "splice",
+  },
+  {
+    question: "Remove 3 elements starting from index 2",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [30, 40, 50],
+    solution: "data.splice(2, 3)",
+    category: "splice",
+  },
+  {
+    question: "Remove the last element from the array",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [50],
+    solution: "data.splice(-1, 1)",
+    category: "splice",
+  },
+  {
+    question: 'Add the element "apple" at the beginning of the array',
+    data: ["banana", "cherry"],
+    expected_result: ["banana", "cherry"],
+    solution: 'data.splice(0, 0, "apple")',
+    category: "splice",
+  },
+  {
+    question: "Remove 4 elements starting from index 3",
+    data: ["a", "b", "c", "d", "e", "f", "g"],
+    expected_result: ["d", "e", "f", "g"],
+    solution: "data.splice(3, 4)",
+    category: "splice",
+  },
+  {
+    question: 'Add "pear" and "peach" starting at index 1',
+    data: ["apple", "banana", "cherry"],
+    expected_result: ["banana", "cherry"],
+    solution: 'data.splice(1, 0, "pear", "peach")',
+    category: "splice",
+  },
+  {
+    question:
+      'Remove 2 elements from index 2 and replace them with "kiwi" and "mango"',
+    data: ["apple", "orange", "banana", "grape"],
+    expected_result: ["banana", "grape"],
+    solution: 'data.splice(2, 2, "kiwi", "mango")',
+    category: "splice",
+  },
+  {
+    question: 'Add "blueberry" at index 0',
+    data: ["apple", "banana"],
+    expected_result: ["apple", "banana"],
+    solution: 'data.splice(0, 0, "blueberry")',
+    category: "splice",
+  },
+  {
+    question: "Remove 1 element from the second-to-last index",
+    data: [10, 20, 30, 40, 50],
+    expected_result: [40],
+    solution: "data.splice(-2, 1)",
+    category: "splice",
+  },
+  {
+    question: 'Add "watermelon" and "grape" at the end of the array',
+    data: ["apple", "orange"],
+    expected_result: ["apple", "orange"],
+    solution: 'data.splice(data.length, 0, "watermelon", "grape")',
+    category: "splice",
+  },
+  {
+    question: 'Remove 3 elements from index 1 and add "peach" at the end',
+    data: ["apple", "banana", "cherry", "date", "elderberry"],
+    expected_result: ["banana", "cherry", "date"],
+    solution: 'data.splice(1, 3, "peach")',
+    category: "splice",
+  },
+  {
+    question: "Remove the first 2 elements from the array",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [1, 2],
+    solution: "data.splice(0, 2)",
+    category: "splice",
+  },
+  {
+    question: "Remove elements from index 1 to the second-to-last index",
+    data: [1, 2, 3, 4, 5],
+    expected_result: [2, 3, 4],
+    solution: "data.splice(1, 3)",
+    category: "splice",
+  },
+  {
+    question:
+      'Remove 1 element from index 2 and replace it with "blue" and "green"',
+    data: ["red", "yellow", "orange", "pink"],
+    expected_result: ["orange"],
+    solution: 'data.splice(2, 1, "blue", "green")',
+    category: "splice",
+  },
+  {
+    question:
+      'Remove 2 elements from index 2 and replace them with "purple" and "violet"',
+    data: ["red", "yellow", "green", "blue", "orange"],
+    expected_result: ["green", "blue"],
+    solution: 'data.splice(2, 2, "purple", "violet")',
+    category: "splice",
+  },
+  {
+    question: 'Add "orange" at index 2 in the array',
+    data: ["apple", "banana", "cherry"],
+    expected_result: ["apple", "banana", "cherry"],
+    solution: 'data.splice(2, 0, "orange")',
+    category: "splice",
+  },
+  {
+    question: "Remove 4 elements starting from index 1 in the array",
+    data: [1, 2, 3, 4, 5, 6, 7],
+    expected_result: [2, 3, 4, 5],
+    solution: "data.splice(1, 4)",
+    category: "splice",
+  },
+  {
+    question: 'Add "grape" and "kiwi" at index 3',
+    data: ["apple", "banana", "cherry", "date"],
+    expected_result: ["date"],
+    solution: 'data.splice(3, 0, "grape", "kiwi")',
+    category: "splice",
+  },
+  {
+    question:
+      'Remove the last element of the array and replace it with "peach"',
+    data: ["apple", "banana", "cherry"],
+    expected_result: ["cherry"],
+    solution: 'data.splice(-1, 1, "peach")',
+    category: "splice",
+  },
+  {
+    question:
+      'Remove 2 elements from index 1 and add "kiwi", "mango", and "papaya"',
+    data: ["apple", "banana", "cherry", "date"],
+    expected_result: ["banana", "cherry"],
+    solution: 'data.splice(1, 2, "kiwi", "mango", "papaya")',
+    category: "splice",
+  },
+  {
+    question:
+      'Remove elements from index 0 and replace them with "a", "b", and "c"',
+    data: ["x", "y", "z"],
+    expected_result: ["x", "y", "z"],
+    solution: 'data.splice(0, 3, "a", "b", "c")',
+    category: "splice",
+  },
+  {
+    question:
+      'Remove 2 elements from index 3 and replace them with "watermelon" and "melon"',
+    data: [10, 20, 30, 40, 50],
+    expected_result: [40, 50],
+    solution: 'data.splice(3, 2, "watermelon", "melon")',
+    category: "splice",
+  },
+
+  {
+    question: "Check if the variable is an array",
+    data: [1, 2, 3, 4],
+    expected_result: true,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if the variable is an array of strings",
+    data: ["apple", "banana", "cherry"],
+    expected_result: true,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if a string is an array",
+    data: "Hello, world!",
+    expected_result: false,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if an object is an array",
+    data: { name: "John", age: 30 },
+    expected_result: false,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if an array with mixed data types is an array",
+    data: [1, "apple", true, null],
+    expected_result: true,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if a number is an array",
+    data: 12345,
+    expected_result: false,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if an empty array is an array",
+    data: [],
+    expected_result: true,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if a function is an array",
+    data: function () {
+      return "hello";
+    },
+    expected_result: false,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if an array of numbers is an array",
+    data: [1, 2, 3, 4, 5],
+    expected_result: true,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  {
+    question: "Check if a boolean is an array",
+    data: true,
+    expected_result: false,
+    solution: "Array.isArray(data)",
+    category: "isArray",
+  },
+  
 ];
