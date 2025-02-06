@@ -1322,6 +1322,79 @@ export const question = [
                                     solution: 'data.sort((a, b) => new Date(a).getFullYear() - new Date(b).getFullYear())',
                                     category: 'sort'
                                 },
+                                
+                                    {
+                                        question: 'Join the elements of an array of numbers into a string with commas',
+                                        data: [1, 2, 3, 4],
+                                        expected_result: '1,2,3,4',
+                                        solution: 'data.join()',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of strings into a single string with a space between them',
+                                        data: ['apple', 'banana', 'cherry'],
+                                        expected_result: 'apple banana cherry',
+                                        solution: 'data.join(" ")',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of strings into a single string with a hyphen between each element',
+                                        data: ['one', 'two', 'three'],
+                                        expected_result: 'one-two-three',
+                                        solution: 'data.join("-")',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of numbers into a string with semicolons between the numbers',
+                                        data: [10, 20, 30],
+                                        expected_result: '10;20;30',
+                                        solution: 'data.join(";")',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of strings and add a period at the end',
+                                        data: ['The', 'quick', 'brown', 'fox'],
+                                        expected_result: 'The quick brown fox.',
+                                        solution: 'data.join(" ") + "."',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of words into a string with no spaces or commas',
+                                        data: ['Hello', 'World'],
+                                        expected_result: 'HelloWorld',
+                                        solution: 'data.join("")',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of characters into a string and separate them with a comma',
+                                        data: ['a', 'b', 'c', 'd'],
+                                        expected_result: 'a,b,c,d',
+                                        solution: 'data.join(",")',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of strings and reverse the order of elements',
+                                        data: ['apple', 'banana', 'cherry'],
+                                        expected_result: 'cherry banana apple',
+                                        solution: 'data.reverse().join(" ")',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of numbers and place a space after each comma',
+                                        data: [5, 10, 15, 20],
+                                        expected_result: '5, 10, 15, 20',
+                                        solution: 'data.join(", ")',
+                                        category: 'join'
+                                    },
+                                    {
+                                        question: 'Join an array of booleans into a string with no separator',
+                                        data: [true, false, true],
+                                        expected_result: 'truefalsetrue',
+                                        solution: 'data.join("")',
+                                        category: 'join'
+                                    },
+                                
+                                
                             
                             
                         
