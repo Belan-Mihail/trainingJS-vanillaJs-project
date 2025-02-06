@@ -1108,6 +1108,79 @@ export const question = [
                         solution: 'data[0].concat(data[1])',
                         category: 'concat'
                     },
+                    
+                        {
+                            question: 'Reverse the order of elements in the array',
+                            data: [1, 2, 3, 4, 5],
+                            expected_result: [5, 4, 3, 2, 1],
+                            solution: 'data.reverse()',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse an array of strings',
+                            data: ['apple', 'banana', 'cherry'],
+                            expected_result: ['cherry', 'banana', 'apple'],
+                            solution: 'data.reverse()',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse an array of numbers and sum all elements',
+                            data: [1, 2, 3, 4],
+                            expected_result: 10,
+                            solution: 'data.reverse().reduce((acc, curr) => acc + curr, 0)',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse an array of booleans',
+                            data: [true, false, true, false],
+                            expected_result: [false, true, false, true],
+                            solution: 'data.reverse()',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse an array of mixed types: numbers, strings, and booleans',
+                            data: [1, 'hello', true, 2, 'world', false],
+                            expected_result: [false, 'world', 2, true, 'hello', 1],
+                            solution: 'data.reverse()',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse an array and return only the last 3 elements',
+                            data: [10, 20, 30, 40, 50],
+                            expected_result: [50, 40, 30],
+                            solution: 'data.reverse().slice(0, 3)',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse the order of an array of objects',
+                            data: [{a: 1}, {b: 2}, {c: 3}],
+                            expected_result: [{c: 3}, {b: 2}, {a: 1}],
+                            solution: 'data.reverse()',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse an array of numbers and return a new array without modifying the original',
+                            data: [1, 2, 3, 4],
+                            expected_result: [4, 3, 2, 1],
+                            solution: '[...data].reverse()',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse the order of characters in each string in the array',
+                            data: ['apple', 'banana', 'cherry'],
+                            expected_result: ['elppa', 'ananab', 'yrrehc'],
+                            solution: 'data.map(str => str.split("").reverse().join(""))',
+                            category: 'reverse'
+                        },
+                        {
+                            question: 'Reverse an array of arrays',
+                            data: [[1, 2], [3, 4], [5, 6]],
+                            expected_result: [[5, 6], [3, 4], [1, 2]],
+                            solution: 'data.reverse()',
+                            category: 'reverse'
+                        }
+                    
+                    
                 
                 
             
