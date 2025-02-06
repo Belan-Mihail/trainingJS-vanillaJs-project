@@ -1895,7 +1895,80 @@ export const question = [
                 expected_result: 1,
                 solution: 'data.findIndex(obj => obj.name === "Jane")',
                 category: 'findIndex'
-            }
+            },
+            
+                {
+                    question: 'Convert an array of numbers to a string representation',
+                    data: [1, 2, 3, 4, 5],
+                    expected_result: '1,2,3,4,5',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert an array of strings to a string representation',
+                    data: ['apple', 'banana', 'cherry'],
+                    expected_result: 'apple,banana,cherry',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert a number to its string representation',
+                    data: 12345,
+                    expected_result: '12345',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert a boolean value to a string representation',
+                    data: true,
+                    expected_result: 'true',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert a date object to a string representation',
+                    data: new Date('2025-02-06'),
+                    expected_result: 'Fri Feb 06 2025 00:00:00 GMT+0000 (Coordinated Universal Time)',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert an array of numbers and strings to a string representation',
+                    data: [1, 'apple', 2, 'banana'],
+                    expected_result: '1,apple,2,banana',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert a string with special characters to a string representation',
+                    data: 'Hello, World!',
+                    expected_result: 'Hello, World!',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert a number to a string with a specific radix',
+                    data: (255).toString(16),
+                    expected_result: 'ff',
+                    solution: 'data.toString(16)',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert an array of nested arrays to a string representation',
+                    data: [[1, 2], [3, 4]],
+                    expected_result: '1,2,3,4',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                },
+                {
+                    question: 'Convert a number in scientific notation to a string representation',
+                    data: 1.23e5,
+                    expected_result: '123000',
+                    solution: 'data.toString()',
+                    category: 'toString'
+                }
+            
+            
         
         
 
