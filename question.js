@@ -756,13 +756,364 @@ export const question = [
     category: 'fill'
 },
 
-
-
-
-
-
-
-
-
+    {
+        question: 'Sum all elements in the array',
+        data: [1, 2, 3, 4, 5],
+        expected_result: 15,
+        solution: 'data.reduce((acc, curr) => acc + curr, 0)',
+        category: 'reduce'
+    },
+    {
+        question: 'Find the maximum value in the array',
+        data: [7, 8, 2, 5, 3],
+        expected_result: 8,
+        solution: 'data.reduce((max, curr) => curr > max ? curr : max, data[0])',
+        category: 'reduce'
+    },
+    {
+        question: 'Find the minimum value in the array',
+        data: [12, 45, 3, 8, 1],
+        expected_result: 1,
+        solution: 'data.reduce((min, curr) => curr < min ? curr : min, data[0])',
+        category: 'reduce'
+    },
+    {
+        question: 'Concatenate all elements in the array into a single string',
+        data: ['apple', 'banana', 'cherry'],
+        expected_result: 'applebananacherry',
+        solution: 'data.reduce((acc, curr) => acc + curr, "")',
+        category: 'reduce'
+    },
+    {
+        question: 'Multiply all elements in the array together',
+        data: [1, 2, 3, 4],
+        expected_result: 24,
+        solution: 'data.reduce((acc, curr) => acc * curr, 1)',
+        category: 'reduce'
+    },
+    {
+        question: 'Count the occurrences of the number 2 in the array',
+        data: [1, 2, 2, 3, 2],
+        expected_result: 3,
+        solution: 'data.reduce((count, curr) => curr === 2 ? count + 1 : count, 0)',
+        category: 'reduce'
+    },
+    {
+        question: 'Flatten a nested array of arrays',
+        data: [[1, 2], [3, 4], [5, 6]],
+        expected_result: [1, 2, 3, 4, 5, 6],
+        solution: 'data.reduce((acc, curr) => acc.concat(curr), [])',
+        category: 'reduce'
+    },
+    {
+        question: 'Create an object where the keys are the array indices and the values are the array elements',
+        data: ['a', 'b', 'c'],
+        expected_result: {0: 'a', 1: 'b', 2: 'c'},
+        solution: 'data.reduce((acc, curr, index) => { acc[index] = curr; return acc; }, {})',
+        category: 'reduce'
+    },
+    {
+        question: 'Find the sum of even numbers in the array',
+        data: [1, 2, 3, 4, 5, 6],
+        expected_result: 12,
+        solution: 'data.reduce((acc, curr) => curr % 2 === 0 ? acc + curr : acc, 0)',
+        category: 'reduce'
+    },
+    {
+        question: 'Create a string from the array where each element is separated by a hyphen',
+        data: ['one', 'two', 'three'],
+        expected_result: 'one-two-three',
+        solution: 'data.reduce((acc, curr) => acc + "-" + curr)',
+        category: 'reduce'
+    },
+    
+        {
+            question: 'Find the sum of all odd numbers in the array',
+            data: [1, 2, 3, 4, 5, 6],
+            expected_result: 9,
+            solution: 'data.reduce((acc, curr) => curr % 2 !== 0 ? acc + curr : acc, 0)',
+            category: 'reduce'
+        },
+        {
+            question: 'Count how many times the number 10 appears in the array',
+            data: [10, 20, 10, 30, 10],
+            expected_result: 3,
+            solution: 'data.reduce((count, curr) => curr === 10 ? count + 1 : count, 0)',
+            category: 'reduce'
+        },
+        {
+            question: 'Create a single object from an array of key-value pairs',
+            data: [['a', 1], ['b', 2], ['c', 3]],
+            expected_result: {a: 1, b: 2, c: 3},
+            solution: 'data.reduce((acc, [key, value]) => { acc[key] = value; return acc; }, {})',
+            category: 'reduce'
+        },
+        {
+            question: 'Calculate the average of all numbers in the array',
+            data: [10, 20, 30, 40],
+            expected_result: 25,
+            solution: 'data.reduce((acc, curr) => acc + curr, 0) / data.length',
+            category: 'reduce'
+        },
+        {
+            question: 'Concatenate all elements in the array with a space between them',
+            data: ['Hello', 'world', 'how', 'are', 'you'],
+            expected_result: 'Hello world how are you',
+            solution: 'data.reduce((acc, curr) => acc + " " + curr)',
+            category: 'reduce'
+        },
+        {
+            question: 'Convert an array of strings to an array of their lengths',
+            data: ['apple', 'banana', 'cherry'],
+            expected_result: [5, 6, 6],
+            solution: 'data.reduce((acc, curr) => { acc.push(curr.length); return acc; }, [])',
+            category: 'reduce'
+        },
+        {
+            question: 'Group the elements of the array into even and odd numbers',
+            data: [1, 2, 3, 4, 5, 6],
+            expected_result: {even: [2, 4, 6], odd: [1, 3, 5]},
+            solution: 'data.reduce((acc, curr) => { curr % 2 === 0 ? acc.even.push(curr) : acc.odd.push(curr); return acc; }, {even: [], odd: []})',
+            category: 'reduce'
+        },
+        {
+            question: 'Find the product of all elements in the array',
+            data: [2, 3, 4],
+            expected_result: 24,
+            solution: 'data.reduce((acc, curr) => acc * curr, 1)',
+            category: 'reduce'
+        },
+        {
+            question: 'Create a new array with elements doubled',
+            data: [1, 2, 3],
+            expected_result: [2, 4, 6],
+            solution: 'data.reduce((acc, curr) => { acc.push(curr * 2); return acc; }, [])',
+            category: 'reduce'
+        },
+        {
+            question: 'Find the longest string in the array',
+            data: ['apple', 'banana', 'cherry', 'grape'],
+            expected_result: 'banana',
+            solution: 'data.reduce((longest, curr) => curr.length > longest.length ? curr : longest, "")',
+            category: 'reduce'
+        },
+            {
+                question: 'Flatten a deeply nested array',
+                data: [[1, 2, [3, 4]], [5, [6, 7]]],
+                expected_result: [1, 2, 3, 4, 5, 6, 7],
+                solution: 'data.reduce((acc, curr) => acc.concat(Array.isArray(curr) ? curr.reduce((a, b) => a.concat(b), []) : curr), [])',
+                category: 'reduce'
+            },
+            {
+                question: 'Create a new array of objects where each object has the number as key and its square as value',
+                data: [1, 2, 3, 4],
+                expected_result: [{1: 1}, {2: 4}, {3: 9}, {4: 16}],
+                solution: 'data.reduce((acc, curr) => { acc.push({[curr]: curr * curr}); return acc; }, [])',
+                category: 'reduce'
+            },
+            {
+                question: 'Find the difference between the maximum and minimum numbers in the array',
+                data: [4, 7, 1, 9, 2],
+                expected_result: 8,
+                solution: 'data.reduce((acc, curr) => { acc.min = Math.min(acc.min, curr); acc.max = Math.max(acc.max, curr); return acc; }, {min: Infinity, max: -Infinity})',
+                category: 'reduce'
+            },
+            {
+                question: 'Create an array that only contains numbers greater than 5',
+                data: [2, 3, 6, 8, 1],
+                expected_result: [6, 8],
+                solution: 'data.reduce((acc, curr) => curr > 5 ? [...acc, curr] : acc, [])',
+                category: 'reduce'
+            },
+            {
+                question: 'Find the total length of all strings in the array',
+                data: ['apple', 'banana', 'cherry'],
+                expected_result: 16,
+                solution: 'data.reduce((acc, curr) => acc + curr.length, 0)',
+                category: 'reduce'
+            },
+            {
+                question: 'Combine all objects in the array into one object, merging their properties',
+                data: [{a: 1}, {b: 2}, {c: 3}],
+                expected_result: {a: 1, b: 2, c: 3},
+                solution: 'data.reduce((acc, curr) => ({...acc, ...curr}), {})',
+                category: 'reduce'
+            },
+            {
+                question: 'Reverse the order of elements in the array',
+                data: [1, 2, 3, 4],
+                expected_result: [4, 3, 2, 1],
+                solution: 'data.reduce((acc, curr) => [curr, ...acc], [])',
+                category: 'reduce'
+            },
+            {
+                question: 'Check if the array contains only even numbers',
+                data: [2, 4, 6, 8],
+                expected_result: true,
+                solution: 'data.reduce((acc, curr) => acc && curr % 2 === 0, true)',
+                category: 'reduce'
+            },
+            {
+                question: 'Find the sum of all numbers in the array except the first one',
+                data: [10, 20, 30, 40],
+                expected_result: 90,
+                solution: 'data.slice(1).reduce((acc, curr) => acc + curr, 0)',
+                category: 'reduce'
+            },
+            {
+                question: 'Create an array of only the unique values from the array',
+                data: [1, 2, 2, 3, 3, 4],
+                expected_result: [1, 2, 3, 4],
+                solution: 'data.reduce((acc, curr) => acc.includes(curr) ? acc : [...acc, curr], [])',
+                category: 'reduce'
+            },
+            {
+                    question: 'Merge two arrays into one array',
+                    data: [[1, 2], [3, 4]],
+                    expected_result: [1, 2, 3, 4],
+                    solution: 'data[0].concat(data[1])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Join two arrays with a string between them',
+                    data: [['a', 'b'], ['c', 'd']],
+                    expected_result: ['a', 'b', 'c', 'd'],
+                    solution: 'data[0].concat(" ", data[1])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Add an element to the beginning of an array using concat',
+                    data: [[1, 2, 3], 0],
+                    expected_result: [0, 1, 2, 3],
+                    solution: 'data[1].concat(data[0])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Concatenate three arrays into one array',
+                    data: [[1, 2], [3, 4], [5, 6]],
+                    expected_result: [1, 2, 3, 4, 5, 6],
+                    solution: 'data[0].concat(data[1], data[2])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Combine an array of strings with a single array of numbers',
+                    data: [['apple', 'banana'], [1, 2, 3]],
+                    expected_result: ['apple', 'banana', 1, 2, 3],
+                    solution: 'data[0].concat(data[1])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Concatenate an array of elements with an array of empty strings',
+                    data: [['apple', 'banana'], ['', '', '']],
+                    expected_result: ['apple', 'banana', '', '', ''],
+                    solution: 'data[0].concat(data[1])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Combine arrays of objects into a single array of objects',
+                    data: [[{id: 1, name: 'John'}], [{id: 2, name: 'Jane'}]],
+                    expected_result: [{id: 1, name: 'John'}, {id: 2, name: 'Jane'}],
+                    solution: 'data[0].concat(data[1])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Add multiple elements to an array using concat',
+                    data: [[1, 2, 3], 4, 5, 6],
+                    expected_result: [1, 2, 3, 4, 5, 6],
+                    solution: 'data[0].concat(4, 5, 6)',
+                    category: 'concat'
+                },
+                {
+                    question: 'Combine an array with another array containing null and undefined values',
+                    data: [[1, 2, 3], [null, undefined]],
+                    expected_result: [1, 2, 3, null, undefined],
+                    solution: 'data[0].concat(data[1])',
+                    category: 'concat'
+                },
+                {
+                    question: 'Concatenate an array with an empty array',
+                    data: [[1, 2, 3], []],
+                    expected_result: [1, 2, 3],
+                    solution: 'data[0].concat(data[1])',
+                    category: 'concat'
+                },
+                
+                    {
+                        question: 'Concatenate two arrays of numbers and sort the result',
+                        data: [[4, 3], [1, 2]],
+                        expected_result: [1, 2, 3, 4],
+                        solution: 'data[0].concat(data[1]).sort((a, b) => a - b)',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Merge multiple arrays of strings into one array with spaces between them',
+                        data: [['apple', 'banana'], ['cherry', 'date'], ['elderberry']],
+                        expected_result: ['apple', 'banana', 'cherry', 'date', 'elderberry'],
+                        solution: 'data[0].concat(data[1], data[2])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Add a string to the end of an array of numbers',
+                        data: [[1, 2, 3], 'end'],
+                        expected_result: [1, 2, 3, 'end'],
+                        solution: 'data[0].concat(data[1])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Combine arrays of different types: numbers, strings, and booleans',
+                        data: [[1, 2], ['apple', 'banana'], [true, false]],
+                        expected_result: [1, 2, 'apple', 'banana', true, false],
+                        solution: 'data[0].concat(data[1], data[2])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Merge an array of objects with another array of numbers',
+                        data: [[{a: 1}, {b: 2}], [3, 4, 5]],
+                        expected_result: [{a: 1}, {b: 2}, 3, 4, 5],
+                        solution: 'data[0].concat(data[1])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Combine a nested array with other arrays and flatten them',
+                        data: [[1, 2], [3, 4], [5, 6]],
+                        expected_result: [1, 2, 3, 4, 5, 6],
+                        solution: 'data[0].concat(data[1], data[2])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Merge an array of integers with an array of strings',
+                        data: [[1, 2, 3], ['one', 'two', 'three']],
+                        expected_result: [1, 2, 3, 'one', 'two', 'three'],
+                        solution: 'data[0].concat(data[1])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Concatenate two arrays and insert a number in between them',
+                        data: [[10, 20], 30, [40, 50]],
+                        expected_result: [10, 20, 30, 40, 50],
+                        solution: 'data[0].concat(data[1], data[2])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Add elements of different types (number, string, object) to an array',
+                        data: [[1, 2], 'hello', {key: 'value'}],
+                        expected_result: [1, 2, 'hello', {key: 'value'}],
+                        solution: 'data[0].concat(data[1], data[2])',
+                        category: 'concat'
+                    },
+                    {
+                        question: 'Merge an array with a large number of elements with a small array',
+                        data: [[1, 2, 3, 4, 5, 6, 7, 8, 9], [10]],
+                        expected_result: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                        solution: 'data[0].concat(data[1])',
+                        category: 'concat'
+                    },
+                
+                
+            
+            
+        
+        
+    
 
 ]
