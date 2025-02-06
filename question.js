@@ -1178,7 +1178,154 @@ export const question = [
                             expected_result: [[5, 6], [3, 4], [1, 2]],
                             solution: 'data.reverse()',
                             category: 'reverse'
-                        }
+                        },
+                        
+                            {
+                                question: 'Sort an array of numbers in ascending order',
+                                data: [4, 2, 5, 1, 3],
+                                expected_result: [1, 2, 3, 4, 5],
+                                solution: 'data.sort((a, b) => a - b)',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of strings alphabetically',
+                                data: ['banana', 'apple', 'cherry'],
+                                expected_result: ['apple', 'banana', 'cherry'],
+                                solution: 'data.sort()',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of numbers in descending order',
+                                data: [3, 1, 4, 2],
+                                expected_result: [4, 3, 2, 1],
+                                solution: 'data.sort((a, b) => b - a)',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of mixed numbers and strings',
+                                data: [10, 'apple', 5, 'banana', 2],
+                                expected_result: ['apple', 'banana', 2, 5, 10],
+                                solution: 'data.sort((a, b) => (typeof a === "string" ? a : "") > (typeof b === "string" ? b : "") ? 1 : -1)',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of objects by a specific property (age)',
+                                data: [{name: 'John', age: 30}, {name: 'Jane', age: 25}, {name: 'Doe', age: 35}],
+                                expected_result: [{name: 'Jane', age: 25}, {name: 'John', age: 30}, {name: 'Doe', age: 35}],
+                                solution: 'data.sort((a, b) => a.age - b.age)',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of strings by length',
+                                data: ['apple', 'banana', 'kiwi', 'grape'],
+                                expected_result: ['kiwi', 'grape', 'apple', 'banana'],
+                                solution: 'data.sort((a, b) => a.length - b.length)',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of numbers and strings, putting strings first',
+                                data: [5, 'apple', 2, 'banana', 4],
+                                expected_result: ['apple', 'banana', 2, 4, 5],
+                                solution: 'data.sort((a, b) => (typeof a === "string" ? -1 : 1))',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of dates in descending order',
+                                data: ['2025-02-06', '2020-05-10', '2021-01-01'],
+                                expected_result: ['2025-02-06', '2021-01-01', '2020-05-10'],
+                                solution: 'data.sort((a, b) => new Date(b) - new Date(a))',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of numbers in ascending order, treating them as strings',
+                                data: [10, 2, 1, 21],
+                                expected_result: [1, 10, 2, 21],
+                                solution: 'data.sort()',
+                                category: 'sort'
+                            },
+                            {
+                                question: 'Sort an array of objects by multiple properties (age, then name)',
+                                data: [{name: 'John', age: 30}, {name: 'Jane', age: 25}, {name: 'Doe', age: 25}],
+                                expected_result: [{name: 'Doe', age: 25}, {name: 'Jane', age: 25}, {name: 'John', age: 30}],
+                                solution: 'data.sort((a, b) => a.age - b.age || a.name.localeCompare(b.name))',
+                                category: 'sort'
+                            },
+                            
+                                {
+                                    question: 'Sort an array of numbers in ascending order, ignoring negative signs',
+                                    data: [-10, 5, -2, 7],
+                                    expected_result: [-10, -2, 5, 7],
+                                    solution: 'data.sort((a, b) => Math.abs(a) - Math.abs(b))',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of numbers by their absolute values in descending order',
+                                    data: [10, -5, 2, -8],
+                                    expected_result: [10, -8, -5, 2],
+                                    solution: 'data.sort((a, b) => Math.abs(b) - Math.abs(a))',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of strings in reverse alphabetical order',
+                                    data: ['apple', 'banana', 'cherry'],
+                                    expected_result: ['cherry', 'banana', 'apple'],
+                                    solution: 'data.sort().reverse()',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of boolean values (true first)',
+                                    data: [false, true, true, false],
+                                    expected_result: [true, true, false, false],
+                                    solution: 'data.sort((a, b) => b - a)',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of objects by a numerical property (price)',
+                                    data: [{product: 'apple', price: 10}, {product: 'banana', price: 5}, {product: 'cherry', price: 15}],
+                                    expected_result: [{product: 'banana', price: 5}, {product: 'apple', price: 10}, {product: 'cherry', price: 15}],
+                                    solution: 'data.sort((a, b) => a.price - b.price)',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of strings based on the frequency of each character (most frequent first)',
+                                    data: ['apple', 'banana', 'kiwi'],
+                                    expected_result: ['banana', 'apple', 'kiwi'],
+                                    solution: 'data.sort((a, b) => b.split("a").length - a.split("a").length)',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of arrays based on the length of each inner array (shortest first)',
+                                    data: [[1, 2], [1, 2, 3], [1]],
+                                    expected_result: [[1], [1, 2], [1, 2, 3]],
+                                    solution: 'data.sort((a, b) => a.length - b.length)',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of objects by a string property (name) in reverse order',
+                                    data: [{name: 'John'}, {name: 'Jane'}, {name: 'Doe'}],
+                                    expected_result: [{name: 'John'}, {name: 'Jane'}, {name: 'Doe'}],
+                                    solution: 'data.sort((a, b) => b.name.localeCompare(a.name))',
+                                    category: 'sort'
+                                },
+                                {
+                                    question: 'Sort an array of numbers by the sum of their digits (lowest sum first)',
+                                    data: [23, 41, 12, 34],
+                                    expected_result: [12, 23, 34, 41],
+                                    solution: 'data.sort((a, b) => sumOfDigits(a) - sumOfDigits(b))',
+                                    category: 'sort',
+                                    custom_function: 'function sumOfDigits(num) { return num.toString().split("").reduce((acc, val) => acc + Number(val), 0); }'
+                                },
+                                {
+                                    question: 'Sort an array of dates in ascending order of year',
+                                    data: ['2025-02-06', '2020-05-10', '2021-01-01'],
+                                    expected_result: ['2020-05-10', '2021-01-01', '2025-02-06'],
+                                    solution: 'data.sort((a, b) => new Date(a).getFullYear() - new Date(b).getFullYear())',
+                                    category: 'sort'
+                                },
+                            
+                            
+                        
+                        
                     
                     
                 
