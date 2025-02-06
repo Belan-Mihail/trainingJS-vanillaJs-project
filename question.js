@@ -2552,6 +2552,152 @@ export const question = [
         solution: 'Array.from(data, str => str.toUpperCase())',
         category: 'Array.from'
     },
+    
+        {
+            question: 'Find the length of the string "Hello, World!"',
+            data: 'Hello, World!',
+            expected_result: 13,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Find the length of the string "JavaScript"',
+            data: 'JavaScript',
+            expected_result: 10,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Check the length of an empty string',
+            data: '',
+            expected_result: 0,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Check the length of the string "1234567890"',
+            data: '1234567890',
+            expected_result: 10,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Find the length of the string "   " (three spaces)',
+            data: '   ',
+            expected_result: 3,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Find the length of the string "I love JavaScript!"',
+            data: 'I love JavaScript!',
+            expected_result: 19,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Check the length of the string "abcdef" and compare it with 6',
+            data: 'abcdef',
+            expected_result: true,
+            solution: 'data.length === 6',
+            category: 'length'
+        },
+        {
+            question: 'Check the length of a string containing special characters "@#&*"',
+            data: '@#&*',
+            expected_result: 4,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Find the length of the string "apple pie"',
+            data: 'apple pie',
+            expected_result: 10,
+            solution: 'data.length',
+            category: 'length'
+        },
+        {
+            question: 'Check if the string "Hello" has a length greater than 5',
+            data: 'Hello',
+            expected_result: false,
+            solution: 'data.length > 5',
+            category: 'length'
+        },
+        
+            {
+                question: 'Get the character at index 0 of the string "Hello"',
+                data: 'Hello',
+                expected_result: 'H',
+                solution: 'data.charAt(0)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 4 of the string "JavaScript"',
+                data: 'JavaScript',
+                expected_result: 'S',
+                solution: 'data.charAt(4)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 2 of the string "abcdef"',
+                data: 'abcdef',
+                expected_result: 'c',
+                solution: 'data.charAt(2)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 0 of the string "123456789"',
+                data: '123456789',
+                expected_result: '1',
+                solution: 'data.charAt(0)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 5 of the string "Hello, World!"',
+                data: 'Hello, World!',
+                expected_result: ',',
+                solution: 'data.charAt(5)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 10 of the string "abcdef"',
+                data: 'abcdef',
+                expected_result: '',
+                solution: 'data.charAt(10)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 3 of the string "apple pie"',
+                data: 'apple pie',
+                expected_result: 'l',
+                solution: 'data.charAt(3)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 6 of the string "I love JavaScript"',
+                data: 'I love JavaScript',
+                expected_result: 'J',
+                solution: 'data.charAt(6)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 1 of the string "world"',
+                data: 'world',
+                expected_result: 'o',
+                solution: 'data.charAt(1)',
+                category: 'charAt'
+            },
+            {
+                question: 'Get the character at index 8 of the string "Learning JavaScript"',
+                data: 'Learning JavaScript',
+                expected_result: 'J',
+                solution: 'data.charAt(8)',
+                category: 'charAt'
+            },
+        
+        
+   
+    
 
 
 
