@@ -2481,223 +2481,721 @@ export const question = [
     solution: "Array.isArray(data)",
     category: "isArray",
   },
+
+  {
+    question: "Convert a string into an array of characters",
+    data: "hello",
+    expected_result: ["h", "e", "l", "l", "o"],
+    solution: "Array.from(data)",
+    category: "Array.from",
+  },
+  {
+    question: "Convert a Set into an array",
+    data: new Set([1, 2, 3, 4, 5]),
+    expected_result: [1, 2, 3, 4, 5],
+    solution: "Array.from(data)",
+    category: "Array.from",
+  },
+  {
+    question: "Convert a Map’s values into an array",
+    data: new Map([
+      ["a", 1],
+      ["b", 2],
+      ["c", 3],
+    ]),
+    expected_result: [1, 2, 3],
+    solution: "Array.from(data.values())",
+    category: "Array.from",
+  },
+  {
+    question: "Create an array from an object with iterable properties",
+    data: { length: 5 },
+    expected_result: [undefined, undefined, undefined, undefined, undefined],
+    solution: "Array.from({ length: 5 })",
+    category: "Array.from",
+  },
+  {
+    question:
+      "Create an array from a string and apply a transformation (uppercase each character)",
+    data: "hello",
+    expected_result: ["H", "E", "L", "L", "O"],
+    solution: "Array.from(data, char => char.toUpperCase())",
+    category: "Array.from",
+  },
+  {
+    question: "Convert an array-like object (arguments) into an array",
+    data: function () {
+      return Array.from(arguments);
+    },
+    expected_result: [1, 2, 3, 4],
+    solution: "data(1, 2, 3, 4)",
+    category: "Array.from",
+  },
+  {
+    question:
+      "Create an array from a Set and remove duplicates from a string array",
+    data: new Set(["apple", "banana", "apple", "orange"]),
+    expected_result: ["apple", "banana", "orange"],
+    solution: "Array.from(data)",
+    category: "Array.from",
+  },
+  {
+    question:
+      "Create an array of squares from a range of numbers using Array.from",
+    data: 5,
+    expected_result: [0, 1, 4, 9, 16],
+    solution: "Array.from({ length: 5 }, (v, i) => i * i)",
+    category: "Array.from",
+  },
+  {
+    question: "Convert a NodeList into an array",
+    data: document.querySelectorAll("div"),
+    expected_result: Array.from(data).length,
+    solution: "Array.from(data)",
+    category: "Array.from",
+  },
+  {
+    question: "Convert a Set of strings into an array of uppercase strings",
+    data: new Set(["dog", "cat", "bird"]),
+    expected_result: ["DOG", "CAT", "BIRD"],
+    solution: "Array.from(data, str => str.toUpperCase())",
+    category: "Array.from",
+  },
+
+  {
+    question: 'Find the length of the string "Hello, World!"',
+    data: "Hello, World!",
+    expected_result: 13,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: 'Find the length of the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: 10,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: "Check the length of an empty string",
+    data: "",
+    expected_result: 0,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: 'Check the length of the string "1234567890"',
+    data: "1234567890",
+    expected_result: 10,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: 'Find the length of the string "   " (three spaces)',
+    data: "   ",
+    expected_result: 3,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: 'Find the length of the string "I love JavaScript!"',
+    data: "I love JavaScript!",
+    expected_result: 19,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: 'Check the length of the string "abcdef" and compare it with 6',
+    data: "abcdef",
+    expected_result: true,
+    solution: "data.length === 6",
+    category: "length",
+  },
+  {
+    question:
+      'Check the length of a string containing special characters "@#&*"',
+    data: "@#&*",
+    expected_result: 4,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: 'Find the length of the string "apple pie"',
+    data: "apple pie",
+    expected_result: 10,
+    solution: "data.length",
+    category: "length",
+  },
+  {
+    question: 'Check if the string "Hello" has a length greater than 5',
+    data: "Hello",
+    expected_result: false,
+    solution: "data.length > 5",
+    category: "length",
+  },
+
+  {
+    question: 'Get the character at index 0 of the string "Hello"',
+    data: "Hello",
+    expected_result: "H",
+    solution: "data.charAt(0)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 4 of the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "S",
+    solution: "data.charAt(4)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 2 of the string "abcdef"',
+    data: "abcdef",
+    expected_result: "c",
+    solution: "data.charAt(2)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 0 of the string "123456789"',
+    data: "123456789",
+    expected_result: "1",
+    solution: "data.charAt(0)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 5 of the string "Hello, World!"',
+    data: "Hello, World!",
+    expected_result: ",",
+    solution: "data.charAt(5)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 10 of the string "abcdef"',
+    data: "abcdef",
+    expected_result: "",
+    solution: "data.charAt(10)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 3 of the string "apple pie"',
+    data: "apple pie",
+    expected_result: "l",
+    solution: "data.charAt(3)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 6 of the string "I love JavaScript"',
+    data: "I love JavaScript",
+    expected_result: "J",
+    solution: "data.charAt(6)",
+    category: "charAt",
+  },
+  {
+    question: 'Get the character at index 1 of the string "world"',
+    data: "world",
+    expected_result: "o",
+    solution: "data.charAt(1)",
+    category: "charAt",
+  },
+  {
+    question:
+      'Get the character at index 8 of the string "Learning JavaScript"',
+    data: "Learning JavaScript",
+    expected_result: "J",
+    solution: "data.charAt(8)",
+    category: "charAt",
+  },
+
+  {
+    question:
+      'Find the index of the first occurrence of "o" in the string "Hello"',
+    data: "Hello",
+    expected_result: 4,
+    solution: 'data.indexOf("o")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "a" in the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: 1,
+    solution: 'data.indexOf("a")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "r" in the string "abcdef"',
+    data: "abcdef",
+    expected_result: -1,
+    solution: 'data.indexOf("r")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "o" in the string "Hello, World!"',
+    data: "Hello, World!",
+    expected_result: 4,
+    solution: 'data.indexOf("o")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "e" in the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: 1,
+    solution: 'data.indexOf("e")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "y" in the string "hey"',
+    data: "hey",
+    expected_result: 1,
+    solution: 'data.indexOf("y")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "w" in the string "wonderful"',
+    data: "wonderful",
+    expected_result: 0,
+    solution: 'data.indexOf("w")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "i" in the string "business"',
+    data: "business",
+    expected_result: 2,
+    solution: 'data.indexOf("i")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "o" in the string "goodbye"',
+    data: "goodbye",
+    expected_result: 1,
+    solution: 'data.indexOf("o")',
+    category: "indexOf",
+  },
+  {
+    question:
+      'Find the index of the first occurrence of "z" in the string "hello"',
+    data: "hello",
+    expected_result: -1,
+    solution: 'data.indexOf("z")',
+    category: "indexOf",
+  },
+
+  {
+    question: 'Convert the string "HELLO" to lowercase',
+    data: "HELLO",
+    expected_result: "hello",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "JavaScript" to lowercase',
+    data: "JavaScript",
+    expected_result: "javascript",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "HELLO WORLD" to lowercase',
+    data: "HELLO WORLD",
+    expected_result: "hello world",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "Code" to lowercase',
+    data: "Code",
+    expected_result: "code",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "gReaT" to lowercase',
+    data: "gReaT",
+    expected_result: "great",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "TEXTPROCESSING" to lowercase',
+    data: "TEXTPROCESSING",
+    expected_result: "textprocessing",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "123ABC" to lowercase',
+    data: "123ABC",
+    expected_result: "123abc",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "Java IS Fun" to lowercase',
+    data: "Java IS Fun",
+    expected_result: "java is fun",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "UPPERCASE" to lowercase',
+    data: "UPPERCASE",
+    expected_result: "uppercase",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+  {
+    question: 'Convert the string "TeStInG" to lowercase',
+    data: "TeStInG",
+    expected_result: "testing",
+    solution: "data.toLowerCase()",
+    category: "toLowerCase",
+  },
+
+  {
+    question: 'Convert the string "hello" to uppercase',
+    data: "hello",
+    expected_result: "HELLO",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "javaScript" to uppercase',
+    data: "javaScript",
+    expected_result: "JAVASCRIPT",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "hello world" to uppercase',
+    data: "hello world",
+    expected_result: "HELLO WORLD",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "code" to uppercase',
+    data: "code",
+    expected_result: "CODE",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "great" to uppercase',
+    data: "great",
+    expected_result: "GREAT",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "textprocessing" to uppercase',
+    data: "textprocessing",
+    expected_result: "TEXTPROCESSING",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "123abc" to uppercase',
+    data: "123abc",
+    expected_result: "123ABC",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "java is fun" to uppercase',
+    data: "java is fun",
+    expected_result: "JAVA IS FUN",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "uppercase" to uppercase',
+    data: "uppercase",
+    expected_result: "UPPERCASE",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+  {
+    question: 'Convert the string "testing" to uppercase',
+    data: "testing",
+    expected_result: "TESTING",
+    solution: "data.toUpperCase()",
+    category: "toUpperCase",
+  },
+
+  {
+    question: 'Extract the first 3 characters from the string "Hello"',
+    data: "Hello",
+    expected_result: "Hel",
+    solution: "data.slice(0, 3)",
+    category: "slice",
+  },
+  {
+    question: 'Extract the last 2 characters from the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "pt",
+    solution: "data.slice(-2)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract characters from index 4 to index 9 in the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "Script",
+    solution: "data.slice(4, 10)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract characters from index 3 to the end of the string "hello world"',
+    data: "hello world",
+    expected_result: "lo world",
+    solution: "data.slice(3)",
+    category: "slice",
+  },
+  {
+    question: 'Extract the first 4 characters from the string "abcdef"',
+    data: "abcdef",
+    expected_result: "abcd",
+    solution: "data.slice(0, 4)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index 2 to the end of the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "vascript",
+    solution: "data.slice(2)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index 2 to index 6 in the string "Programming"',
+    data: "Programming",
+    expected_result: "ogra",
+    solution: "data.slice(2, 6)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index 4 to index 7 in the string "Technology"',
+    data: "Technology",
+    expected_result: "nolo",
+    solution: "data.slice(4, 8)",
+    category: "slice",
+  },
+  {
+    question: 'Extract the last 3 characters from the string "123456"',
+    data: "123456",
+    expected_result: "456",
+    solution: "data.slice(-3)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index 0 to index 5 in the string "abcdef"',
+    data: "abcdef",
+    expected_result: "abcde",
+    solution: "data.slice(0, 5)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index 5 to index 10 in the string "supercalifragilisticexpialidocious"',
+    data: "supercalifragilisticexpialidocious",
+    expected_result: "fragil",
+    solution: "data.slice(5, 10)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index -5 to the end of the string "Hello, World!"',
+    data: "Hello, World!",
+    expected_result: "orld!",
+    solution: "data.slice(-5)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract characters from index 7 to index 12 in the string "programming"',
+    data: "programming",
+    expected_result: "mming",
+    solution: "data.slice(7, 12)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract characters from index 4 to index 9 in the string "wonderful"',
+    data: "wonderful",
+    expected_result: "erful",
+    solution: "data.slice(4, 9)",
+    category: "slice",
+  },
+  {
+    question: 'Extract the first 5 characters from the string "environment"',
+    data: "environment",
+    expected_result: "envir",
+    solution: "data.slice(0, 5)",
+    category: "slice",
+  },
+  {
+    question: 'Extract the last 4 characters from the string "incredible"',
+    data: "incredible",
+    expected_result: "ible",
+    solution: "data.slice(-4)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index 2 to the end of the string "development"',
+    data: "development",
+    expected_result: "velopment",
+    solution: "data.slice(2)",
+    category: "slice",
+  },
+  {
+    question: 'Extract the first 3 characters from the string "discover"',
+    data: "discover",
+    expected_result: "dis",
+    solution: "data.slice(0, 3)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract characters from index 3 to index 8 in the string "inspiration"',
+    data: "inspiration",
+    expected_result: "spira",
+    solution: "data.slice(3, 8)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract characters from index 1 to index 6 in the string "explanation"',
+    data: "explanation",
+    expected_result: "xplan",
+    solution: "data.slice(1, 6)",
+    category: "slice",
+  },
+  {
+    question:
+      'Extract the characters from index -8 to the end of the string "imagination"',
+    data: "imagination",
+    expected_result: "gination",
+    solution: "data.slice(-8)",
+    category: "slice",
+  },
   
     {
-        question: 'Convert a string into an array of characters',
-        data: 'hello',
-        expected_result: ['h', 'e', 'l', 'l', 'o'],
-        solution: 'Array.from(data)',
-        category: 'Array.from'
+        question: 'Extract the substring from index 0 to index 3 of the string "Hello"',
+        data: 'Hello',
+        expected_result: 'Hell',
+        solution: 'data.substring(0, 4)',
+        category: 'substring'
     },
     {
-        question: 'Convert a Set into an array',
-        data: new Set([1, 2, 3, 4, 5]),
-        expected_result: [1, 2, 3, 4, 5],
-        solution: 'Array.from(data)',
-        category: 'Array.from'
+        question: 'Extract the substring from index 2 to index 5 of the string "JavaScript"',
+        data: 'JavaScript',
+        expected_result: 'va',
+        solution: 'data.substring(2, 5)',
+        category: 'substring'
     },
     {
-        question: 'Convert a Map’s values into an array',
-        data: new Map([['a', 1], ['b', 2], ['c', 3]]),
-        expected_result: [1, 2, 3],
-        solution: 'Array.from(data.values())',
-        category: 'Array.from'
+        question: 'Extract the substring from index 3 to the end of the string "abcdef"',
+        data: 'abcdef',
+        expected_result: 'def',
+        solution: 'data.substring(3)',
+        category: 'substring'
     },
     {
-        question: 'Create an array from an object with iterable properties',
-        data: { length: 5 },
-        expected_result: [undefined, undefined, undefined, undefined, undefined],
-        solution: 'Array.from({ length: 5 })',
-        category: 'Array.from'
+        question: 'Extract the substring from index 4 to index 7 of the string "supercalifragilisticexpialidocious"',
+        data: 'supercalifragilisticexpialidocious',
+        expected_result: 'cali',
+        solution: 'data.substring(4, 8)',
+        category: 'substring'
     },
     {
-        question: 'Create an array from a string and apply a transformation (uppercase each character)',
-        data: 'hello',
-        expected_result: ['H', 'E', 'L', 'L', 'O'],
-        solution: 'Array.from(data, char => char.toUpperCase())',
-        category: 'Array.from'
+        question: 'Extract the substring from index 1 to index 6 of the string "wonderful"',
+        data: 'wonderful',
+        expected_result: 'onder',
+        solution: 'data.substring(1, 6)',
+        category: 'substring'
     },
     {
-        question: 'Convert an array-like object (arguments) into an array',
-        data: function() { return Array.from(arguments); },
-        expected_result: [1, 2, 3, 4],
-        solution: 'data(1, 2, 3, 4)',
-        category: 'Array.from'
+        question: 'Extract the substring from index 5 to index 10 of the string "JavaScript"',
+        data: 'JavaScript',
+        expected_result: 'Scrip',
+        solution: 'data.substring(5, 10)',
+        category: 'substring'
     },
     {
-        question: 'Create an array from a Set and remove duplicates from a string array',
-        data: new Set(['apple', 'banana', 'apple', 'orange']),
-        expected_result: ['apple', 'banana', 'orange'],
-        solution: 'Array.from(data)',
-        category: 'Array.from'
+        question: 'Extract the substring from index 0 to index 3 of the string "Programming"',
+        data: 'Programming',
+        expected_result: 'Prog',
+        solution: 'data.substring(0, 4)',
+        category: 'substring'
     },
     {
-        question: 'Create an array of squares from a range of numbers using Array.from',
-        data: 5,
-        expected_result: [0, 1, 4, 9, 16],
-        solution: 'Array.from({ length: 5 }, (v, i) => i * i)',
-        category: 'Array.from'
+        question: 'Extract the substring from index 3 to index 7 of the string "incredible"',
+        data: 'incredible',
+        expected_result: 'cred',
+        solution: 'data.substring(3, 7)',
+        category: 'substring'
     },
     {
-        question: 'Convert a NodeList into an array',
-        data: document.querySelectorAll('div'),
-        expected_result: Array.from(data).length,
-        solution: 'Array.from(data)',
-        category: 'Array.from'
+        question: 'Extract the substring from index 2 to index 5 of the string "development"',
+        data: 'development',
+        expected_result: 'velo',
+        solution: 'data.substring(2, 6)',
+        category: 'substring'
     },
     {
-        question: 'Convert a Set of strings into an array of uppercase strings',
-        data: new Set(['dog', 'cat', 'bird']),
-        expected_result: ['DOG', 'CAT', 'BIRD'],
-        solution: 'Array.from(data, str => str.toUpperCase())',
-        category: 'Array.from'
+        question: 'Extract the substring from index 1 to index 4 of the string "environment"',
+        data: 'environment',
+        expected_result: 'nvi',
+        solution: 'data.substring(1, 4)',
+        category: 'substring'
     },
-    
-        {
-            question: 'Find the length of the string "Hello, World!"',
-            data: 'Hello, World!',
-            expected_result: 13,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Find the length of the string "JavaScript"',
-            data: 'JavaScript',
-            expected_result: 10,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Check the length of an empty string',
-            data: '',
-            expected_result: 0,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Check the length of the string "1234567890"',
-            data: '1234567890',
-            expected_result: 10,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Find the length of the string "   " (three spaces)',
-            data: '   ',
-            expected_result: 3,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Find the length of the string "I love JavaScript!"',
-            data: 'I love JavaScript!',
-            expected_result: 19,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Check the length of the string "abcdef" and compare it with 6',
-            data: 'abcdef',
-            expected_result: true,
-            solution: 'data.length === 6',
-            category: 'length'
-        },
-        {
-            question: 'Check the length of a string containing special characters "@#&*"',
-            data: '@#&*',
-            expected_result: 4,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Find the length of the string "apple pie"',
-            data: 'apple pie',
-            expected_result: 10,
-            solution: 'data.length',
-            category: 'length'
-        },
-        {
-            question: 'Check if the string "Hello" has a length greater than 5',
-            data: 'Hello',
-            expected_result: false,
-            solution: 'data.length > 5',
-            category: 'length'
-        },
-        
-            {
-                question: 'Get the character at index 0 of the string "Hello"',
-                data: 'Hello',
-                expected_result: 'H',
-                solution: 'data.charAt(0)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 4 of the string "JavaScript"',
-                data: 'JavaScript',
-                expected_result: 'S',
-                solution: 'data.charAt(4)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 2 of the string "abcdef"',
-                data: 'abcdef',
-                expected_result: 'c',
-                solution: 'data.charAt(2)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 0 of the string "123456789"',
-                data: '123456789',
-                expected_result: '1',
-                solution: 'data.charAt(0)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 5 of the string "Hello, World!"',
-                data: 'Hello, World!',
-                expected_result: ',',
-                solution: 'data.charAt(5)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 10 of the string "abcdef"',
-                data: 'abcdef',
-                expected_result: '',
-                solution: 'data.charAt(10)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 3 of the string "apple pie"',
-                data: 'apple pie',
-                expected_result: 'l',
-                solution: 'data.charAt(3)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 6 of the string "I love JavaScript"',
-                data: 'I love JavaScript',
-                expected_result: 'J',
-                solution: 'data.charAt(6)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 1 of the string "world"',
-                data: 'world',
-                expected_result: 'o',
-                solution: 'data.charAt(1)',
-                category: 'charAt'
-            },
-            {
-                question: 'Get the character at index 8 of the string "Learning JavaScript"',
-                data: 'Learning JavaScript',
-                expected_result: 'J',
-                solution: 'data.charAt(8)',
-                category: 'charAt'
-            },
-        
-        
-   
-    
+    {
+        question: 'Extract the substring from index 4 to the end of the string "unbelievable"',
+        data: 'unbelievable',
+        expected_result: 'lievable',
+        solution: 'data.substring(4)',
+        category: 'substring'
+    },
+    {
+        question: 'Extract the substring from index 3 to index 9 of the string "exceptional"',
+        data: 'exceptional',
+        expected_result: 'eptio',
+        solution: 'data.substring(3, 9)',
+        category: 'substring'
+    },
+    {
+        question: 'Extract the substring from index 2 to index 7 of the string "fantastic"',
+        data: 'fantastic',
+        expected_result: 'ntas',
+        solution: 'data.substring(2, 7)',
+        category: 'substring'
+    },
+    {
+        question: 'Extract the substring from index 0 to index 5 of the string "imagination"',
+        data: 'imagination',
+        expected_result: 'imagi',
+        solution: 'data.substring(0, 5)',
+        category: 'substring'
+    },
+    {
+        question: 'Extract the substring from index 6 to index 12 of the string "explanation"',
+        data: 'explanation',
+        expected_result: 'natio',
+        solution: 'data.substring(6, 12)',
+        category: 'substring'
+    },
 
 
 
