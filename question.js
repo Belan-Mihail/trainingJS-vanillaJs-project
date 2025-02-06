@@ -1966,7 +1966,185 @@ export const question = [
                     expected_result: '123000',
                     solution: 'data.toString()',
                     category: 'toString'
-                }
+                },
+                
+                    {
+                        question: 'Create a new array containing the first 3 elements from the original array',
+                        data: [1, 2, 3, 4, 5],
+                        expected_result: [1, 2, 3],
+                        solution: 'data.slice(0, 3)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing elements from index 2 to the end of the array',
+                        data: [10, 20, 30, 40, 50],
+                        expected_result: [30, 40, 50],
+                        solution: 'data.slice(2)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array with the last 2 elements of the array',
+                        data: [1, 2, 3, 4, 5],
+                        expected_result: [4, 5],
+                        solution: 'data.slice(-2)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing elements from index 1 to 4',
+                        data: ['apple', 'banana', 'cherry', 'date', 'elderberry'],
+                        expected_result: ['banana', 'cherry', 'date'],
+                        solution: 'data.slice(1, 4)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing the last 3 elements from the original array',
+                        data: [7, 8, 9, 10, 11],
+                        expected_result: [9, 10, 11],
+                        solution: 'data.slice(-3)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array with elements from index 2 to 5 (inclusive)',
+                        data: [100, 200, 300, 400, 500, 600],
+                        expected_result: [300, 400, 500],
+                        solution: 'data.slice(2, 5)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array from index 3 to the end, using negative indexing',
+                        data: [5, 10, 15, 20, 25, 30],
+                        expected_result: [20, 25, 30],
+                        solution: 'data.slice(3)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing the first 4 elements from the original array',
+                        data: [1, 2, 3, 4, 5],
+                        expected_result: [1, 2, 3, 4],
+                        solution: 'data.slice(0, 4)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array with the elements from index 1 to 3',
+                        data: ['apple', 'banana', 'cherry', 'date', 'elderberry'],
+                        expected_result: ['banana', 'cherry', 'date'],
+                        solution: 'data.slice(1, 4)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing only the last element of the array',
+                        data: ['a', 'b', 'c', 'd', 'e'],
+                        expected_result: ['e'],
+                        solution: 'data.slice(-1)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing elements from index 0 to index 2',
+                        data: [10, 20, 30, 40, 50],
+                        expected_result: [10, 20, 30],
+                        solution: 'data.slice(0, 3)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing elements from the 3rd index to the 6th index',
+                        data: [1, 2, 3, 4, 5, 6, 7, 8],
+                        expected_result: [4, 5, 6],
+                        solution: 'data.slice(3, 6)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array with the first 2 elements removed',
+                        data: ['apple', 'banana', 'cherry', 'date'],
+                        expected_result: ['cherry', 'date'],
+                        solution: 'data.slice(2)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array that contains the first 5 elements of a string',
+                        data: 'hello world',
+                        expected_result: ['h', 'e', 'l', 'l', 'o'],
+                        solution: 'data.split("").slice(0, 5)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array from index -3 to the end of the array',
+                        data: [1, 2, 3, 4, 5, 6],
+                        expected_result: [4, 5, 6],
+                        solution: 'data.slice(-3)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array that contains the elements from index -2 to the end',
+                        data: [11, 12, 13, 14, 15, 16],
+                        expected_result: [15, 16],
+                        solution: 'data.slice(-2)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array that contains all elements except the last one',
+                        data: [1, 2, 3, 4, 5],
+                        expected_result: [1, 2, 3, 4],
+                        solution: 'data.slice(0, -1)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing elements from index 4 to 6 (inclusive)',
+                        data: [2, 4, 6, 8, 10, 12],
+                        expected_result: [10, 12],
+                        solution: 'data.slice(4, 6)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing elements from index 0 to index 5, but skip index 2',
+                        data: [10, 20, 30, 40, 50],
+                        expected_result: [10, 20, 40, 50],
+                        solution: 'data.slice(0, 2).concat(data.slice(3))',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array that skips the first element and includes all elements after it',
+                        data: ['a', 'b', 'c', 'd'],
+                        expected_result: ['b', 'c', 'd'],
+                        solution: 'data.slice(1)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array that includes the last 4 elements of the array',
+                        data: [1, 2, 3, 4, 5, 6],
+                        expected_result: [3, 4, 5, 6],
+                        solution: 'data.slice(-4)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing the first 6 elements of a string',
+                        data: 'abcdefgh',
+                        expected_result: ['a', 'b', 'c', 'd', 'e', 'f'],
+                        solution: 'data.split("").slice(0, 6)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array that includes the last 5 characters from a string',
+                        data: 'Hello World!',
+                        expected_result: ['o', ' ', 'W', 'o', 'r'],
+                        solution: 'data.slice(-5).split("")',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array containing the middle 3 elements of an array',
+                        data: [1, 2, 3, 4, 5, 6, 7],
+                        expected_result: [3, 4, 5],
+                        solution: 'data.slice(2, 5)',
+                        category: 'slice'
+                    },
+                    {
+                        question: 'Create a new array that includes the first and last elements of the original array',
+                        data: [10, 20, 30, 40, 50],
+                        expected_result: [10, 50],
+                        solution: 'data.slice(0, 1).concat(data.slice(-1))',
+                        category: 'slice'
+                    }
+                
+                
             
             
         
