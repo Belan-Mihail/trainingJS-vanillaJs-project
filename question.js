@@ -2482,4 +2482,77 @@ export const question = [
     category: "isArray",
   },
   
+    {
+        question: 'Convert a string into an array of characters',
+        data: 'hello',
+        expected_result: ['h', 'e', 'l', 'l', 'o'],
+        solution: 'Array.from(data)',
+        category: 'Array.from'
+    },
+    {
+        question: 'Convert a Set into an array',
+        data: new Set([1, 2, 3, 4, 5]),
+        expected_result: [1, 2, 3, 4, 5],
+        solution: 'Array.from(data)',
+        category: 'Array.from'
+    },
+    {
+        question: 'Convert a Map’s values into an array',
+        data: new Map([['a', 1], ['b', 2], ['c', 3]]),
+        expected_result: [1, 2, 3],
+        solution: 'Array.from(data.values())',
+        category: 'Array.from'
+    },
+    {
+        question: 'Create an array from an object with iterable properties',
+        data: { length: 5 },
+        expected_result: [undefined, undefined, undefined, undefined, undefined],
+        solution: 'Array.from({ length: 5 })',
+        category: 'Array.from'
+    },
+    {
+        question: 'Create an array from a string and apply a transformation (uppercase each character)',
+        data: 'hello',
+        expected_result: ['H', 'E', 'L', 'L', 'O'],
+        solution: 'Array.from(data, char => char.toUpperCase())',
+        category: 'Array.from'
+    },
+    {
+        question: 'Convert an array-like object (arguments) into an array',
+        data: function() { return Array.from(arguments); },
+        expected_result: [1, 2, 3, 4],
+        solution: 'data(1, 2, 3, 4)',
+        category: 'Array.from'
+    },
+    {
+        question: 'Create an array from a Set and remove duplicates from a string array',
+        data: new Set(['apple', 'banana', 'apple', 'orange']),
+        expected_result: ['apple', 'banana', 'orange'],
+        solution: 'Array.from(data)',
+        category: 'Array.from'
+    },
+    {
+        question: 'Create an array of squares from a range of numbers using Array.from',
+        data: 5,
+        expected_result: [0, 1, 4, 9, 16],
+        solution: 'Array.from({ length: 5 }, (v, i) => i * i)',
+        category: 'Array.from'
+    },
+    {
+        question: 'Convert a NodeList into an array',
+        data: document.querySelectorAll('div'),
+        expected_result: Array.from(data).length,
+        solution: 'Array.from(data)',
+        category: 'Array.from'
+    },
+    {
+        question: 'Convert a Set of strings into an array of uppercase strings',
+        data: new Set(['dog', 'cat', 'bird']),
+        expected_result: ['DOG', 'CAT', 'BIRD'],
+        solution: 'Array.from(data, str => str.toUpperCase())',
+        category: 'Array.from'
+    },
+
+
+
 ];
