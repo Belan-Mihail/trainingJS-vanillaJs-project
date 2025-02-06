@@ -2142,7 +2142,185 @@ export const question = [
                         expected_result: [10, 50],
                         solution: 'data.slice(0, 1).concat(data.slice(-1))',
                         category: 'slice'
-                    }
+                    },
+                    
+                        {
+                            question: 'Remove 2 elements starting from index 1 in the array',
+                            data: [10, 20, 30, 40, 50],
+                            expected_result: [20, 30],
+                            solution: 'data.splice(1, 2)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove the first element of the array',
+                            data: [1, 2, 3, 4, 5],
+                            expected_result: [1],
+                            solution: 'data.splice(0, 1)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Add 100 and 200 starting at index 2',
+                            data: [1, 2, 3, 4, 5],
+                            expected_result: [3, 4, 5],
+                            solution: 'data.splice(2, 0, 100, 200)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Replace the element at index 1 with "banana"',
+                            data: ['apple', 'orange', 'grape'],
+                            expected_result: ['orange'],
+                            solution: 'data.splice(1, 1, "banana")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 3 elements starting from index 2',
+                            data: [10, 20, 30, 40, 50],
+                            expected_result: [30, 40, 50],
+                            solution: 'data.splice(2, 3)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove the last element from the array',
+                            data: [10, 20, 30, 40, 50],
+                            expected_result: [50],
+                            solution: 'data.splice(-1, 1)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Add the element "apple" at the beginning of the array',
+                            data: ['banana', 'cherry'],
+                            expected_result: ['banana', 'cherry'],
+                            solution: 'data.splice(0, 0, "apple")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 4 elements starting from index 3',
+                            data: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+                            expected_result: ['d', 'e', 'f', 'g'],
+                            solution: 'data.splice(3, 4)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Add "pear" and "peach" starting at index 1',
+                            data: ['apple', 'banana', 'cherry'],
+                            expected_result: ['banana', 'cherry'],
+                            solution: 'data.splice(1, 0, "pear", "peach")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 2 elements from index 2 and replace them with "kiwi" and "mango"',
+                            data: ['apple', 'orange', 'banana', 'grape'],
+                            expected_result: ['banana', 'grape'],
+                            solution: 'data.splice(2, 2, "kiwi", "mango")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Add "blueberry" at index 0',
+                            data: ['apple', 'banana'],
+                            expected_result: ['apple', 'banana'],
+                            solution: 'data.splice(0, 0, "blueberry")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 1 element from the second-to-last index',
+                            data: [10, 20, 30, 40, 50],
+                            expected_result: [40],
+                            solution: 'data.splice(-2, 1)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Add "watermelon" and "grape" at the end of the array',
+                            data: ['apple', 'orange'],
+                            expected_result: ['apple', 'orange'],
+                            solution: 'data.splice(data.length, 0, "watermelon", "grape")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 3 elements from index 1 and add "peach" at the end',
+                            data: ['apple', 'banana', 'cherry', 'date', 'elderberry'],
+                            expected_result: ['banana', 'cherry', 'date'],
+                            solution: 'data.splice(1, 3, "peach")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove the first 2 elements from the array',
+                            data: [1, 2, 3, 4, 5],
+                            expected_result: [1, 2],
+                            solution: 'data.splice(0, 2)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove elements from index 1 to the second-to-last index',
+                            data: [1, 2, 3, 4, 5],
+                            expected_result: [2, 3, 4],
+                            solution: 'data.splice(1, 3)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 1 element from index 2 and replace it with "blue" and "green"',
+                            data: ['red', 'yellow', 'orange', 'pink'],
+                            expected_result: ['orange'],
+                            solution: 'data.splice(2, 1, "blue", "green")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 2 elements from index 2 and replace them with "purple" and "violet"',
+                            data: ['red', 'yellow', 'green', 'blue', 'orange'],
+                            expected_result: ['green', 'blue'],
+                            solution: 'data.splice(2, 2, "purple", "violet")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Add "orange" at index 2 in the array',
+                            data: ['apple', 'banana', 'cherry'],
+                            expected_result: ['apple', 'banana', 'cherry'],
+                            solution: 'data.splice(2, 0, "orange")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 4 elements starting from index 1 in the array',
+                            data: [1, 2, 3, 4, 5, 6, 7],
+                            expected_result: [2, 3, 4, 5],
+                            solution: 'data.splice(1, 4)',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Add "grape" and "kiwi" at index 3',
+                            data: ['apple', 'banana', 'cherry', 'date'],
+                            expected_result: ['date'],
+                            solution: 'data.splice(3, 0, "grape", "kiwi")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove the last element of the array and replace it with "peach"',
+                            data: ['apple', 'banana', 'cherry'],
+                            expected_result: ['cherry'],
+                            solution: 'data.splice(-1, 1, "peach")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 2 elements from index 1 and add "kiwi", "mango", and "papaya"',
+                            data: ['apple', 'banana', 'cherry', 'date'],
+                            expected_result: ['banana', 'cherry'],
+                            solution: 'data.splice(1, 2, "kiwi", "mango", "papaya")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove elements from index 0 and replace them with "a", "b", and "c"',
+                            data: ['x', 'y', 'z'],
+                            expected_result: ['x', 'y', 'z'],
+                            solution: 'data.splice(0, 3, "a", "b", "c")',
+                            category: 'splice'
+                        },
+                        {
+                            question: 'Remove 2 elements from index 3 and replace them with "watermelon" and "melon"',
+                            data: [10, 20, 30, 40, 50],
+                            expected_result: [40, 50],
+                            solution: 'data.splice(3, 2, "watermelon", "melon")',
+                            category: 'splice'
+                        },
+                    
+                    
                 
                 
             
