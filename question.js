@@ -3990,1513 +3990,1826 @@ export const question = [
     solution: "data.trimEnd()",
     category: "trimEnd",
   },
-    {
-      "question": "Pad the string 'Java' with leading zeros to a total length of 6.",
-      "data": "Java",
-      "expected_result": "00Java",
-      "solution": "data.padStart(6, '0')",
-      "category": "padStart"
-    },
-    {
-      "question": "Pad the string 'cat' with leading asterisks to a total length of 5.",
-      "data": "cat",
-      "expected_result": "**cat",
-      "solution": "data.padStart(5, '*')",
-      "category": "padStart"
-    },
-    {
-      "question": "Pad the string '123' with leading dashes to a total length of 8.",
-      "data": "123",
-      "expected_result": "----123",
-      "solution": "data.padStart(8, '-')",
-      "category": "padStart"
-    },
-    {
-      "question": "Pad the string 'hello' with leading spaces to a total length of 10.",
-      "data": "hello",
-      "expected_result": "     hello",
-      "solution": "data.padStart(10, ' ')",
-      "category": "padStart"
-    },
-    {
-      "question": "Pad the string 'short' with leading exclamation marks to a total length of 8.",
-      "data": "short",
-      "expected_result": "!!short",
-      "solution": "data.padStart(8, '!')",
-      "category": "padStart"
-    },
-    {
-      "question": "Pad the string 'abc' with trailing spaces to a total length of 6.",
-      "data": "abc",
-      "expected_result": "abc   ",
-      "solution": "data.padEnd(6, ' ')",
-      "category": "padEnd"
-    },
-    {
-      "question": "Pad the string 'dog' with trailing stars to a total length of 7.",
-      "data": "dog",
-      "expected_result": "dog****",
-      "solution": "data.padEnd(7, '*')",
-      "category": "padEnd"
-    },
-    {
-      "question": "Pad the string 'test' with trailing dashes to a total length of 10.",
-      "data": "test",
-      "expected_result": "test------",
-      "solution": "data.padEnd(10, '-')",
-      "category": "padEnd"
-    },
-    {
-      "question": "Pad the string 'hello' with trailing underscores to a total length of 12.",
-      "data": "hello",
-      "expected_result": "hello______",
-      "solution": "data.padEnd(12, '_')",
-      "category": "padEnd"
-    },
-    {
-      "question": "Pad the string 'openai' with trailing question marks to a total length of 10.",
-      "data": "openai",
-      "expected_result": "openai????",
-      "solution": "data.padEnd(10, '?')",
-      "category": "padEnd"
-    },
-      {
-        "question": "Check if the string 'JavaScript' starts with 'Java'.",
-        "data": "JavaScript",
-        "expected_result": "true",
-        "solution": "data.startsWith('Java')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'JavaScript' starts with 'Script'.",
-        "data": "JavaScript",
-        "expected_result": "false",
-        "solution": "data.startsWith('Script')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'Hello world' starts with 'Hello'.",
-        "data": "Hello world",
-        "expected_result": "true",
-        "solution": "data.startsWith('Hello')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'abc123' starts with 'abc'.",
-        "data": "abc123",
-        "expected_result": "true",
-        "solution": "data.startsWith('abc')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'openai' starts with 'o'.",
-        "data": "openai",
-        "expected_result": "true",
-        "solution": "data.startsWith('o')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'openai' starts with 'ai'.",
-        "data": "openai",
-        "expected_result": "false",
-        "solution": "data.startsWith('ai')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'JavaScript' ends with 'Script'.",
-        "data": "JavaScript",
-        "expected_result": "true",
-        "solution": "data.endsWith('Script')",
-        "category": "endsWith"
-      },
-      {
-        "question": "Check if the string 'JavaScript' ends with 'Java'.",
-        "data": "JavaScript",
-        "expected_result": "false",
-        "solution": "data.endsWith('Java')",
-        "category": "endsWith"
-      },
-      {
-        "question": "Check if the string 'Hello world' ends with 'world'.",
-        "data": "Hello world",
-        "expected_result": "true",
-        "solution": "data.endsWith('world')",
-        "category": "endsWith"
-      },
-      {
-        "question": "Check if the string 'abc123' ends with '123'.",
-        "data": "abc123",
-        "expected_result": "true",
-        "solution": "data.endsWith('123')",
-        "category": "endsWith"
-      },
-      {
-        "question": "Check if the string 'openai' ends with 'ai'.",
-        "data": "openai",
-        "expected_result": "true",
-        "solution": "data.endsWith('ai')",
-        "category": "endsWith"
-      },
-      {
-        "question": "Check if the string 'openai' ends with 'open'.",
-        "data": "openai",
-        "expected_result": "false",
-        "solution": "data.endsWith('open')",
-        "category": "endsWith"
-      },
-      {
-        "question": "Check if the string 'abcdef' starts with 'abc'.",
-        "data": "abcdef",
-        "expected_result": "true",
-        "solution": "data.startsWith('abc')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'abcdef' starts with 'def'.",
-        "data": "abcdef",
-        "expected_result": "false",
-        "solution": "data.startsWith('def')",
-        "category": "startsWith"
-      },
-      {
-        "question": "Check if the string 'hello' ends with 'o'.",
-        "data": "hello",
-        "expected_result": "true",
-        "solution": "data.endsWith('o')",
-        "category": "endsWith"
-      },
-      {
-        "question": "Check if the string 'hello' ends with 'h'.",
-        "data": "hello",
-        "expected_result": "false",
-        "solution": "data.endsWith('h')",
-        "category": "endsWith"
-      },
-      
-        {
-          "question": "Repeat the string 'abc' 3 times.",
-          "data": "abc",
-          "expected_result": "abcabcabc",
-          "solution": "data.repeat(3)",
-          "category": "repeat"
-        },
-        {
-          "question": "Repeat the string '!' 5 times.",
-          "data": "!",
-          "expected_result": "!!!!!",
-          "solution": "data.repeat(5)",
-          "category": "repeat"
-        },
-        {
-          "question": "Repeat the string 'hello' 2 times.",
-          "data": "hello",
-          "expected_result": "hellohello",
-          "solution": "data.repeat(2)",
-          "category": "repeat"
-        },
-        {
-          "question": "Repeat the string '123' 4 times.",
-          "data": "123",
-          "expected_result": "123123123123",
-          "solution": "data.repeat(4)",
-          "category": "repeat"
-        },
-        {
-          "question": "Repeat the string 'openai' 1 time.",
-          "data": "openai",
-          "expected_result": "openai",
-          "solution": "data.repeat(1)",
-          "category": "repeat"
-        },
-        
-          {
-            "question": "Find the first occurrence of 'a' in the string 'JavaScript'.",
-            "data": "JavaScript",
-            "expected_result": "1",
-            "solution": "data.indexOf('a')",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the first occurrence of 'S' in the string 'JavaScript'.",
-            "data": "JavaScript",
-            "expected_result": "4",
-            "solution": "data.indexOf('S')",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the first occurrence of 'o' in the string 'Hello world'.",
-            "data": "Hello world",
-            "expected_result": "4",
-            "solution": "data.indexOf('o')",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the first occurrence of 'e' in the string 'abcdef'.",
-            "data": "abcdef",
-            "expected_result": "1",
-            "solution": "data.indexOf('e')",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the first occurrence of 'l' in the string 'hello'.",
-            "data": "hello",
-            "expected_result": "2",
-            "solution": "data.indexOf('l')",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the first occurrence of 'z' in the string 'apple'.",
-            "data": "apple",
-            "expected_result": "-1",
-            "solution": "data.indexOf('z')",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'a' in the string 'JavaScript'.",
-            "data": "JavaScript",
-            "expected_result": "3",
-            "solution": "data.lastIndexOf('a')",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'o' in the string 'Hello world'.",
-            "data": "Hello world",
-            "expected_result": "7",
-            "solution": "data.lastIndexOf('o')",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'l' in the string 'hello'.",
-            "data": "hello",
-            "expected_result": "3",
-            "solution": "data.lastIndexOf('l')",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'e' in the string 'abcdef'.",
-            "data": "abcdef",
-            "expected_result": "1",
-            "solution": "data.lastIndexOf('e')",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'l' in the string 'balloon'.",
-            "data": "balloon",
-            "expected_result": "4",
-            "solution": "data.lastIndexOf('l')",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'a' in the string 'apple'.",
-            "data": "apple",
-            "expected_result": "0",
-            "solution": "data.lastIndexOf('a')",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'e' in the string 'apple'.",
-            "data": "apple",
-            "expected_result": "4",
-            "solution": "data.lastIndexOf('e')",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the first occurrence of 'a' starting from index 2 in the string 'banana'.",
-            "data": "banana",
-            "expected_result": "3",
-            "solution": "data.indexOf('a', 2)",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the first occurrence of 'n' starting from index 3 in the string 'banana'.",
-            "data": "banana",
-            "expected_result": "4",
-            "solution": "data.indexOf('n', 3)",
-            "category": "indexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'a' starting from index 3 in the string 'banana'.",
-            "data": "banana",
-            "expected_result": "5",
-            "solution": "data.lastIndexOf('a', 3)",
-            "category": "lastIndexOf"
-          },
-          {
-            "question": "Find the last occurrence of 'n' starting from index 4 in the string 'banana'.",
-            "data": "banana",
-            "expected_result": "4",
-            "solution": "data.lastIndexOf('n', 4)",
-            "category": "lastIndexOf"
-          },
-          
-            {
-              "question": "Find the first match of the pattern 'a' in the string 'JavaScript'.",
-              "data": "JavaScript",
-              "expected_result": "1",
-              "solution": "data.search(/a/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern 'S' in the string 'JavaScript'.",
-              "data": "JavaScript",
-              "expected_result": "4",
-              "solution": "data.search(/S/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern 'o' in the string 'Hello world'.",
-              "data": "Hello world",
-              "expected_result": "4",
-              "solution": "data.search(/o/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern 'e' in the string 'abcdef'.",
-              "data": "abcdef",
-              "expected_result": "1",
-              "solution": "data.search(/e/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern 'l' in the string 'hello'.",
-              "data": "hello",
-              "expected_result": "2",
-              "solution": "data.search(/l/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern 'z' in the string 'apple'.",
-              "data": "apple",
-              "expected_result": "-1",
-              "solution": "data.search(/z/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern '\\d' (digit) in the string 'abc123'.",
-              "data": "abc123",
-              "expected_result": "3",
-              "solution": "data.search(/\\d/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern 'world' in the string 'Hello world'.",
-              "data": "Hello world",
-              "expected_result": "6",
-              "solution": "data.search(/world/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern '[aeiou]' (vowel) in the string 'hello'.",
-              "data": "hello",
-              "expected_result": "1",
-              "solution": "data.search(/[aeiou]/)",
-              "category": "search"
-            },
-            {
-              "question": "Find the first match of the pattern '\\d+' (one or more digits) in the string 'The year is 2025'.",
-              "data": "The year is 2025",
-              "expected_result": "15",
-              "solution": "data.search(/\\d+/)",
-              "category": "search"
-            },
-            
-              {
-                "question": "Check if the string 'JavaScript' includes 'Script'.",
-                "data": "JavaScript",
-                "expected_result": "true",
-                "solution": "data.includes('Script')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'Hello world' includes 'world'.",
-                "data": "Hello world",
-                "expected_result": "true",
-                "solution": "data.includes('world')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'abcdef' includes 'abc'.",
-                "data": "abcdef",
-                "expected_result": "true",
-                "solution": "data.includes('abc')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'hello' includes 'e'.",
-                "data": "hello",
-                "expected_result": "true",
-                "solution": "data.includes('e')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'apple' includes 'z'.",
-                "data": "apple",
-                "expected_result": "false",
-                "solution": "data.includes('z')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'The year is 2025' includes '2025'.",
-                "data": "The year is 2025",
-                "expected_result": "true",
-                "solution": "data.includes('2025')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'openai' includes 'ai'.",
-                "data": "openai",
-                "expected_result": "true",
-                "solution": "data.includes('ai')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'openai' includes 'open'.",
-                "data": "openai",
-                "expected_result": "true",
-                "solution": "data.includes('open')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'hello' includes 'l'.",
-                "data": "hello",
-                "expected_result": "true",
-                "solution": "data.includes('l')",
-                "category": "includes"
-              },
-              {
-                "question": "Check if the string 'hello' includes 'z'.",
-                "data": "hello",
-                "expected_result": "false",
-                "solution": "data.includes('z')",
-                "category": "includes"
-              },
-              
-                {
-                  "question": "Create a Date object for the current date and time.",
-                  "data": "new Date()",
-                  "expected_result": "Current date and time",
-                  "solution": "new Date()",
-                  "category": "Date"
-                },
-                {
-                  "question": "Create a Date object for January 1, 2025, 12:00:00 AM.",
-                  "data": "new Date('2025-01-01T00:00:00')",
-                  "expected_result": "Thu Jan 01 2025 00:00:00 GMT...",
-                  "solution": "new Date('2025-01-01T00:00:00')",
-                  "category": "Date"
-                },
-                {
-                  "question": "Create a Date object for the Unix Epoch (January 1, 1970, 00:00:00 UTC).",
-                  "data": "new Date(0)",
-                  "expected_result": "Thu Jan 01 1970 00:00:00 GMT...",
-                  "solution": "new Date(0)",
-                  "category": "Date"
-                },
-                {
-                  "question": "Get the current year from a Date object.",
-                  "data": "new Date()",
-                  "expected_result": "2025",
-                  "solution": "new Date().getFullYear()",
-                  "category": "Date"
-                },
-                {
-                  "question": "Get the current month (0-based) from a Date object.",
-                  "data": "new Date()",
-                  "expected_result": "1",
-                  "solution": "new Date().getMonth()",
-                  "category": "Date"
-                },
-                {
-                  "question": "Get the current day of the month from a Date object.",
-                  "data": "new Date()",
-                  "expected_result": "12",
-                  "solution": "new Date().getDate()",
-                  "category": "Date"
-                },
-                {
-                  "question": "Get the current day of the week (0-Sunday, 6-Saturday) from a Date object.",
-                  "data": "new Date()",
-                  "expected_result": "1",
-                  "solution": "new Date().getDay()",
-                  "category": "Date"
-                },
-                {
-                  "question": "Get the current hours from a Date object.",
-                  "data": "new Date()",
-                  "expected_result": "16",
-                  "solution": "new Date().getHours()",
-                  "category": "Date"
-                },
-                {
-                  "question": "Get the current minutes from a Date object.",
-                  "data": "new Date()",
-                  "expected_result": "25",
-                  "solution": "new Date().getMinutes()",
-                  "category": "Date"
-                },
-                {
-                  "question": "Create a Date object for the date 'March 15, 2022'.",
-                  "data": "new Date('2022-03-15')",
-                  "expected_result": "Tue Mar 15 2022 00:00:00 GMT...",
-                  "solution": "new Date('2022-03-15')",
-                  "category": "Date"
-                },
-                
-                  {
-                    "question": "Convert the current date into a string using toString().",
-                    "data": "new Date()",
-                    "expected_result": "Wed Feb 12 2025 16:30:45 GMT+0000 (Coordinated Universal Time)",
-                    "solution": "new Date().toString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert the current date into a string using toDateString().",
-                    "data": "new Date()",
-                    "expected_result": "Wed Feb 12 2025",
-                    "solution": "new Date().toDateString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert the current date into a string using toLocaleDateString().",
-                    "data": "new Date()",
-                    "expected_result": "2/12/2025",
-                    "solution": "new Date().toLocaleDateString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert the current date into a string using toISOString().",
-                    "data": "new Date()",
-                    "expected_result": "2025-02-12T16:30:45.000Z",
-                    "solution": "new Date().toISOString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert the current date into a string using toUTCString().",
-                    "data": "new Date()",
-                    "expected_result": "Wed, 12 Feb 2025 16:30:45 GMT",
-                    "solution": "new Date().toUTCString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert the current date into a string using toTimeString().",
-                    "data": "new Date()",
-                    "expected_result": "16:30:45 GMT+0000 (Coordinated Universal Time)",
-                    "solution": "new Date().toTimeString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert the current date into a string using toLocaleTimeString().",
-                    "data": "new Date()",
-                    "expected_result": "4:30:45 PM",
-                    "solution": "new Date().toLocaleTimeString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert a specific date '2025-01-01' into a string using toDateString().",
-                    "data": "new Date('2025-01-01')",
-                    "expected_result": "Thu Jan 01 2025",
-                    "solution": "new Date('2025-01-01').toDateString()",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert the current date into a string in 'en-US' locale using toLocaleDateString().",
-                    "data": "new Date()",
-                    "expected_result": "2/12/2025",
-                    "solution": "new Date().toLocaleDateString('en-US')",
-                    "category": "Date to String"
-                  },
-                  {
-                    "question": "Convert a specific date '2025-03-15' into a string using toISOString().",
-                    "data": "new Date('2025-03-15')",
-                    "expected_result": "2025-03-15T00:00:00.000Z",
-                    "solution": "new Date('2025-03-15').toISOString()",
-                    "category": "Date to String"
-                  },
-                  
-                    {
-                      "question": "Select the element with id 'header' from the document.",
-                      "data": "<div id='header'>Welcome</div>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('header')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'main-content' from the document.",
-                      "data": "<div id='main-content'>This is the main content</div>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('main-content')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'footer' from the document.",
-                      "data": "<footer id='footer'>Footer content here</footer>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('footer')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'submit-button' from the document.",
-                      "data": "<button id='submit-button'>Submit</button>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('submit-button')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'username' from the document.",
-                      "data": "<input id='username' type='text' placeholder='Enter username'>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('username')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'main-heading' from the document.",
-                      "data": "<h1 id='main-heading'>Main Heading</h1>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('main-heading')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'email' from the document.",
-                      "data": "<input id='email' type='email' placeholder='Enter email'>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('email')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'navigation' from the document.",
-                      "data": "<nav id='navigation'><ul><li>Home</li><li>About</li></ul></nav>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('navigation')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'login-form' from the document.",
-                      "data": "<form id='login-form'><input type='text' placeholder='Username'><input type='password' placeholder='Password'></form>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('login-form')",
-                      "category": "DOM"
-                    },
-                    {
-                      "question": "Select the element with id 'search-bar' from the document.",
-                      "data": "<div id='search-bar'><input type='text' placeholder='Search...'></div>",
-                      "expected_result": "",
-                      "solution": "document.getElementById('search-bar')",
-                      "category": "DOM"
-                    },
-                    
-                      {
-                        "question": "Select the element with id 'banner' from the document.",
-                        "data": "<div id='banner'>Welcome to our website!</div>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('banner')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'profile-picture' from the document.",
-                        "data": "<img id='profile-picture' src='profile.jpg' alt='Profile Picture'>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('profile-picture')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'alert-box' from the document.",
-                        "data": "<div id='alert-box'>This is an alert box!</div>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('alert-box')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'carousel' from the document.",
-                        "data": "<div id='carousel'><img src='image1.jpg'><img src='image2.jpg'></div>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('carousel')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'shopping-cart' from the document.",
-                        "data": "<div id='shopping-cart'>Items: 3</div>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('shopping-cart')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'header-image' from the document.",
-                        "data": "<img id='header-image' src='header.jpg' alt='Header Image'>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('header-image')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'subscribe-button' from the document.",
-                        "data": "<button id='subscribe-button'>Subscribe</button>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('subscribe-button')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'newsletter' from the document.",
-                        "data": "<div id='newsletter'><input type='email' placeholder='Enter email'> <button>Subscribe</button></div>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('newsletter')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'contact-form' from the document.",
-                        "data": "<form id='contact-form'><input type='text' placeholder='Name'><input type='email' placeholder='Email'></form>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('contact-form')",
-                        "category": "DOM"
-                      },
-                      {
-                        "question": "Select the element with id 'faq-section' from the document.",
-                        "data": "<div id='faq-section'><h2>FAQs</h2><p>Answer 1</p><p>Answer 2</p></div>",
-                        "expected_result": "",
-                        "solution": "document.getElementById('faq-section')",
-                        "category": "DOM"
-                      },
-                      
-                        {
-                          "question": "Select all elements with the class 'header' from the document.",
-                          "data": "<div class='header'>Header 1</div><div class='header'>Header 2</div>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('header')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'menu' from the document.",
-                          "data": "<ul><li class='menu'>Home</li><li class='menu'>About</li></ul>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('menu')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'card' from the document.",
-                          "data": "<div class='card'>Card 1</div><div class='card'>Card 2</div><div class='card'>Card 3</div>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('card')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'button' from the document.",
-                          "data": "<button class='button'>Submit</button><button class='button'>Cancel</button>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('button')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'highlight' from the document.",
-                          "data": "<span class='highlight'>Text 1</span><span class='highlight'>Text 2</span>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('highlight')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'image' from the document.",
-                          "data": "<img class='image' src='image1.jpg'><img class='image' src='image2.jpg'>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('image')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'alert' from the document.",
-                          "data": "<div class='alert'>Warning!</div><div class='alert'>Error!</div>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('alert')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'footer' from the document.",
-                          "data": "<footer class='footer'>Footer Content</footer>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('footer')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'active' from the document.",
-                          "data": "<div class='active'>Active 1</div><div class='active'>Active 2</div>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('active')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'nav-item' from the document.",
-                          "data": "<ul><li class='nav-item'>Home</li><li class='nav-item'>Contact</li></ul>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('nav-item')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'content' from the document.",
-                          "data": "<div class='content'>Main content</div><div class='content'>Side content</div>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('content')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'sidebar' from the document.",
-                          "data": "<div class='sidebar'>Sidebar 1</div><div class='sidebar'>Sidebar 2</div>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('sidebar')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'form-field' from the document.",
-                          "data": "<input class='form-field' type='text'><input class='form-field' type='password'>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('form-field')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'testimonial' from the document.",
-                          "data": "<div class='testimonial'>Testimonial 1</div><div class='testimonial'>Testimonial 2</div>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('testimonial')",
-                          "category": "DOM"
-                        },
-                        {
-                          "question": "Select all elements with the class 'testimonial-text' from the document.",
-                          "data": "<p class='testimonial-text'>Amazing service!</p><p class='testimonial-text'>Great experience!</p>",
-                          "expected_result": "",
-                          "solution": "document.getElementsByClassName('testimonial-text')",
-                          "category": "DOM"
-                        },
-                        
-                          {
-                            "question": "Select all <div> elements from the document.",
-                            "data": "<div>Div 1</div><div>Div 2</div><div>Div 3</div>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('div')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <p> elements from the document.",
-                            "data": "<p>Paragraph 1</p><p>Paragraph 2</p><p>Paragraph 3</p>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('p')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <button> elements from the document.",
-                            "data": "<button>Button 1</button><button>Button 2</button>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('button')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <img> elements from the document.",
-                            "data": "<img src='image1.jpg'><img src='image2.jpg'>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('img')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <ul> elements from the document.",
-                            "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('ul')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <a> elements from the document.",
-                            "data": "<a href='#'>Link 1</a><a href='#'>Link 2</a>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('a')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <form> elements from the document.",
-                            "data": "<form><input type='text'></form><form><input type='password'></form>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('form')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <input> elements from the document.",
-                            "data": "<input type='text'><input type='checkbox'><input type='radio'>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('input')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <span> elements from the document.",
-                            "data": "<span>Text 1</span><span>Text 2</span>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('span')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <h1> elements from the document.",
-                            "data": "<h1>Heading 1</h1><h1>Heading 2</h1>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('h1')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <h2> elements from the document.",
-                            "data": "<h2>Subheading 1</h2><h2>Subheading 2</h2>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('h2')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <table> elements from the document.",
-                            "data": "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('table')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <li> elements from the document.",
-                            "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('li')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <strong> elements from the document.",
-                            "data": "<strong>Important 1</strong><strong>Important 2</strong>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('strong')",
-                            "category": "DOM"
-                          },
-                          {
-                            "question": "Select all <footer> elements from the document.",
-                            "data": "<footer>Footer Content 1</footer><footer>Footer Content 2</footer>",
-                            "expected_result": "",
-                            "solution": "document.getElementsByTagName('footer')",
-                            "category": "DOM"
-                          },
-                          
-                            {
-                              "question": "Select the first element with the class 'header' from the document.",
-                              "data": "<div class='header'>Header 1</div><div class='header'>Header 2</div>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('.header')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <p> element from the document.",
-                              "data": "<p>Paragraph 1</p><p>Paragraph 2</p>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('p')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <button> element from the document.",
-                              "data": "<button>Button 1</button><button>Button 2</button>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('button')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <a> element from the document.",
-                              "data": "<a href='#'>Link 1</a><a href='#'>Link 2</a>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('a')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <ul> element from the document.",
-                              "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('ul')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first element with the class 'active' from the document.",
-                              "data": "<div class='active'>Active 1</div><div class='inactive'>Inactive 1</div>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('.active')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <form> element from the document.",
-                              "data": "<form><input type='text'></form><form><input type='password'></form>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('form')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <img> element from the document.",
-                              "data": "<img src='image1.jpg'><img src='image2.jpg'>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('img')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first element with the id 'main' from the document.",
-                              "data": "<div id='main'>Main Content</div><div id='secondary'>Secondary Content</div>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('#main')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <h1> element from the document.",
-                              "data": "<h1>Heading 1</h1><h1>Heading 2</h1>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('h1')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <span> element from the document.",
-                              "data": "<span>Text 1</span><span>Text 2</span>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('span')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first element with the class 'footer' from the document.",
-                              "data": "<footer class='footer'>Footer Content</footer><footer class='footer'>Footer Content 2</footer>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('.footer')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <table> element from the document.",
-                              "data": "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('table')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <li> element from the document.",
-                              "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('li')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <strong> element from the document.",
-                              "data": "<strong>Important 1</strong><strong>Important 2</strong>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('strong')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <header> element from the document.",
-                              "data": "<header>Header Content</header><header>Header Content 2</header>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('header')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <footer> element from the document.",
-                              "data": "<footer>Footer Content 1</footer><footer>Footer Content 2</footer>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('footer')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <input> element with type 'text' from the document.",
-                              "data": "<input type='text'><input type='password'><input type='text'>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('input[type=text]')",
-                              "category": "DOM"
-                            },
-                            {
-                              "question": "Select the first <div> element with the id 'container' from the document.",
-                              "data": "<div id='container'>Container Content</div><div id='wrapper'>Wrapper Content</div>",
-                              "expected_result": "",
-                              "solution": "document.querySelector('#container')",
-                              "category": "DOM"
-                            },
-                            
-                              {
-                                "question": "Select all elements with the class 'header' from the document.",
-                                "data": "<div class='header'>Header 1</div><div class='header'>Header 2</div><div class='header'>Header 3</div>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('.header')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <p> elements from the document.",
-                                "data": "<p>Paragraph 1</p><p>Paragraph 2</p><p>Paragraph 3</p>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('p')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <button> elements from the document.",
-                                "data": "<button>Button 1</button><button>Button 2</button><button>Button 3</button>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('button')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <a> elements from the document.",
-                                "data": "<a href='#'>Link 1</a><a href='#'>Link 2</a><a href='#'>Link 3</a>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('a')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <ul> elements from the document.",
-                                "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('ul')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all elements with the class 'active' from the document.",
-                                "data": "<div class='active'>Active 1</div><div class='inactive'>Inactive 1</div><div class='active'>Active 2</div>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('.active')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <form> elements from the document.",
-                                "data": "<form><input type='text'></form><form><input type='password'></form><form><input type='email'></form>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('form')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <img> elements from the document.",
-                                "data": "<img src='image1.jpg'><img src='image2.jpg'><img src='image3.jpg'>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('img')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all elements with the id 'main' from the document.",
-                                "data": "<div id='main'>Main Content 1</div><div id='secondary'>Secondary Content</div><div id='main'>Main Content 2</div>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('#main')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <h1> elements from the document.",
-                                "data": "<h1>Heading 1</h1><h1>Heading 2</h1><h1>Heading 3</h1>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('h1')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <span> elements from the document.",
-                                "data": "<span>Text 1</span><span>Text 2</span><span>Text 3</span>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('span')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all elements with the class 'footer' from the document.",
-                                "data": "<footer class='footer'>Footer 1</footer><footer class='footer'>Footer 2</footer><footer class='footer'>Footer 3</footer>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('.footer')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <table> elements from the document.",
-                                "data": "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table><table><tr><td>Row X</td></tr></table>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('table')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <li> elements from the document.",
-                                "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li><ul><li>Item X</li><li>Item Y</li></ul>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('li')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <strong> elements from the document.",
-                                "data": "<strong>Important 1</strong><strong>Important 2</strong><strong>Important 3</strong>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('strong')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Select all <footer> elements from the document.",
-                                "data": "<footer>Footer 1</footer><footer>Footer 2</footer><footer>Footer 3</footer>",
-                                "expected_result": "",
-                                "solution": "document.querySelectorAll('footer')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <div> element.",
-                                "data": "",
-                                "expected_result": "<div></div>",
-                                "solution": "document.createElement('div')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <p> element.",
-                                "data": "",
-                                "expected_result": "<p></p>",
-                                "solution": "document.createElement('p')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <button> element.",
-                                "data": "",
-                                "expected_result": "<button></button>",
-                                "solution": "document.createElement('button')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create an <a> element.",
-                                "data": "",
-                                "expected_result": "<a></a>",
-                                "solution": "document.createElement('a')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create an <img> element.",
-                                "data": "",
-                                "expected_result": "<img />",
-                                "solution": "document.createElement('img')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <ul> element.",
-                                "data": "",
-                                "expected_result": "<ul></ul>",
-                                "solution": "document.createElement('ul')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <form> element.",
-                                "data": "",
-                                "expected_result": "<form></form>",
-                                "solution": "document.createElement('form')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <section> element.",
-                                "data": "",
-                                "expected_result": "<section></section>",
-                                "solution": "document.createElement('section')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <header> element.",
-                                "data": "",
-                                "expected_result": "<header></header>",
-                                "solution": "document.createElement('header')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <footer> element.",
-                                "data": "",
-                                "expected_result": "<footer></footer>",
-                                "solution": "document.createElement('footer')",
-                                "category": "DOM"
-                              },
-                              {
-                                "question": "Create a <span> element.",
-                                "data": "",
-                                "expected_result": "<span></span>",
-                                "solution": "document.createElement('span')",
-                                "category": "DOM"
-                              },
-                              
-                                {
-                                  "question": "Create a <div> element and append it inside the first <section> element.",
-                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
-                                  "expected_result": "<section><p>Section 1</p><div></div></section><section><p>Section 2</p></section>",
-                                  "solution": "const div = document.createElement('div'); document.querySelector('section').appendChild(div);",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create a <button> element and append it inside the <header> element.",
-                                  "data": "<header><h1>Site Header</h1></header><footer>Footer</footer>",
-                                  "expected_result": "<header><h1>Site Header</h1><button></button></header><footer>Footer</footer>",
-                                  "solution": "const button = document.createElement('button'); document.querySelector('header').appendChild(button);",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create a <ul> element and append it inside the first <section> element.",
-                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
-                                  "expected_result": "<section><p>Section 1</p><ul></ul></section><section><p>Section 2</p></section>",
-                                  "solution": "const ul = document.createElement('ul'); document.querySelector('section').appendChild(ul);",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create a <span> element and append it inside the second <section> element.",
-                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
-                                  "expected_result": "<section><p>Section 1</p></section><section><p>Section 2<span></span></p></section>",
-                                  "solution": "const span = document.createElement('span'); document.querySelectorAll('section')[1].querySelector('p').appendChild(span);",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create an <img> element and append it inside the <footer> element.",
-                                  "data": "<footer>Footer Content</footer>",
-                                  "expected_result": "<footer>Footer Content<img /></footer>",
-                                  "solution": "const img = document.createElement('img'); document.querySelector('footer').appendChild(img);",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create an <h2> element and insert it before the first <p> element inside the first <section>.",
-                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
-                                  "expected_result": "<section><h2></h2><p>Section 1</p></section><section><p>Section 2</p></section>",
-                                  "solution": "const h2 = document.createElement('h2'); document.querySelector('section').insertBefore(h2, document.querySelector('section').querySelector('p'));",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create a <nav> element and insert it after the <header> element.",
-                                  "data": "<header><h1>Site Header</h1></header><footer>Footer</footer>",
-                                  "expected_result": "<header><h1>Site Header</h1></header><nav></nav><footer>Footer</footer>",
-                                  "solution": "const nav = document.createElement('nav'); document.querySelector('header').parentNode.insertBefore(nav, document.querySelector('footer'));",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create an <article> element and append it inside the <main> element.",
-                                  "data": "<main><p>Main Content</p></main>",
-                                  "expected_result": "<main><p>Main Content</p><article></article></main>",
-                                  "solution": "const article = document.createElement('article'); document.querySelector('main').appendChild(article);",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create a <table> element and insert it as the first child of the <body> element.",
-                                  "data": "<body><div>Some content</div></body>",
-                                  "expected_result": "<body><table></table><div>Some content</div></body>",
-                                  "solution": "const table = document.createElement('table'); document.body.insertBefore(table, document.body.firstChild);",
-                                  "category": "DOM"
-                                },
-                                {
-                                  "question": "Create a <footer> element and append it as the last child inside the <div> with id 'content'.",
-                                  "data": "<div id='content'><p>Content here</p></div>",
-                                  "expected_result": "<div id='content'><p>Content here</p><footer></footer></div>",
-                                  "solution": "const footer = document.createElement('footer'); document.querySelector('#content').appendChild(footer);",
-                                  "category": "DOM"
-                                },
-                                
-                                  {
-                                    "question": "Append a new <div> element inside the <body> element.",
-                                    "data": "<body><p>Existing Content</p></body>",
-                                    "expected_result": "<body><p>Existing Content</p><div></div></body>",
-                                    "solution": "const div = document.createElement('div'); document.body.appendChild(div);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <p> element inside the <header> element.",
-                                    "data": "<header><h1>Header Content</h1></header>",
-                                    "expected_result": "<header><h1>Header Content</h1><p></p></header>",
-                                    "solution": "const p = document.createElement('p'); document.querySelector('header').appendChild(p);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <button> element inside the <footer> element.",
-                                    "data": "<footer>Footer Content</footer>",
-                                    "expected_result": "<footer>Footer Content<button></button></footer>",
-                                    "solution": "const button = document.createElement('button'); document.querySelector('footer').appendChild(button);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <ul> element inside the <section> element.",
-                                    "data": "<section><p>Section Content</p></section>",
-                                    "expected_result": "<section><p>Section Content</p><ul></ul></section>",
-                                    "solution": "const ul = document.createElement('ul'); document.querySelector('section').appendChild(ul);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <li> element inside the first <ul> element.",
-                                    "data": "<ul><li>Item 1</li></ul>",
-                                    "expected_result": "<ul><li>Item 1</li><li></li></ul>",
-                                    "solution": "const li = document.createElement('li'); document.querySelector('ul').appendChild(li);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <span> element inside the first <p> element.",
-                                    "data": "<p>Paragraph Content</p>",
-                                    "expected_result": "<p>Paragraph Content<span></span></p>",
-                                    "solution": "const span = document.createElement('span'); document.querySelector('p').appendChild(span);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <img> element inside the <footer> element.",
-                                    "data": "<footer>Footer Content</footer>",
-                                    "expected_result": "<footer>Footer Content<img /></footer>",
-                                    "solution": "const img = document.createElement('img'); document.querySelector('footer').appendChild(img);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <a> element inside the <nav> element.",
-                                    "data": "<nav>Navigation</nav>",
-                                    "expected_result": "<nav>Navigation<a></a></nav>",
-                                    "solution": "const a = document.createElement('a'); document.querySelector('nav').appendChild(a);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <section> element inside the <main> element.",
-                                    "data": "<main><p>Main Content</p></main>",
-                                    "expected_result": "<main><p>Main Content</p><section></section></main>",
-                                    "solution": "const section = document.createElement('section'); document.querySelector('main').appendChild(section);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <article> element inside the <main> element.",
-                                    "data": "<main><p>Main Content</p></main>",
-                                    "expected_result": "<main><p>Main Content</p><article></article></main>",
-                                    "solution": "const article = document.createElement('article'); document.querySelector('main').appendChild(article);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <footer> element inside the <body> element.",
-                                    "data": "<body><h1>Page Title</h1></body>",
-                                    "expected_result": "<body><h1>Page Title</h1><footer></footer></body>",
-                                    "solution": "const footer = document.createElement('footer'); document.body.appendChild(footer);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <h3> element inside the first <section> element.",
-                                    "data": "<section><p>Content</p></section><section><p>More Content</p></section>",
-                                    "expected_result": "<section><p>Content</p><h3></h3></section><section><p>More Content</p></section>",
-                                    "solution": "const h3 = document.createElement('h3'); document.querySelector('section').appendChild(h3);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <nav> element inside the <header> element.",
-                                    "data": "<header><h1>Website Header</h1></header>",
-                                    "expected_result": "<header><h1>Website Header</h1><nav></nav></header>",
-                                    "solution": "const nav = document.createElement('nav'); document.querySelector('header').appendChild(nav);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <div> element inside the <main> element.",
-                                    "data": "<main><p>Main Content</p></main>",
-                                    "expected_result": "<main><p>Main Content</p><div></div></main>",
-                                    "solution": "const div = document.createElement('div'); document.querySelector('main').appendChild(div);",
-                                    "category": "DOM"
-                                  },
-                                  {
-                                    "question": "Append a new <table> element inside the <main> element.",
-                                    "data": "<main><p>Main Content</p></main>",
-                                    "expected_result": "<main><p>Main Content</p><table></table></main>",
-                                    "solution": "const table = document.createElement('table'); document.querySelector('main').appendChild(table);",
-                                    "category": "DOM"
-                                  },
-                                
-                                
-                              
-                              
-                            
-                            
-                          
-                          
-                        
-                        
-                      
-                      
-                    
-                    
-                  
-                  
-                
-                
-              
-            
-          
-          
-        
-        
-      
-      
-    
-    
+  {
+    question:
+      "Pad the string 'Java' with leading zeros to a total length of 6.",
+    data: "Java",
+    expected_result: "00Java",
+    solution: "data.padStart(6, '0')",
+    category: "padStart",
+  },
+  {
+    question:
+      "Pad the string 'cat' with leading asterisks to a total length of 5.",
+    data: "cat",
+    expected_result: "**cat",
+    solution: "data.padStart(5, '*')",
+    category: "padStart",
+  },
+  {
+    question:
+      "Pad the string '123' with leading dashes to a total length of 8.",
+    data: "123",
+    expected_result: "----123",
+    solution: "data.padStart(8, '-')",
+    category: "padStart",
+  },
+  {
+    question:
+      "Pad the string 'hello' with leading spaces to a total length of 10.",
+    data: "hello",
+    expected_result: "     hello",
+    solution: "data.padStart(10, ' ')",
+    category: "padStart",
+  },
+  {
+    question:
+      "Pad the string 'short' with leading exclamation marks to a total length of 8.",
+    data: "short",
+    expected_result: "!!short",
+    solution: "data.padStart(8, '!')",
+    category: "padStart",
+  },
+  {
+    question:
+      "Pad the string 'abc' with trailing spaces to a total length of 6.",
+    data: "abc",
+    expected_result: "abc   ",
+    solution: "data.padEnd(6, ' ')",
+    category: "padEnd",
+  },
+  {
+    question:
+      "Pad the string 'dog' with trailing stars to a total length of 7.",
+    data: "dog",
+    expected_result: "dog****",
+    solution: "data.padEnd(7, '*')",
+    category: "padEnd",
+  },
+  {
+    question:
+      "Pad the string 'test' with trailing dashes to a total length of 10.",
+    data: "test",
+    expected_result: "test------",
+    solution: "data.padEnd(10, '-')",
+    category: "padEnd",
+  },
+  {
+    question:
+      "Pad the string 'hello' with trailing underscores to a total length of 12.",
+    data: "hello",
+    expected_result: "hello______",
+    solution: "data.padEnd(12, '_')",
+    category: "padEnd",
+  },
+  {
+    question:
+      "Pad the string 'openai' with trailing question marks to a total length of 10.",
+    data: "openai",
+    expected_result: "openai????",
+    solution: "data.padEnd(10, '?')",
+    category: "padEnd",
+  },
+  {
+    question: "Check if the string 'JavaScript' starts with 'Java'.",
+    data: "JavaScript",
+    expected_result: "true",
+    solution: "data.startsWith('Java')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'JavaScript' starts with 'Script'.",
+    data: "JavaScript",
+    expected_result: "false",
+    solution: "data.startsWith('Script')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'Hello world' starts with 'Hello'.",
+    data: "Hello world",
+    expected_result: "true",
+    solution: "data.startsWith('Hello')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'abc123' starts with 'abc'.",
+    data: "abc123",
+    expected_result: "true",
+    solution: "data.startsWith('abc')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'openai' starts with 'o'.",
+    data: "openai",
+    expected_result: "true",
+    solution: "data.startsWith('o')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'openai' starts with 'ai'.",
+    data: "openai",
+    expected_result: "false",
+    solution: "data.startsWith('ai')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'JavaScript' ends with 'Script'.",
+    data: "JavaScript",
+    expected_result: "true",
+    solution: "data.endsWith('Script')",
+    category: "endsWith",
+  },
+  {
+    question: "Check if the string 'JavaScript' ends with 'Java'.",
+    data: "JavaScript",
+    expected_result: "false",
+    solution: "data.endsWith('Java')",
+    category: "endsWith",
+  },
+  {
+    question: "Check if the string 'Hello world' ends with 'world'.",
+    data: "Hello world",
+    expected_result: "true",
+    solution: "data.endsWith('world')",
+    category: "endsWith",
+  },
+  {
+    question: "Check if the string 'abc123' ends with '123'.",
+    data: "abc123",
+    expected_result: "true",
+    solution: "data.endsWith('123')",
+    category: "endsWith",
+  },
+  {
+    question: "Check if the string 'openai' ends with 'ai'.",
+    data: "openai",
+    expected_result: "true",
+    solution: "data.endsWith('ai')",
+    category: "endsWith",
+  },
+  {
+    question: "Check if the string 'openai' ends with 'open'.",
+    data: "openai",
+    expected_result: "false",
+    solution: "data.endsWith('open')",
+    category: "endsWith",
+  },
+  {
+    question: "Check if the string 'abcdef' starts with 'abc'.",
+    data: "abcdef",
+    expected_result: "true",
+    solution: "data.startsWith('abc')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'abcdef' starts with 'def'.",
+    data: "abcdef",
+    expected_result: "false",
+    solution: "data.startsWith('def')",
+    category: "startsWith",
+  },
+  {
+    question: "Check if the string 'hello' ends with 'o'.",
+    data: "hello",
+    expected_result: "true",
+    solution: "data.endsWith('o')",
+    category: "endsWith",
+  },
+  {
+    question: "Check if the string 'hello' ends with 'h'.",
+    data: "hello",
+    expected_result: "false",
+    solution: "data.endsWith('h')",
+    category: "endsWith",
+  },
+
+  {
+    question: "Repeat the string 'abc' 3 times.",
+    data: "abc",
+    expected_result: "abcabcabc",
+    solution: "data.repeat(3)",
+    category: "repeat",
+  },
+  {
+    question: "Repeat the string '!' 5 times.",
+    data: "!",
+    expected_result: "!!!!!",
+    solution: "data.repeat(5)",
+    category: "repeat",
+  },
+  {
+    question: "Repeat the string 'hello' 2 times.",
+    data: "hello",
+    expected_result: "hellohello",
+    solution: "data.repeat(2)",
+    category: "repeat",
+  },
+  {
+    question: "Repeat the string '123' 4 times.",
+    data: "123",
+    expected_result: "123123123123",
+    solution: "data.repeat(4)",
+    category: "repeat",
+  },
+  {
+    question: "Repeat the string 'openai' 1 time.",
+    data: "openai",
+    expected_result: "openai",
+    solution: "data.repeat(1)",
+    category: "repeat",
+  },
+
+  {
+    question: "Find the first occurrence of 'a' in the string 'JavaScript'.",
+    data: "JavaScript",
+    expected_result: "1",
+    solution: "data.indexOf('a')",
+    category: "indexOf",
+  },
+  {
+    question: "Find the first occurrence of 'S' in the string 'JavaScript'.",
+    data: "JavaScript",
+    expected_result: "4",
+    solution: "data.indexOf('S')",
+    category: "indexOf",
+  },
+  {
+    question: "Find the first occurrence of 'o' in the string 'Hello world'.",
+    data: "Hello world",
+    expected_result: "4",
+    solution: "data.indexOf('o')",
+    category: "indexOf",
+  },
+  {
+    question: "Find the first occurrence of 'e' in the string 'abcdef'.",
+    data: "abcdef",
+    expected_result: "1",
+    solution: "data.indexOf('e')",
+    category: "indexOf",
+  },
+  {
+    question: "Find the first occurrence of 'l' in the string 'hello'.",
+    data: "hello",
+    expected_result: "2",
+    solution: "data.indexOf('l')",
+    category: "indexOf",
+  },
+  {
+    question: "Find the first occurrence of 'z' in the string 'apple'.",
+    data: "apple",
+    expected_result: "-1",
+    solution: "data.indexOf('z')",
+    category: "indexOf",
+  },
+  {
+    question: "Find the last occurrence of 'a' in the string 'JavaScript'.",
+    data: "JavaScript",
+    expected_result: "3",
+    solution: "data.lastIndexOf('a')",
+    category: "lastIndexOf",
+  },
+  {
+    question: "Find the last occurrence of 'o' in the string 'Hello world'.",
+    data: "Hello world",
+    expected_result: "7",
+    solution: "data.lastIndexOf('o')",
+    category: "lastIndexOf",
+  },
+  {
+    question: "Find the last occurrence of 'l' in the string 'hello'.",
+    data: "hello",
+    expected_result: "3",
+    solution: "data.lastIndexOf('l')",
+    category: "lastIndexOf",
+  },
+  {
+    question: "Find the last occurrence of 'e' in the string 'abcdef'.",
+    data: "abcdef",
+    expected_result: "1",
+    solution: "data.lastIndexOf('e')",
+    category: "lastIndexOf",
+  },
+  {
+    question: "Find the last occurrence of 'l' in the string 'balloon'.",
+    data: "balloon",
+    expected_result: "4",
+    solution: "data.lastIndexOf('l')",
+    category: "lastIndexOf",
+  },
+  {
+    question: "Find the last occurrence of 'a' in the string 'apple'.",
+    data: "apple",
+    expected_result: "0",
+    solution: "data.lastIndexOf('a')",
+    category: "lastIndexOf",
+  },
+  {
+    question: "Find the last occurrence of 'e' in the string 'apple'.",
+    data: "apple",
+    expected_result: "4",
+    solution: "data.lastIndexOf('e')",
+    category: "lastIndexOf",
+  },
+  {
+    question:
+      "Find the first occurrence of 'a' starting from index 2 in the string 'banana'.",
+    data: "banana",
+    expected_result: "3",
+    solution: "data.indexOf('a', 2)",
+    category: "indexOf",
+  },
+  {
+    question:
+      "Find the first occurrence of 'n' starting from index 3 in the string 'banana'.",
+    data: "banana",
+    expected_result: "4",
+    solution: "data.indexOf('n', 3)",
+    category: "indexOf",
+  },
+  {
+    question:
+      "Find the last occurrence of 'a' starting from index 3 in the string 'banana'.",
+    data: "banana",
+    expected_result: "5",
+    solution: "data.lastIndexOf('a', 3)",
+    category: "lastIndexOf",
+  },
+  {
+    question:
+      "Find the last occurrence of 'n' starting from index 4 in the string 'banana'.",
+    data: "banana",
+    expected_result: "4",
+    solution: "data.lastIndexOf('n', 4)",
+    category: "lastIndexOf",
+  },
+
+  {
+    question:
+      "Find the first match of the pattern 'a' in the string 'JavaScript'.",
+    data: "JavaScript",
+    expected_result: "1",
+    solution: "data.search(/a/)",
+    category: "search",
+  },
+  {
+    question:
+      "Find the first match of the pattern 'S' in the string 'JavaScript'.",
+    data: "JavaScript",
+    expected_result: "4",
+    solution: "data.search(/S/)",
+    category: "search",
+  },
+  {
+    question:
+      "Find the first match of the pattern 'o' in the string 'Hello world'.",
+    data: "Hello world",
+    expected_result: "4",
+    solution: "data.search(/o/)",
+    category: "search",
+  },
+  {
+    question: "Find the first match of the pattern 'e' in the string 'abcdef'.",
+    data: "abcdef",
+    expected_result: "1",
+    solution: "data.search(/e/)",
+    category: "search",
+  },
+  {
+    question: "Find the first match of the pattern 'l' in the string 'hello'.",
+    data: "hello",
+    expected_result: "2",
+    solution: "data.search(/l/)",
+    category: "search",
+  },
+  {
+    question: "Find the first match of the pattern 'z' in the string 'apple'.",
+    data: "apple",
+    expected_result: "-1",
+    solution: "data.search(/z/)",
+    category: "search",
+  },
+  {
+    question:
+      "Find the first match of the pattern '\\d' (digit) in the string 'abc123'.",
+    data: "abc123",
+    expected_result: "3",
+    solution: "data.search(/\\d/)",
+    category: "search",
+  },
+  {
+    question:
+      "Find the first match of the pattern 'world' in the string 'Hello world'.",
+    data: "Hello world",
+    expected_result: "6",
+    solution: "data.search(/world/)",
+    category: "search",
+  },
+  {
+    question:
+      "Find the first match of the pattern '[aeiou]' (vowel) in the string 'hello'.",
+    data: "hello",
+    expected_result: "1",
+    solution: "data.search(/[aeiou]/)",
+    category: "search",
+  },
+  {
+    question:
+      "Find the first match of the pattern '\\d+' (one or more digits) in the string 'The year is 2025'.",
+    data: "The year is 2025",
+    expected_result: "15",
+    solution: "data.search(/\\d+/)",
+    category: "search",
+  },
+
+  {
+    question: "Check if the string 'JavaScript' includes 'Script'.",
+    data: "JavaScript",
+    expected_result: "true",
+    solution: "data.includes('Script')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'Hello world' includes 'world'.",
+    data: "Hello world",
+    expected_result: "true",
+    solution: "data.includes('world')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'abcdef' includes 'abc'.",
+    data: "abcdef",
+    expected_result: "true",
+    solution: "data.includes('abc')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'hello' includes 'e'.",
+    data: "hello",
+    expected_result: "true",
+    solution: "data.includes('e')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'apple' includes 'z'.",
+    data: "apple",
+    expected_result: "false",
+    solution: "data.includes('z')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'The year is 2025' includes '2025'.",
+    data: "The year is 2025",
+    expected_result: "true",
+    solution: "data.includes('2025')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'openai' includes 'ai'.",
+    data: "openai",
+    expected_result: "true",
+    solution: "data.includes('ai')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'openai' includes 'open'.",
+    data: "openai",
+    expected_result: "true",
+    solution: "data.includes('open')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'hello' includes 'l'.",
+    data: "hello",
+    expected_result: "true",
+    solution: "data.includes('l')",
+    category: "includes",
+  },
+  {
+    question: "Check if the string 'hello' includes 'z'.",
+    data: "hello",
+    expected_result: "false",
+    solution: "data.includes('z')",
+    category: "includes",
+  },
+
+  {
+    question: "Create a Date object for the current date and time.",
+    data: "new Date()",
+    expected_result: "Current date and time",
+    solution: "new Date()",
+    category: "Date",
+  },
+  {
+    question: "Create a Date object for January 1, 2025, 12:00:00 AM.",
+    data: "new Date('2025-01-01T00:00:00')",
+    expected_result: "Thu Jan 01 2025 00:00:00 GMT...",
+    solution: "new Date('2025-01-01T00:00:00')",
+    category: "Date",
+  },
+  {
+    question:
+      "Create a Date object for the Unix Epoch (January 1, 1970, 00:00:00 UTC).",
+    data: "new Date(0)",
+    expected_result: "Thu Jan 01 1970 00:00:00 GMT...",
+    solution: "new Date(0)",
+    category: "Date",
+  },
+  {
+    question: "Get the current year from a Date object.",
+    data: "new Date()",
+    expected_result: "2025",
+    solution: "new Date().getFullYear()",
+    category: "Date",
+  },
+  {
+    question: "Get the current month (0-based) from a Date object.",
+    data: "new Date()",
+    expected_result: "1",
+    solution: "new Date().getMonth()",
+    category: "Date",
+  },
+  {
+    question: "Get the current day of the month from a Date object.",
+    data: "new Date()",
+    expected_result: "12",
+    solution: "new Date().getDate()",
+    category: "Date",
+  },
+  {
+    question:
+      "Get the current day of the week (0-Sunday, 6-Saturday) from a Date object.",
+    data: "new Date()",
+    expected_result: "1",
+    solution: "new Date().getDay()",
+    category: "Date",
+  },
+  {
+    question: "Get the current hours from a Date object.",
+    data: "new Date()",
+    expected_result: "16",
+    solution: "new Date().getHours()",
+    category: "Date",
+  },
+  {
+    question: "Get the current minutes from a Date object.",
+    data: "new Date()",
+    expected_result: "25",
+    solution: "new Date().getMinutes()",
+    category: "Date",
+  },
+  {
+    question: "Create a Date object for the date 'March 15, 2022'.",
+    data: "new Date('2022-03-15')",
+    expected_result: "Tue Mar 15 2022 00:00:00 GMT...",
+    solution: "new Date('2022-03-15')",
+    category: "Date",
+  },
+
+  {
+    question: "Convert the current date into a string using toString().",
+    data: "new Date()",
+    expected_result:
+      "Wed Feb 12 2025 16:30:45 GMT+0000 (Coordinated Universal Time)",
+    solution: "new Date().toString()",
+    category: "Date to String",
+  },
+  {
+    question: "Convert the current date into a string using toDateString().",
+    data: "new Date()",
+    expected_result: "Wed Feb 12 2025",
+    solution: "new Date().toDateString()",
+    category: "Date to String",
+  },
+  {
+    question:
+      "Convert the current date into a string using toLocaleDateString().",
+    data: "new Date()",
+    expected_result: "2/12/2025",
+    solution: "new Date().toLocaleDateString()",
+    category: "Date to String",
+  },
+  {
+    question: "Convert the current date into a string using toISOString().",
+    data: "new Date()",
+    expected_result: "2025-02-12T16:30:45.000Z",
+    solution: "new Date().toISOString()",
+    category: "Date to String",
+  },
+  {
+    question: "Convert the current date into a string using toUTCString().",
+    data: "new Date()",
+    expected_result: "Wed, 12 Feb 2025 16:30:45 GMT",
+    solution: "new Date().toUTCString()",
+    category: "Date to String",
+  },
+  {
+    question: "Convert the current date into a string using toTimeString().",
+    data: "new Date()",
+    expected_result: "16:30:45 GMT+0000 (Coordinated Universal Time)",
+    solution: "new Date().toTimeString()",
+    category: "Date to String",
+  },
+  {
+    question:
+      "Convert the current date into a string using toLocaleTimeString().",
+    data: "new Date()",
+    expected_result: "4:30:45 PM",
+    solution: "new Date().toLocaleTimeString()",
+    category: "Date to String",
+  },
+  {
+    question:
+      "Convert a specific date '2025-01-01' into a string using toDateString().",
+    data: "new Date('2025-01-01')",
+    expected_result: "Thu Jan 01 2025",
+    solution: "new Date('2025-01-01').toDateString()",
+    category: "Date to String",
+  },
+  {
+    question:
+      "Convert the current date into a string in 'en-US' locale using toLocaleDateString().",
+    data: "new Date()",
+    expected_result: "2/12/2025",
+    solution: "new Date().toLocaleDateString('en-US')",
+    category: "Date to String",
+  },
+  {
+    question:
+      "Convert a specific date '2025-03-15' into a string using toISOString().",
+    data: "new Date('2025-03-15')",
+    expected_result: "2025-03-15T00:00:00.000Z",
+    solution: "new Date('2025-03-15').toISOString()",
+    category: "Date to String",
+  },
+
+  {
+    question: "Select the element with id 'header' from the document.",
+    data: "<div id='header'>Welcome</div>",
+    expected_result: "",
+    solution: "document.getElementById('header')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'main-content' from the document.",
+    data: "<div id='main-content'>This is the main content</div>",
+    expected_result: "",
+    solution: "document.getElementById('main-content')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'footer' from the document.",
+    data: "<footer id='footer'>Footer content here</footer>",
+    expected_result: "",
+    solution: "document.getElementById('footer')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'submit-button' from the document.",
+    data: "<button id='submit-button'>Submit</button>",
+    expected_result: "",
+    solution: "document.getElementById('submit-button')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'username' from the document.",
+    data: "<input id='username' type='text' placeholder='Enter username'>",
+    expected_result: "",
+    solution: "document.getElementById('username')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'main-heading' from the document.",
+    data: "<h1 id='main-heading'>Main Heading</h1>",
+    expected_result: "",
+    solution: "document.getElementById('main-heading')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'email' from the document.",
+    data: "<input id='email' type='email' placeholder='Enter email'>",
+    expected_result: "",
+    solution: "document.getElementById('email')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'navigation' from the document.",
+    data: "<nav id='navigation'><ul><li>Home</li><li>About</li></ul></nav>",
+    expected_result: "",
+    solution: "document.getElementById('navigation')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'login-form' from the document.",
+    data: "<form id='login-form'><input type='text' placeholder='Username'><input type='password' placeholder='Password'></form>",
+    expected_result: "",
+    solution: "document.getElementById('login-form')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'search-bar' from the document.",
+    data: "<div id='search-bar'><input type='text' placeholder='Search...'></div>",
+    expected_result: "",
+    solution: "document.getElementById('search-bar')",
+    category: "DOM",
+  },
+
+  {
+    question: "Select the element with id 'banner' from the document.",
+    data: "<div id='banner'>Welcome to our website!</div>",
+    expected_result: "",
+    solution: "document.getElementById('banner')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'profile-picture' from the document.",
+    data: "<img id='profile-picture' src='profile.jpg' alt='Profile Picture'>",
+    expected_result: "",
+    solution: "document.getElementById('profile-picture')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'alert-box' from the document.",
+    data: "<div id='alert-box'>This is an alert box!</div>",
+    expected_result: "",
+    solution: "document.getElementById('alert-box')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'carousel' from the document.",
+    data: "<div id='carousel'><img src='image1.jpg'><img src='image2.jpg'></div>",
+    expected_result: "",
+    solution: "document.getElementById('carousel')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'shopping-cart' from the document.",
+    data: "<div id='shopping-cart'>Items: 3</div>",
+    expected_result: "",
+    solution: "document.getElementById('shopping-cart')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'header-image' from the document.",
+    data: "<img id='header-image' src='header.jpg' alt='Header Image'>",
+    expected_result: "",
+    solution: "document.getElementById('header-image')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select the element with id 'subscribe-button' from the document.",
+    data: "<button id='subscribe-button'>Subscribe</button>",
+    expected_result: "",
+    solution: "document.getElementById('subscribe-button')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'newsletter' from the document.",
+    data: "<div id='newsletter'><input type='email' placeholder='Enter email'> <button>Subscribe</button></div>",
+    expected_result: "",
+    solution: "document.getElementById('newsletter')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'contact-form' from the document.",
+    data: "<form id='contact-form'><input type='text' placeholder='Name'><input type='email' placeholder='Email'></form>",
+    expected_result: "",
+    solution: "document.getElementById('contact-form')",
+    category: "DOM",
+  },
+  {
+    question: "Select the element with id 'faq-section' from the document.",
+    data: "<div id='faq-section'><h2>FAQs</h2><p>Answer 1</p><p>Answer 2</p></div>",
+    expected_result: "",
+    solution: "document.getElementById('faq-section')",
+    category: "DOM",
+  },
+
+  {
+    question: "Select all elements with the class 'header' from the document.",
+    data: "<div class='header'>Header 1</div><div class='header'>Header 2</div>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('header')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'menu' from the document.",
+    data: "<ul><li class='menu'>Home</li><li class='menu'>About</li></ul>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('menu')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'card' from the document.",
+    data: "<div class='card'>Card 1</div><div class='card'>Card 2</div><div class='card'>Card 3</div>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('card')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'button' from the document.",
+    data: "<button class='button'>Submit</button><button class='button'>Cancel</button>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('button')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select all elements with the class 'highlight' from the document.",
+    data: "<span class='highlight'>Text 1</span><span class='highlight'>Text 2</span>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('highlight')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'image' from the document.",
+    data: "<img class='image' src='image1.jpg'><img class='image' src='image2.jpg'>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('image')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'alert' from the document.",
+    data: "<div class='alert'>Warning!</div><div class='alert'>Error!</div>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('alert')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'footer' from the document.",
+    data: "<footer class='footer'>Footer Content</footer>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('footer')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'active' from the document.",
+    data: "<div class='active'>Active 1</div><div class='active'>Active 2</div>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('active')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select all elements with the class 'nav-item' from the document.",
+    data: "<ul><li class='nav-item'>Home</li><li class='nav-item'>Contact</li></ul>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('nav-item')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'content' from the document.",
+    data: "<div class='content'>Main content</div><div class='content'>Side content</div>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('content')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'sidebar' from the document.",
+    data: "<div class='sidebar'>Sidebar 1</div><div class='sidebar'>Sidebar 2</div>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('sidebar')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select all elements with the class 'form-field' from the document.",
+    data: "<input class='form-field' type='text'><input class='form-field' type='password'>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('form-field')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select all elements with the class 'testimonial' from the document.",
+    data: "<div class='testimonial'>Testimonial 1</div><div class='testimonial'>Testimonial 2</div>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('testimonial')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select all elements with the class 'testimonial-text' from the document.",
+    data: "<p class='testimonial-text'>Amazing service!</p><p class='testimonial-text'>Great experience!</p>",
+    expected_result: "",
+    solution: "document.getElementsByClassName('testimonial-text')",
+    category: "DOM",
+  },
+
+  {
+    question: "Select all <div> elements from the document.",
+    data: "<div>Div 1</div><div>Div 2</div><div>Div 3</div>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('div')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <p> elements from the document.",
+    data: "<p>Paragraph 1</p><p>Paragraph 2</p><p>Paragraph 3</p>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('p')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <button> elements from the document.",
+    data: "<button>Button 1</button><button>Button 2</button>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('button')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <img> elements from the document.",
+    data: "<img src='image1.jpg'><img src='image2.jpg'>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('img')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <ul> elements from the document.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('ul')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <a> elements from the document.",
+    data: "<a href='#'>Link 1</a><a href='#'>Link 2</a>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('a')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <form> elements from the document.",
+    data: "<form><input type='text'></form><form><input type='password'></form>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('form')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <input> elements from the document.",
+    data: "<input type='text'><input type='checkbox'><input type='radio'>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('input')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <span> elements from the document.",
+    data: "<span>Text 1</span><span>Text 2</span>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('span')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <h1> elements from the document.",
+    data: "<h1>Heading 1</h1><h1>Heading 2</h1>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('h1')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <h2> elements from the document.",
+    data: "<h2>Subheading 1</h2><h2>Subheading 2</h2>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('h2')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <table> elements from the document.",
+    data: "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('table')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <li> elements from the document.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('li')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <strong> elements from the document.",
+    data: "<strong>Important 1</strong><strong>Important 2</strong>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('strong')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <footer> elements from the document.",
+    data: "<footer>Footer Content 1</footer><footer>Footer Content 2</footer>",
+    expected_result: "",
+    solution: "document.getElementsByTagName('footer')",
+    category: "DOM",
+  },
+
+  {
+    question:
+      "Select the first element with the class 'header' from the document.",
+    data: "<div class='header'>Header 1</div><div class='header'>Header 2</div>",
+    expected_result: "",
+    solution: "document.querySelector('.header')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <p> element from the document.",
+    data: "<p>Paragraph 1</p><p>Paragraph 2</p>",
+    expected_result: "",
+    solution: "document.querySelector('p')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <button> element from the document.",
+    data: "<button>Button 1</button><button>Button 2</button>",
+    expected_result: "",
+    solution: "document.querySelector('button')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <a> element from the document.",
+    data: "<a href='#'>Link 1</a><a href='#'>Link 2</a>",
+    expected_result: "",
+    solution: "document.querySelector('a')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <ul> element from the document.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+    expected_result: "",
+    solution: "document.querySelector('ul')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select the first element with the class 'active' from the document.",
+    data: "<div class='active'>Active 1</div><div class='inactive'>Inactive 1</div>",
+    expected_result: "",
+    solution: "document.querySelector('.active')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <form> element from the document.",
+    data: "<form><input type='text'></form><form><input type='password'></form>",
+    expected_result: "",
+    solution: "document.querySelector('form')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <img> element from the document.",
+    data: "<img src='image1.jpg'><img src='image2.jpg'>",
+    expected_result: "",
+    solution: "document.querySelector('img')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first element with the id 'main' from the document.",
+    data: "<div id='main'>Main Content</div><div id='secondary'>Secondary Content</div>",
+    expected_result: "",
+    solution: "document.querySelector('#main')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <h1> element from the document.",
+    data: "<h1>Heading 1</h1><h1>Heading 2</h1>",
+    expected_result: "",
+    solution: "document.querySelector('h1')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <span> element from the document.",
+    data: "<span>Text 1</span><span>Text 2</span>",
+    expected_result: "",
+    solution: "document.querySelector('span')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select the first element with the class 'footer' from the document.",
+    data: "<footer class='footer'>Footer Content</footer><footer class='footer'>Footer Content 2</footer>",
+    expected_result: "",
+    solution: "document.querySelector('.footer')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <table> element from the document.",
+    data: "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table>",
+    expected_result: "",
+    solution: "document.querySelector('table')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <li> element from the document.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+    expected_result: "",
+    solution: "document.querySelector('li')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <strong> element from the document.",
+    data: "<strong>Important 1</strong><strong>Important 2</strong>",
+    expected_result: "",
+    solution: "document.querySelector('strong')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <header> element from the document.",
+    data: "<header>Header Content</header><header>Header Content 2</header>",
+    expected_result: "",
+    solution: "document.querySelector('header')",
+    category: "DOM",
+  },
+  {
+    question: "Select the first <footer> element from the document.",
+    data: "<footer>Footer Content 1</footer><footer>Footer Content 2</footer>",
+    expected_result: "",
+    solution: "document.querySelector('footer')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select the first <input> element with type 'text' from the document.",
+    data: "<input type='text'><input type='password'><input type='text'>",
+    expected_result: "",
+    solution: "document.querySelector('input[type=text]')",
+    category: "DOM",
+  },
+  {
+    question:
+      "Select the first <div> element with the id 'container' from the document.",
+    data: "<div id='container'>Container Content</div><div id='wrapper'>Wrapper Content</div>",
+    expected_result: "",
+    solution: "document.querySelector('#container')",
+    category: "DOM",
+  },
+
+  {
+    question: "Select all elements with the class 'header' from the document.",
+    data: "<div class='header'>Header 1</div><div class='header'>Header 2</div><div class='header'>Header 3</div>",
+    expected_result: "",
+    solution: "document.querySelectorAll('.header')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <p> elements from the document.",
+    data: "<p>Paragraph 1</p><p>Paragraph 2</p><p>Paragraph 3</p>",
+    expected_result: "",
+    solution: "document.querySelectorAll('p')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <button> elements from the document.",
+    data: "<button>Button 1</button><button>Button 2</button><button>Button 3</button>",
+    expected_result: "",
+    solution: "document.querySelectorAll('button')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <a> elements from the document.",
+    data: "<a href='#'>Link 1</a><a href='#'>Link 2</a><a href='#'>Link 3</a>",
+    expected_result: "",
+    solution: "document.querySelectorAll('a')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <ul> elements from the document.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+    expected_result: "",
+    solution: "document.querySelectorAll('ul')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'active' from the document.",
+    data: "<div class='active'>Active 1</div><div class='inactive'>Inactive 1</div><div class='active'>Active 2</div>",
+    expected_result: "",
+    solution: "document.querySelectorAll('.active')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <form> elements from the document.",
+    data: "<form><input type='text'></form><form><input type='password'></form><form><input type='email'></form>",
+    expected_result: "",
+    solution: "document.querySelectorAll('form')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <img> elements from the document.",
+    data: "<img src='image1.jpg'><img src='image2.jpg'><img src='image3.jpg'>",
+    expected_result: "",
+    solution: "document.querySelectorAll('img')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the id 'main' from the document.",
+    data: "<div id='main'>Main Content 1</div><div id='secondary'>Secondary Content</div><div id='main'>Main Content 2</div>",
+    expected_result: "",
+    solution: "document.querySelectorAll('#main')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <h1> elements from the document.",
+    data: "<h1>Heading 1</h1><h1>Heading 2</h1><h1>Heading 3</h1>",
+    expected_result: "",
+    solution: "document.querySelectorAll('h1')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <span> elements from the document.",
+    data: "<span>Text 1</span><span>Text 2</span><span>Text 3</span>",
+    expected_result: "",
+    solution: "document.querySelectorAll('span')",
+    category: "DOM",
+  },
+  {
+    question: "Select all elements with the class 'footer' from the document.",
+    data: "<footer class='footer'>Footer 1</footer><footer class='footer'>Footer 2</footer><footer class='footer'>Footer 3</footer>",
+    expected_result: "",
+    solution: "document.querySelectorAll('.footer')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <table> elements from the document.",
+    data: "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table><table><tr><td>Row X</td></tr></table>",
+    expected_result: "",
+    solution: "document.querySelectorAll('table')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <li> elements from the document.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li><ul><li>Item X</li><li>Item Y</li></ul>",
+    expected_result: "",
+    solution: "document.querySelectorAll('li')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <strong> elements from the document.",
+    data: "<strong>Important 1</strong><strong>Important 2</strong><strong>Important 3</strong>",
+    expected_result: "",
+    solution: "document.querySelectorAll('strong')",
+    category: "DOM",
+  },
+  {
+    question: "Select all <footer> elements from the document.",
+    data: "<footer>Footer 1</footer><footer>Footer 2</footer><footer>Footer 3</footer>",
+    expected_result: "",
+    solution: "document.querySelectorAll('footer')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <div> element.",
+    data: "",
+    expected_result: "<div></div>",
+    solution: "document.createElement('div')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <p> element.",
+    data: "",
+    expected_result: "<p></p>",
+    solution: "document.createElement('p')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <button> element.",
+    data: "",
+    expected_result: "<button></button>",
+    solution: "document.createElement('button')",
+    category: "DOM",
+  },
+  {
+    question: "Create an <a> element.",
+    data: "",
+    expected_result: "<a></a>",
+    solution: "document.createElement('a')",
+    category: "DOM",
+  },
+  {
+    question: "Create an <img> element.",
+    data: "",
+    expected_result: "<img />",
+    solution: "document.createElement('img')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <ul> element.",
+    data: "",
+    expected_result: "<ul></ul>",
+    solution: "document.createElement('ul')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <form> element.",
+    data: "",
+    expected_result: "<form></form>",
+    solution: "document.createElement('form')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <section> element.",
+    data: "",
+    expected_result: "<section></section>",
+    solution: "document.createElement('section')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <header> element.",
+    data: "",
+    expected_result: "<header></header>",
+    solution: "document.createElement('header')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <footer> element.",
+    data: "",
+    expected_result: "<footer></footer>",
+    solution: "document.createElement('footer')",
+    category: "DOM",
+  },
+  {
+    question: "Create a <span> element.",
+    data: "",
+    expected_result: "<span></span>",
+    solution: "document.createElement('span')",
+    category: "DOM",
+  },
+
+  {
+    question:
+      "Create a <div> element and append it inside the first <section> element.",
+    data: "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+    expected_result:
+      "<section><p>Section 1</p><div></div></section><section><p>Section 2</p></section>",
+    solution:
+      "const div = document.createElement('div'); document.querySelector('section').appendChild(div);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create a <button> element and append it inside the <header> element.",
+    data: "<header><h1>Site Header</h1></header><footer>Footer</footer>",
+    expected_result:
+      "<header><h1>Site Header</h1><button></button></header><footer>Footer</footer>",
+    solution:
+      "const button = document.createElement('button'); document.querySelector('header').appendChild(button);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create a <ul> element and append it inside the first <section> element.",
+    data: "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+    expected_result:
+      "<section><p>Section 1</p><ul></ul></section><section><p>Section 2</p></section>",
+    solution:
+      "const ul = document.createElement('ul'); document.querySelector('section').appendChild(ul);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create a <span> element and append it inside the second <section> element.",
+    data: "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+    expected_result:
+      "<section><p>Section 1</p></section><section><p>Section 2<span></span></p></section>",
+    solution:
+      "const span = document.createElement('span'); document.querySelectorAll('section')[1].querySelector('p').appendChild(span);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create an <img> element and append it inside the <footer> element.",
+    data: "<footer>Footer Content</footer>",
+    expected_result: "<footer>Footer Content<img /></footer>",
+    solution:
+      "const img = document.createElement('img'); document.querySelector('footer').appendChild(img);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create an <h2> element and insert it before the first <p> element inside the first <section>.",
+    data: "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+    expected_result:
+      "<section><h2></h2><p>Section 1</p></section><section><p>Section 2</p></section>",
+    solution:
+      "const h2 = document.createElement('h2'); document.querySelector('section').insertBefore(h2, document.querySelector('section').querySelector('p'));",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create a <nav> element and insert it after the <header> element.",
+    data: "<header><h1>Site Header</h1></header><footer>Footer</footer>",
+    expected_result:
+      "<header><h1>Site Header</h1></header><nav></nav><footer>Footer</footer>",
+    solution:
+      "const nav = document.createElement('nav'); document.querySelector('header').parentNode.insertBefore(nav, document.querySelector('footer'));",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create an <article> element and append it inside the <main> element.",
+    data: "<main><p>Main Content</p></main>",
+    expected_result: "<main><p>Main Content</p><article></article></main>",
+    solution:
+      "const article = document.createElement('article'); document.querySelector('main').appendChild(article);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create a <table> element and insert it as the first child of the <body> element.",
+    data: "<body><div>Some content</div></body>",
+    expected_result: "<body><table></table><div>Some content</div></body>",
+    solution:
+      "const table = document.createElement('table'); document.body.insertBefore(table, document.body.firstChild);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Create a <footer> element and append it as the last child inside the <div> with id 'content'.",
+    data: "<div id='content'><p>Content here</p></div>",
+    expected_result:
+      "<div id='content'><p>Content here</p><footer></footer></div>",
+    solution:
+      "const footer = document.createElement('footer'); document.querySelector('#content').appendChild(footer);",
+    category: "DOM",
+  },
+
+  {
+    question: "Append a new <div> element inside the <body> element.",
+    data: "<body><p>Existing Content</p></body>",
+    expected_result: "<body><p>Existing Content</p><div></div></body>",
+    solution:
+      "const div = document.createElement('div'); document.body.appendChild(div);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <p> element inside the <header> element.",
+    data: "<header><h1>Header Content</h1></header>",
+    expected_result: "<header><h1>Header Content</h1><p></p></header>",
+    solution:
+      "const p = document.createElement('p'); document.querySelector('header').appendChild(p);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <button> element inside the <footer> element.",
+    data: "<footer>Footer Content</footer>",
+    expected_result: "<footer>Footer Content<button></button></footer>",
+    solution:
+      "const button = document.createElement('button'); document.querySelector('footer').appendChild(button);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <ul> element inside the <section> element.",
+    data: "<section><p>Section Content</p></section>",
+    expected_result: "<section><p>Section Content</p><ul></ul></section>",
+    solution:
+      "const ul = document.createElement('ul'); document.querySelector('section').appendChild(ul);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <li> element inside the first <ul> element.",
+    data: "<ul><li>Item 1</li></ul>",
+    expected_result: "<ul><li>Item 1</li><li></li></ul>",
+    solution:
+      "const li = document.createElement('li'); document.querySelector('ul').appendChild(li);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <span> element inside the first <p> element.",
+    data: "<p>Paragraph Content</p>",
+    expected_result: "<p>Paragraph Content<span></span></p>",
+    solution:
+      "const span = document.createElement('span'); document.querySelector('p').appendChild(span);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <img> element inside the <footer> element.",
+    data: "<footer>Footer Content</footer>",
+    expected_result: "<footer>Footer Content<img /></footer>",
+    solution:
+      "const img = document.createElement('img'); document.querySelector('footer').appendChild(img);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <a> element inside the <nav> element.",
+    data: "<nav>Navigation</nav>",
+    expected_result: "<nav>Navigation<a></a></nav>",
+    solution:
+      "const a = document.createElement('a'); document.querySelector('nav').appendChild(a);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <section> element inside the <main> element.",
+    data: "<main><p>Main Content</p></main>",
+    expected_result: "<main><p>Main Content</p><section></section></main>",
+    solution:
+      "const section = document.createElement('section'); document.querySelector('main').appendChild(section);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <article> element inside the <main> element.",
+    data: "<main><p>Main Content</p></main>",
+    expected_result: "<main><p>Main Content</p><article></article></main>",
+    solution:
+      "const article = document.createElement('article'); document.querySelector('main').appendChild(article);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <footer> element inside the <body> element.",
+    data: "<body><h1>Page Title</h1></body>",
+    expected_result: "<body><h1>Page Title</h1><footer></footer></body>",
+    solution:
+      "const footer = document.createElement('footer'); document.body.appendChild(footer);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <h3> element inside the first <section> element.",
+    data: "<section><p>Content</p></section><section><p>More Content</p></section>",
+    expected_result:
+      "<section><p>Content</p><h3></h3></section><section><p>More Content</p></section>",
+    solution:
+      "const h3 = document.createElement('h3'); document.querySelector('section').appendChild(h3);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <nav> element inside the <header> element.",
+    data: "<header><h1>Website Header</h1></header>",
+    expected_result: "<header><h1>Website Header</h1><nav></nav></header>",
+    solution:
+      "const nav = document.createElement('nav'); document.querySelector('header').appendChild(nav);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <div> element inside the <main> element.",
+    data: "<main><p>Main Content</p></main>",
+    expected_result: "<main><p>Main Content</p><div></div></main>",
+    solution:
+      "const div = document.createElement('div'); document.querySelector('main').appendChild(div);",
+    category: "DOM",
+  },
+  {
+    question: "Append a new <table> element inside the <main> element.",
+    data: "<main><p>Main Content</p></main>",
+    expected_result: "<main><p>Main Content</p><table></table></main>",
+    solution:
+      "const table = document.createElement('table'); document.querySelector('main').appendChild(table);",
+    category: "DOM",
+  },
+
+  {
+    question: "Remove the first <div> element inside the <body> element.",
+    data: "<body><div>Div 1</div><div>Div 2</div></body>",
+    expected_result: "<body><div>Div 2</div></body>",
+    solution:
+      "const div = document.querySelector('body').querySelector('div'); document.body.removeChild(div);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the first <p> element inside the <header> element.",
+    data: "<header><p>Paragraph 1</p><p>Paragraph 2</p></header>",
+    expected_result: "<header><p>Paragraph 2</p></header>",
+    solution:
+      "const p = document.querySelector('header').querySelector('p'); document.querySelector('header').removeChild(p);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the first <button> element inside the <footer> element.",
+    data: "<footer><button>Button 1</button><button>Button 2</button></footer>",
+    expected_result: "<footer><button>Button 2</button></footer>",
+    solution:
+      "const button = document.querySelector('footer').querySelector('button'); document.querySelector('footer').removeChild(button);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the first <ul> element inside the <section> element.",
+    data: "<section><ul><li>Item 1</li></ul><ul><li>Item 2</li></ul></section>",
+    expected_result: "<section><ul><li>Item 2</li></ul></section>",
+    solution:
+      "const ul = document.querySelector('section').querySelector('ul'); document.querySelector('section').removeChild(ul);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the first <li> element inside the <ul> element.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul>",
+    expected_result: "<ul><li>Item 2</li></ul>",
+    solution:
+      "const li = document.querySelector('ul').querySelector('li'); document.querySelector('ul').removeChild(li);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the first <span> element inside the <p> element.",
+    data: "<p><span>Text 1</span><span>Text 2</span></p>",
+    expected_result: "<p><span>Text 2</span></p>",
+    solution:
+      "const span = document.querySelector('p').querySelector('span'); document.querySelector('p').removeChild(span);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the <img> element inside the <footer> element.",
+    data: "<footer><img src='image.jpg' /></footer>",
+    expected_result: "<footer></footer>",
+    solution:
+      "const img = document.querySelector('footer').querySelector('img'); document.querySelector('footer').removeChild(img);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the <a> element inside the <nav> element.",
+    data: "<nav><a href='#'>Link</a></nav>",
+    expected_result: "<nav></nav>",
+    solution:
+      "const a = document.querySelector('nav').querySelector('a'); document.querySelector('nav').removeChild(a);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the first <section> element inside the <main> element.",
+    data: "<main><section>Section 1</section><section>Section 2</section></main>",
+    expected_result: "<main><section>Section 2</section></main>",
+    solution:
+      "const section = document.querySelector('main').querySelector('section'); document.querySelector('main').removeChild(section);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the first <article> element inside the <main> element.",
+    data: "<main><article>Article 1</article><article>Article 2</article></main>",
+    expected_result: "<main><article>Article 2</article></main>",
+    solution:
+      "const article = document.querySelector('main').querySelector('article'); document.querySelector('main').removeChild(article);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the <footer> element inside the <body> element.",
+    data: "<body><h1>Title</h1><footer>Footer Content</footer></body>",
+    expected_result: "<body><h1>Title</h1></body>",
+    solution:
+      "const footer = document.querySelector('body').querySelector('footer'); document.querySelector('body').removeChild(footer);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the <h3> element inside the <section> element.",
+    data: "<section><h3>Heading 1</h3><h3>Heading 2</h3></section>",
+    expected_result: "<section><h3>Heading 2</h3></section>",
+    solution:
+      "const h3 = document.querySelector('section').querySelector('h3'); document.querySelector('section').removeChild(h3);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the <nav> element inside the <header> element.",
+    data: "<header><h1>Site Header</h1><nav>Navigation</nav></header>",
+    expected_result: "<header><h1>Site Header</h1></header>",
+    solution:
+      "const nav = document.querySelector('header').querySelector('nav'); document.querySelector('header').removeChild(nav);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the <div> element inside the <main> element.",
+    data: "<main><div>Div Content</div></main>",
+    expected_result: "<main></main>",
+    solution:
+      "const div = document.querySelector('main').querySelector('div'); document.querySelector('main').removeChild(div);",
+    category: "DOM",
+  },
+  {
+    question: "Remove the <table> element inside the <main> element.",
+    data: "<main><table><tr><td>Data</td></tr></table></main>",
+    expected_result: "<main></main>",
+    solution:
+      "const table = document.querySelector('main').querySelector('table'); document.querySelector('main').removeChild(table);",
+    category: "DOM",
+  },
+
+  {
+    question:
+      "Replace the first <div> element inside the <body> element with a new <span> element.",
+    data: "<body><div>Div Content</div><div>Another Div</div></body>",
+    expected_result: "<body><span></span><div>Another Div</div></body>",
+    solution:
+      "const div = document.querySelector('body').querySelector('div'); const span = document.createElement('span'); document.body.replaceChild(span, div);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the first <p> element inside the <header> element with a new <h1> element.",
+    data: "<header><p>Old Paragraph</p><p>Another Paragraph</p></header>",
+    expected_result: "<header><h1></h1><p>Another Paragraph</p></header>",
+    solution:
+      "const p = document.querySelector('header').querySelector('p'); const h1 = document.createElement('h1'); document.querySelector('header').replaceChild(h1, p);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the first <button> element inside the <footer> element with a new <a> element.",
+    data: "<footer><button>Click Me</button><button>Another Button</button></footer>",
+    expected_result: "<footer><a></a><button>Another Button</button></footer>",
+    solution:
+      "const button = document.querySelector('footer').querySelector('button'); const a = document.createElement('a'); document.querySelector('footer').replaceChild(a, button);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the first <ul> element inside the <section> element with a new <ol> element.",
+    data: "<section><ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item 3</li></ul></section>",
+    expected_result:
+      "<section><ol><li>Item 1</li><li>Item 2</li></ol><ul><li>Item 3</li></ul></section>",
+    solution:
+      "const ul = document.querySelector('section').querySelector('ul'); const ol = document.createElement('ol'); document.querySelector('section').replaceChild(ol, ul);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the first <li> element inside the <ul> element with a new <p> element.",
+    data: "<ul><li>Item 1</li><li>Item 2</li></ul>",
+    expected_result: "<ul><p></p><li>Item 2</li></ul>",
+    solution:
+      "const li = document.querySelector('ul').querySelector('li'); const p = document.createElement('p'); document.querySelector('ul').replaceChild(p, li);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the first <span> element inside the <p> element with a new <strong> element.",
+    data: "<p><span>Text 1</span><span>Text 2</span></p>",
+    expected_result: "<p><strong></strong><span>Text 2</span></p>",
+    solution:
+      "const span = document.querySelector('p').querySelector('span'); const strong = document.createElement('strong'); document.querySelector('p').replaceChild(strong, span);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the <img> element inside the <footer> element with a new <video> element.",
+    data: "<footer><img src='image.jpg' /></footer>",
+    expected_result: "<footer><video></video></footer>",
+    solution:
+      "const img = document.querySelector('footer').querySelector('img'); const video = document.createElement('video'); document.querySelector('footer').replaceChild(video, img);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the <a> element inside the <nav> element with a new <button> element.",
+    data: "<nav><a href='#'>Link</a></nav>",
+    expected_result: "<nav><button></button></nav>",
+    solution:
+      "const a = document.querySelector('nav').querySelector('a'); const button = document.createElement('button'); document.querySelector('nav').replaceChild(button, a);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the first <section> element inside the <main> element with a new <article> element.",
+    data: "<main><section>Section 1</section><section>Section 2</section></main>",
+    expected_result:
+      "<main><article>Section 1</article><section>Section 2</section></main>",
+    solution:
+      "const section = document.querySelector('main').querySelector('section'); const article = document.createElement('article'); document.querySelector('main').replaceChild(article, section);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the first <article> element inside the <main> element with a new <header> element.",
+    data: "<main><article>Article 1</article><article>Article 2</article></main>",
+    expected_result:
+      "<main><header>Article 1</header><article>Article 2</article></main>",
+    solution:
+      "const article = document.querySelector('main').querySelector('article'); const header = document.createElement('header'); document.querySelector('main').replaceChild(header, article);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the <footer> element inside the <body> element with a new <nav> element.",
+    data: "<body><h1>Page Title</h1><footer>Footer Content</footer></body>",
+    expected_result: "<body><h1>Page Title</h1><nav></nav></body>",
+    solution:
+      "const footer = document.querySelector('body').querySelector('footer'); const nav = document.createElement('nav'); document.querySelector('body').replaceChild(nav, footer);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the <h3> element inside the <section> element with a new <h2> element.",
+    data: "<section><h3>Heading 1</h3><h3>Heading 2</h3></section>",
+    expected_result: "<section><h2></h2><h3>Heading 2</h3></section>",
+    solution:
+      "const h3 = document.querySelector('section').querySelector('h3'); const h2 = document.createElement('h2'); document.querySelector('section').replaceChild(h2, h3);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the <nav> element inside the <header> element with a new <aside> element.",
+    data: "<header><h1>Website Header</h1><nav>Navigation</nav></header>",
+    expected_result: "<header><h1>Website Header</h1><aside></aside></header>",
+    solution:
+      "const nav = document.querySelector('header').querySelector('nav'); const aside = document.createElement('aside'); document.querySelector('header').replaceChild(aside, nav);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the <div> element inside the <main> element with a new <section> element.",
+    data: "<main><div>Content</div></main>",
+    expected_result: "<main><section></section></main>",
+    solution:
+      "const div = document.querySelector('main').querySelector('div'); const section = document.createElement('section'); document.querySelector('main').replaceChild(section, div);",
+    category: "DOM",
+  },
+  {
+    question:
+      "Replace the <table> element inside the <main> element with a new <div> element.",
+    data: "<main><table><tr><td>Data</td></tr></table></main>",
+    expected_result: "<main><div></div></main>",
+    solution:
+      "const table = document.querySelector('main').querySelector('table'); const div = document.createElement('div'); document.querySelector('main').replaceChild(div, table);",
+    category: "DOM",
+  },
 
   
-  
-
 ];
