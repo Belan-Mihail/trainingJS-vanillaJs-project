@@ -4328,6 +4328,79 @@ export const question = [
             "solution": "data.lastIndexOf('n', 4)",
             "category": "lastIndexOf"
           },
+          
+            {
+              "question": "Find the first match of the pattern 'a' in the string 'JavaScript'.",
+              "data": "JavaScript",
+              "expected_result": "1",
+              "solution": "data.search(/a/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern 'S' in the string 'JavaScript'.",
+              "data": "JavaScript",
+              "expected_result": "4",
+              "solution": "data.search(/S/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern 'o' in the string 'Hello world'.",
+              "data": "Hello world",
+              "expected_result": "4",
+              "solution": "data.search(/o/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern 'e' in the string 'abcdef'.",
+              "data": "abcdef",
+              "expected_result": "1",
+              "solution": "data.search(/e/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern 'l' in the string 'hello'.",
+              "data": "hello",
+              "expected_result": "2",
+              "solution": "data.search(/l/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern 'z' in the string 'apple'.",
+              "data": "apple",
+              "expected_result": "-1",
+              "solution": "data.search(/z/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern '\\d' (digit) in the string 'abc123'.",
+              "data": "abc123",
+              "expected_result": "3",
+              "solution": "data.search(/\\d/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern 'world' in the string 'Hello world'.",
+              "data": "Hello world",
+              "expected_result": "6",
+              "solution": "data.search(/world/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern '[aeiou]' (vowel) in the string 'hello'.",
+              "data": "hello",
+              "expected_result": "1",
+              "solution": "data.search(/[aeiou]/)",
+              "category": "search"
+            },
+            {
+              "question": "Find the first match of the pattern '\\d+' (one or more digits) in the string 'The year is 2025'.",
+              "data": "The year is 2025",
+              "expected_result": "15",
+              "solution": "data.search(/\\d+/)",
+              "category": "search"
+            },
+          
+          
         
         
       
