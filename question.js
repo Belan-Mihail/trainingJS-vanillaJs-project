@@ -4754,6 +4754,222 @@ export const question = [
                         "solution": "document.getElementById('faq-section')",
                         "category": "DOM"
                       },
+                      
+                        {
+                          "question": "Select all elements with the class 'header' from the document.",
+                          "data": "<div class='header'>Header 1</div><div class='header'>Header 2</div>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('header')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'menu' from the document.",
+                          "data": "<ul><li class='menu'>Home</li><li class='menu'>About</li></ul>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('menu')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'card' from the document.",
+                          "data": "<div class='card'>Card 1</div><div class='card'>Card 2</div><div class='card'>Card 3</div>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('card')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'button' from the document.",
+                          "data": "<button class='button'>Submit</button><button class='button'>Cancel</button>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('button')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'highlight' from the document.",
+                          "data": "<span class='highlight'>Text 1</span><span class='highlight'>Text 2</span>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('highlight')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'image' from the document.",
+                          "data": "<img class='image' src='image1.jpg'><img class='image' src='image2.jpg'>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('image')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'alert' from the document.",
+                          "data": "<div class='alert'>Warning!</div><div class='alert'>Error!</div>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('alert')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'footer' from the document.",
+                          "data": "<footer class='footer'>Footer Content</footer>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('footer')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'active' from the document.",
+                          "data": "<div class='active'>Active 1</div><div class='active'>Active 2</div>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('active')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'nav-item' from the document.",
+                          "data": "<ul><li class='nav-item'>Home</li><li class='nav-item'>Contact</li></ul>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('nav-item')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'content' from the document.",
+                          "data": "<div class='content'>Main content</div><div class='content'>Side content</div>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('content')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'sidebar' from the document.",
+                          "data": "<div class='sidebar'>Sidebar 1</div><div class='sidebar'>Sidebar 2</div>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('sidebar')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'form-field' from the document.",
+                          "data": "<input class='form-field' type='text'><input class='form-field' type='password'>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('form-field')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'testimonial' from the document.",
+                          "data": "<div class='testimonial'>Testimonial 1</div><div class='testimonial'>Testimonial 2</div>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('testimonial')",
+                          "category": "DOM"
+                        },
+                        {
+                          "question": "Select all elements with the class 'testimonial-text' from the document.",
+                          "data": "<p class='testimonial-text'>Amazing service!</p><p class='testimonial-text'>Great experience!</p>",
+                          "expected_result": "",
+                          "solution": "document.getElementsByClassName('testimonial-text')",
+                          "category": "DOM"
+                        },
+                        
+                          {
+                            "question": "Select all <div> elements from the document.",
+                            "data": "<div>Div 1</div><div>Div 2</div><div>Div 3</div>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('div')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <p> elements from the document.",
+                            "data": "<p>Paragraph 1</p><p>Paragraph 2</p><p>Paragraph 3</p>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('p')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <button> elements from the document.",
+                            "data": "<button>Button 1</button><button>Button 2</button>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('button')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <img> elements from the document.",
+                            "data": "<img src='image1.jpg'><img src='image2.jpg'>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('img')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <ul> elements from the document.",
+                            "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('ul')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <a> elements from the document.",
+                            "data": "<a href='#'>Link 1</a><a href='#'>Link 2</a>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('a')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <form> elements from the document.",
+                            "data": "<form><input type='text'></form><form><input type='password'></form>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('form')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <input> elements from the document.",
+                            "data": "<input type='text'><input type='checkbox'><input type='radio'>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('input')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <span> elements from the document.",
+                            "data": "<span>Text 1</span><span>Text 2</span>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('span')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <h1> elements from the document.",
+                            "data": "<h1>Heading 1</h1><h1>Heading 2</h1>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('h1')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <h2> elements from the document.",
+                            "data": "<h2>Subheading 1</h2><h2>Subheading 2</h2>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('h2')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <table> elements from the document.",
+                            "data": "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('table')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <li> elements from the document.",
+                            "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('li')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <strong> elements from the document.",
+                            "data": "<strong>Important 1</strong><strong>Important 2</strong>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('strong')",
+                            "category": "DOM"
+                          },
+                          {
+                            "question": "Select all <footer> elements from the document.",
+                            "data": "<footer>Footer Content 1</footer><footer>Footer Content 2</footer>",
+                            "expected_result": "",
+                            "solution": "document.getElementsByTagName('footer')",
+                            "category": "DOM"
+                          },
+                        
+                        
+                      
+                      
                     
                     
                   
