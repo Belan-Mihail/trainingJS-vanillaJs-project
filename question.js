@@ -6149,6 +6149,114 @@ export const question = [
           "solution": "document.querySelector('h1').style.fontFamily = 'Arial';",
           "category": "DOM"
         },
+        
+          {
+            "question": "Retrieve the outer HTML of a <div> element.",
+            "data": "<div></div>",
+            "expected_result": "<div></div>",
+            "solution": "const outerHtml = document.querySelector('div').outerHTML;",
+            "category": "DOM"
+          },
+          {
+            "question": "Get the outer HTML of a <span> element.",
+            "data": "<span>Text</span>",
+            "expected_result": "<span>Text</span>",
+            "solution": "const outerHtml = document.querySelector('span').outerHTML;",
+            "category": "DOM"
+          },
+          {
+            "question": "Set the outer HTML of a <p> element to '<p>Updated Content</p>'.",
+            "data": "<p>Old Content</p>",
+            "expected_result": "<p>Updated Content</p>",
+            "solution": "document.querySelector('p').outerHTML = '<p>Updated Content</p>';",
+            "category": "DOM"
+          },
+          {
+            "question": "Replace the outer HTML of a <h1> element with '<h1>New Heading</h1>'.",
+            "data": "<h1>Old Heading</h1>",
+            "expected_result": "<h1>New Heading</h1>",
+            "solution": "document.querySelector('h1').outerHTML = '<h1>New Heading</h1>';",
+            "category": "DOM"
+          },
+          {
+            "question": "Retrieve the outer HTML of a <section> element.",
+            "data": "<section><h2>Title</h2><p>Paragraph</p></section>",
+            "expected_result": "<section><h2>Title</h2><p>Paragraph</p></section>",
+            "solution": "const outerHtml = document.querySelector('section').outerHTML;",
+            "category": "DOM"
+          },
+          {
+            "question": "Set the outer HTML of a <footer> element to '<footer>Footer Content</footer>'.",
+            "data": "<footer>Old Footer</footer>",
+            "expected_result": "<footer>Footer Content</footer>",
+            "solution": "document.querySelector('footer').outerHTML = '<footer>Footer Content</footer>';",
+            "category": "DOM"
+          },
+          {
+            "question": "Retrieve the outer HTML of an <article> element.",
+            "data": "<article><h1>Article Title</h1><p>Content</p></article>",
+            "expected_result": "<article><h1>Article Title</h1><p>Content</p></article>",
+            "solution": "const outerHtml = document.querySelector('article').outerHTML;",
+            "category": "DOM"
+          },
+          {
+            "question": "Set the outer HTML of a <nav> element to '<nav>Home | About | Contact</nav>'.",
+            "data": "<nav>Old Navigation</nav>",
+            "expected_result": "<nav>Home | About | Contact</nav>",
+            "solution": "document.querySelector('nav').outerHTML = '<nav>Home | About | Contact</nav>';",
+            "category": "DOM"
+          },
+          {
+            "question": "Get the outer HTML of a <button> element.",
+            "data": "<button>Click Me</button>",
+            "expected_result": "<button>Click Me</button>",
+            "solution": "const outerHtml = document.querySelector('button').outerHTML;",
+            "category": "DOM"
+          },
+          {
+            "question": "Change the outer HTML of a <div> element to '<div class=\"container\">New Content</div>'.",
+            "data": "<div class=\"container\">Old Content</div>",
+            "expected_result": "<div class=\"container\">New Content</div>",
+            "solution": "document.querySelector('div').outerHTML = '<div class=\"container\">New Content</div>';",
+            "category": "DOM"
+          },
+          {
+            "question": "Retrieve the outer HTML of the first <li> element inside an <ul>.",
+            "data": "<ul><li>Item 1</li><li>Item 2</li></ul>",
+            "expected_result": "<li>Item 1</li>",
+            "solution": "const outerHtml = document.querySelector('ul').querySelector('li').outerHTML;",
+            "category": "DOM"
+          },
+          {
+            "question": "Set the outer HTML of a <main> element to '<main><h1>Main Section</h1></main>'.",
+            "data": "<main></main>",
+            "expected_result": "<main><h1>Main Section</h1></main>",
+            "solution": "document.querySelector('main').outerHTML = '<main><h1>Main Section</h1></main>';",
+            "category": "DOM"
+          },
+          {
+            "question": "Replace the outer HTML of a <header> element with '<header>Updated Header</header>'.",
+            "data": "<header>Old Header</header>",
+            "expected_result": "<header>Updated Header</header>",
+            "solution": "document.querySelector('header').outerHTML = '<header>Updated Header</header>';",
+            "category": "DOM"
+          },
+          {
+            "question": "Get the outer HTML of a <div> element with class 'card'.",
+            "data": "<div class=\"card\"><p>Card Content</p></div>",
+            "expected_result": "<div class=\"card\"><p>Card Content</p></div>",
+            "solution": "const outerHtml = document.querySelector('.card').outerHTML;",
+            "category": "DOM"
+          },
+          {
+            "question": "Set the outer HTML of a <section> element to '<section><p>Updated Section</p></section>'.",
+            "data": "<section><p>Old Section</p></section>",
+            "expected_result": "<section><p>Updated Section</p></section>",
+            "solution": "document.querySelector('section').outerHTML = '<section><p>Updated Section</p></section>';",
+            "category": "DOM"
+          },
+        
+        
       
       
     
