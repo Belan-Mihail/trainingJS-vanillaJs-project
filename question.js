@@ -4060,7 +4060,121 @@ export const question = [
       "solution": "data.padEnd(10, '?')",
       "category": "padEnd"
     },
+      {
+        "question": "Check if the string 'JavaScript' starts with 'Java'.",
+        "data": "JavaScript",
+        "expected_result": "true",
+        "solution": "data.startsWith('Java')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'JavaScript' starts with 'Script'.",
+        "data": "JavaScript",
+        "expected_result": "false",
+        "solution": "data.startsWith('Script')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'Hello world' starts with 'Hello'.",
+        "data": "Hello world",
+        "expected_result": "true",
+        "solution": "data.startsWith('Hello')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'abc123' starts with 'abc'.",
+        "data": "abc123",
+        "expected_result": "true",
+        "solution": "data.startsWith('abc')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'openai' starts with 'o'.",
+        "data": "openai",
+        "expected_result": "true",
+        "solution": "data.startsWith('o')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'openai' starts with 'ai'.",
+        "data": "openai",
+        "expected_result": "false",
+        "solution": "data.startsWith('ai')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'JavaScript' ends with 'Script'.",
+        "data": "JavaScript",
+        "expected_result": "true",
+        "solution": "data.endsWith('Script')",
+        "category": "endsWith"
+      },
+      {
+        "question": "Check if the string 'JavaScript' ends with 'Java'.",
+        "data": "JavaScript",
+        "expected_result": "false",
+        "solution": "data.endsWith('Java')",
+        "category": "endsWith"
+      },
+      {
+        "question": "Check if the string 'Hello world' ends with 'world'.",
+        "data": "Hello world",
+        "expected_result": "true",
+        "solution": "data.endsWith('world')",
+        "category": "endsWith"
+      },
+      {
+        "question": "Check if the string 'abc123' ends with '123'.",
+        "data": "abc123",
+        "expected_result": "true",
+        "solution": "data.endsWith('123')",
+        "category": "endsWith"
+      },
+      {
+        "question": "Check if the string 'openai' ends with 'ai'.",
+        "data": "openai",
+        "expected_result": "true",
+        "solution": "data.endsWith('ai')",
+        "category": "endsWith"
+      },
+      {
+        "question": "Check if the string 'openai' ends with 'open'.",
+        "data": "openai",
+        "expected_result": "false",
+        "solution": "data.endsWith('open')",
+        "category": "endsWith"
+      },
+      {
+        "question": "Check if the string 'abcdef' starts with 'abc'.",
+        "data": "abcdef",
+        "expected_result": "true",
+        "solution": "data.startsWith('abc')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'abcdef' starts with 'def'.",
+        "data": "abcdef",
+        "expected_result": "false",
+        "solution": "data.startsWith('def')",
+        "category": "startsWith"
+      },
+      {
+        "question": "Check if the string 'hello' ends with 'o'.",
+        "data": "hello",
+        "expected_result": "true",
+        "solution": "data.endsWith('o')",
+        "category": "endsWith"
+      },
+      {
+        "question": "Check if the string 'hello' ends with 'h'.",
+        "data": "hello",
+        "expected_result": "false",
+        "solution": "data.endsWith('h')",
+        "category": "endsWith"
+      }
     
+    
+
   
   
 
