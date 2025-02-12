@@ -5810,6 +5810,351 @@ export const question = [
       "const table = document.querySelector('main').querySelector('table'); const div = document.createElement('div'); document.querySelector('main').replaceChild(div, table);",
     category: "DOM",
   },
-
   
+    {
+      "question": "Set the inner HTML of a <div> element to '<p>New Content</p>'",
+      "data": "<div></div>",
+      "expected_result": "<div><p>New Content</p></div>",
+      "solution": "document.querySelector('div').innerHTML = '<p>New Content</p>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Retrieve the inner HTML of a <header> element.",
+      "data": "<header><h1>Site Title</h1><nav>Navigation</nav></header>",
+      "expected_result": "<h1>Site Title</h1><nav>Navigation</nav>",
+      "solution": "const innerHTML = document.querySelector('header').innerHTML;",
+      "category": "DOM"
+    },
+    {
+      "question": "Set the inner HTML of a <p> element to '<strong>Important Text</strong>'",
+      "data": "<p></p>",
+      "expected_result": "<p><strong>Important Text</strong></p>",
+      "solution": "document.querySelector('p').innerHTML = '<strong>Important Text</strong>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Append a new <span> element with 'Added Text' to the inner HTML of the <footer> element.",
+      "data": "<footer></footer>",
+      "expected_result": "<footer><span>Added Text</span></footer>",
+      "solution": "document.querySelector('footer').innerHTML += '<span>Added Text</span>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Retrieve and display the inner HTML of the first <div> element inside the <body> element.",
+      "data": "<body><div><p>Content</p></div><div><p>More Content</p></div></body>",
+      "expected_result": "<p>Content</p>",
+      "solution": "const divContent = document.querySelector('body').querySelector('div').innerHTML;",
+      "category": "DOM"
+    },
+    {
+      "question": "Replace the inner HTML of the <section> element with '<h2>Updated Heading</h2>'",
+      "data": "<section></section>",
+      "expected_result": "<section><h2>Updated Heading</h2></section>",
+      "solution": "document.querySelector('section').innerHTML = '<h2>Updated Heading</h2>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Insert a new <ul> with a list of items inside the <div> element.",
+      "data": "<div></div>",
+      "expected_result": "<div><ul><li>Item 1</li><li>Item 2</li></ul></div>",
+      "solution": "document.querySelector('div').innerHTML = '<ul><li>Item 1</li><li>Item 2</li></ul>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Set the inner HTML of a <header> to '<h1>New Title</h1>'",
+      "data": "<header><h1>Old Title</h1></header>",
+      "expected_result": "<header><h1>New Title</h1></header>",
+      "solution": "document.querySelector('header').innerHTML = '<h1>New Title</h1>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Add an <img> tag with a source inside the <footer> element using innerHTML.",
+      "data": "<footer></footer>",
+      "expected_result": "<footer><img src='image.jpg' alt='Image'></footer>",
+      "solution": "document.querySelector('footer').innerHTML = '<img src=\"image.jpg\" alt=\"Image\">';",
+      "category": "DOM"
+    },
+    {
+      "question": "Update the content of a <section> element to include a <p> and an <h2> tag.",
+      "data": "<section></section>",
+      "expected_result": "<section><h2>Section Title</h2><p>Section content here.</p></section>",
+      "solution": "document.querySelector('section').innerHTML = '<h2>Section Title</h2><p>Section content here.</p>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Set the inner HTML of a <nav> element to '<a href=\"#\">Home</a><a href=\"#\">About</a>'",
+      "data": "<nav></nav>",
+      "expected_result": "<nav><a href=\"#\">Home</a><a href=\"#\">About</a></nav>",
+      "solution": "document.querySelector('nav').innerHTML = '<a href=\"#\">Home</a><a href=\"#\">About</a>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Change the inner HTML of a <span> element to display 'Updated Text'.",
+      "data": "<span>Old Text</span>",
+      "expected_result": "<span>Updated Text</span>",
+      "solution": "document.querySelector('span').innerHTML = 'Updated Text';",
+      "category": "DOM"
+    },
+    {
+      "question": "Get and log the inner HTML of the first <footer> element.",
+      "data": "<footer><p>Footer Content</p></footer>",
+      "expected_result": "<p>Footer Content</p>",
+      "solution": "const footerContent = document.querySelector('footer').innerHTML; console.log(footerContent);",
+      "category": "DOM"
+    },
+    {
+      "question": "Replace the content of a <main> element with '<h2>New Main Content</h2>'",
+      "data": "<main></main>",
+      "expected_result": "<main><h2>New Main Content</h2></main>",
+      "solution": "document.querySelector('main').innerHTML = '<h2>New Main Content</h2>';",
+      "category": "DOM"
+    },
+    {
+      "question": "Set the inner HTML of a <div> element inside the <body> to '<h1>Heading</h1><p>Description</p>'",
+      "data": "<div></div>",
+      "expected_result": "<div><h1>Heading</h1><p>Description</p></div>",
+      "solution": "document.querySelector('div').innerHTML = '<h1>Heading</h1><p>Description</p>';",
+      "category": "DOM"
+    },
+    
+      {
+        "question": "Set the inner text of a <div> element to 'Hello, World!'",
+        "data": "<div></div>",
+        "expected_result": "<div>Hello, World!</div>",
+        "solution": "document.querySelector('div').innerText = 'Hello, World!';",
+        "category": "DOM"
+      },
+      {
+        "question": "Retrieve the inner text of a <p> element.",
+        "data": "<p>This is a paragraph.</p>",
+        "expected_result": "This is a paragraph.",
+        "solution": "const text = document.querySelector('p').innerText;",
+        "category": "DOM"
+      },
+      {
+        "question": "Set the inner text of a <span> element to 'Updated Text'.",
+        "data": "<span>Old Text</span>",
+        "expected_result": "<span>Updated Text</span>",
+        "solution": "document.querySelector('span').innerText = 'Updated Text';",
+        "category": "DOM"
+      },
+      {
+        "question": "Change the inner text of a <h2> element inside the <header> to 'New Title'.",
+        "data": "<header><h2>Old Title</h2></header>",
+        "expected_result": "<header><h2>New Title</h2></header>",
+        "solution": "document.querySelector('header').querySelector('h2').innerText = 'New Title';",
+        "category": "DOM"
+      },
+      {
+        "question": "Retrieve and log the inner text of a <footer> element.",
+        "data": "<footer>Footer Information</footer>",
+        "expected_result": "Footer Information",
+        "solution": "const footerText = document.querySelector('footer').innerText; console.log(footerText);",
+        "category": "DOM"
+      },
+      {
+        "question": "Change the inner text of a <p> element inside the <article> to 'Updated Content'.",
+        "data": "<article><p>Old Content</p></article>",
+        "expected_result": "<article><p>Updated Content</p></article>",
+        "solution": "document.querySelector('article').querySelector('p').innerText = 'Updated Content';",
+        "category": "DOM"
+      },
+      {
+        "question": "Set the inner text of a <nav> element to 'Home | About | Contact'.",
+        "data": "<nav></nav>",
+        "expected_result": "<nav>Home | About | Contact</nav>",
+        "solution": "document.querySelector('nav').innerText = 'Home | About | Contact';",
+        "category": "DOM"
+      },
+      {
+        "question": "Retrieve the inner text of the first <section> element inside the <main> element.",
+        "data": "<main><section>Section 1</section><section>Section 2</section></main>",
+        "expected_result": "Section 1",
+        "solution": "const sectionText = document.querySelector('main').querySelector('section').innerText;",
+        "category": "DOM"
+      },
+      {
+        "question": "Set the inner text of a <h1> element to 'Main Heading'.",
+        "data": "<h1></h1>",
+        "expected_result": "<h1>Main Heading</h1>",
+        "solution": "document.querySelector('h1').innerText = 'Main Heading';",
+        "category": "DOM"
+      },
+      {
+        "question": "Set the inner text of a <div> inside the <body> to 'Welcome to the Website'.",
+        "data": "<body><div></div></body>",
+        "expected_result": "<body><div>Welcome to the Website</div></body>",
+        "solution": "document.querySelector('body').querySelector('div').innerText = 'Welcome to the Website';",
+        "category": "DOM"
+      },
+      {
+        "question": "Update the inner text of a <span> element with 'New Message' inside a <footer> element.",
+        "data": "<footer><span></span></footer>",
+        "expected_result": "<footer><span>New Message</span></footer>",
+        "solution": "document.querySelector('footer').querySelector('span').innerText = 'New Message';",
+        "category": "DOM"
+      },
+      {
+        "question": "Retrieve the inner text of the first <p> element inside the <section> element.",
+        "data": "<section><p>Content 1</p><p>Content 2</p></section>",
+        "expected_result": "Content 1",
+        "solution": "const pText = document.querySelector('section').querySelector('p').innerText;",
+        "category": "DOM"
+      },
+      {
+        "question": "Set the inner text of an <h3> element inside the <main> to 'Section 1 Heading'.",
+        "data": "<main><h3></h3></main>",
+        "expected_result": "<main><h3>Section 1 Heading</h3></main>",
+        "solution": "document.querySelector('main').querySelector('h3').innerText = 'Section 1 Heading';",
+        "category": "DOM"
+      },
+      {
+        "question": "Set the inner text of a <button> element inside the <header> to 'Click Me'.",
+        "data": "<header><button></button></header>",
+        "expected_result": "<header><button>Click Me</button></header>",
+        "solution": "document.querySelector('header').querySelector('button').innerText = 'Click Me';",
+        "category": "DOM"
+      },
+      {
+        "question": "Retrieve the inner text of the first <a> element inside the <nav> element.",
+        "data": "<nav><a href='#'>Home</a><a href='#'>About</a></nav>",
+        "expected_result": "Home",
+        "solution": "const linkText = document.querySelector('nav').querySelector('a').innerText;",
+        "category": "DOM"
+      },
+      
+        {
+          "question": "Set the background color of a <div> element to 'red'.",
+          "data": "<div></div>",
+          "expected_result": "<div style='background-color: red;'></div>",
+          "solution": "document.querySelector('div').style.backgroundColor = 'red';",
+          "category": "DOM"
+        },
+        {
+          "question": "Change the font size of a <p> element to '20px'.",
+          "data": "<p>This is a paragraph.</p>",
+          "expected_result": "<p style='font-size: 20px;'>This is a paragraph.</p>",
+          "solution": "document.querySelector('p').style.fontSize = '20px';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the width of a <div> element to '100px'.",
+          "data": "<div></div>",
+          "expected_result": "<div style='width: 100px;'></div>",
+          "solution": "document.querySelector('div').style.width = '100px';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the height of a <div> element to '200px'.",
+          "data": "<div></div>",
+          "expected_result": "<div style='height: 200px;'></div>",
+          "solution": "document.querySelector('div').style.height = '200px';",
+          "category": "DOM"
+        },
+        {
+          "question": "Change the font color of a <span> element to 'blue'.",
+          "data": "<span>Text</span>",
+          "expected_result": "<span style='color: blue;'>Text</span>",
+          "solution": "document.querySelector('span').style.color = 'blue';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the margin of a <div> element to '20px'.",
+          "data": "<div></div>",
+          "expected_result": "<div style='margin: 20px;'></div>",
+          "solution": "document.querySelector('div').style.margin = '20px';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the padding of a <p> element to '10px'.",
+          "data": "<p></p>",
+          "expected_result": "<p style='padding: 10px;'></p>",
+          "solution": "document.querySelector('p').style.padding = '10px';",
+          "category": "DOM"
+        },
+        {
+          "question": "Change the display style of a <section> element to 'flex'.",
+          "data": "<section></section>",
+          "expected_result": "<section style='display: flex;'></section>",
+          "solution": "document.querySelector('section').style.display = 'flex';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the background color of a <footer> element to 'gray'.",
+          "data": "<footer></footer>",
+          "expected_result": "<footer style='background-color: gray;'></footer>",
+          "solution": "document.querySelector('footer').style.backgroundColor = 'gray';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the border of a <div> element to '2px solid black'.",
+          "data": "<div></div>",
+          "expected_result": "<div style='border: 2px solid black;'></div>",
+          "solution": "document.querySelector('div').style.border = '2px solid black';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the position of a <span> element to 'absolute'.",
+          "data": "<span></span>",
+          "expected_result": "<span style='position: absolute;'></span>",
+          "solution": "document.querySelector('span').style.position = 'absolute';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the z-index of a <div> element to '10'.",
+          "data": "<div></div>",
+          "expected_result": "<div style='z-index: 10;'></div>",
+          "solution": "document.querySelector('div').style.zIndex = '10';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the opacity of a <p> element to '0.5'.",
+          "data": "<p></p>",
+          "expected_result": "<p style='opacity: 0.5;'></p>",
+          "solution": "document.querySelector('p').style.opacity = '0.5';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the text align of a <header> element to 'center'.",
+          "data": "<header></header>",
+          "expected_result": "<header style='text-align: center;'></header>",
+          "solution": "document.querySelector('header').style.textAlign = 'center';",
+          "category": "DOM"
+        },
+        {
+          "question": "Change the font weight of a <p> element to 'bold'.",
+          "data": "<p></p>",
+          "expected_result": "<p style='font-weight: bold;'></p>",
+          "solution": "document.querySelector('p').style.fontWeight = 'bold';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the text decoration of a <span> element to 'underline'.",
+          "data": "<span></span>",
+          "expected_result": "<span style='text-decoration: underline;'></span>",
+          "solution": "document.querySelector('span').style.textDecoration = 'underline';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the box shadow of a <div> element to '10px 10px 5px rgba(0,0,0,0.5)'.",
+          "data": "<div></div>",
+          "expected_result": "<div style='box-shadow: 10px 10px 5px rgba(0,0,0,0.5);'></div>",
+          "solution": "document.querySelector('div').style.boxShadow = '10px 10px 5px rgba(0,0,0,0.5)';",
+          "category": "DOM"
+        },
+        {
+          "question": "Set the font family of a <h1> element to 'Arial'.",
+          "data": "<h1></h1>",
+          "expected_result": "<h1 style='font-family: Arial;'></h1>",
+          "solution": "document.querySelector('h1').style.fontFamily = 'Arial';",
+          "category": "DOM"
+        },
+      
+      
+    
+    
+  
+  
+
+
 ];
