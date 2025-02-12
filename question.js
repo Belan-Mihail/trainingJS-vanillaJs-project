@@ -4966,6 +4966,257 @@ export const question = [
                             "solution": "document.getElementsByTagName('footer')",
                             "category": "DOM"
                           },
+                          
+                            {
+                              "question": "Select the first element with the class 'header' from the document.",
+                              "data": "<div class='header'>Header 1</div><div class='header'>Header 2</div>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('.header')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <p> element from the document.",
+                              "data": "<p>Paragraph 1</p><p>Paragraph 2</p>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('p')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <button> element from the document.",
+                              "data": "<button>Button 1</button><button>Button 2</button>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('button')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <a> element from the document.",
+                              "data": "<a href='#'>Link 1</a><a href='#'>Link 2</a>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('a')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <ul> element from the document.",
+                              "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('ul')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first element with the class 'active' from the document.",
+                              "data": "<div class='active'>Active 1</div><div class='inactive'>Inactive 1</div>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('.active')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <form> element from the document.",
+                              "data": "<form><input type='text'></form><form><input type='password'></form>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('form')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <img> element from the document.",
+                              "data": "<img src='image1.jpg'><img src='image2.jpg'>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('img')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first element with the id 'main' from the document.",
+                              "data": "<div id='main'>Main Content</div><div id='secondary'>Secondary Content</div>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('#main')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <h1> element from the document.",
+                              "data": "<h1>Heading 1</h1><h1>Heading 2</h1>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('h1')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <span> element from the document.",
+                              "data": "<span>Text 1</span><span>Text 2</span>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('span')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first element with the class 'footer' from the document.",
+                              "data": "<footer class='footer'>Footer Content</footer><footer class='footer'>Footer Content 2</footer>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('.footer')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <table> element from the document.",
+                              "data": "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('table')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <li> element from the document.",
+                              "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('li')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <strong> element from the document.",
+                              "data": "<strong>Important 1</strong><strong>Important 2</strong>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('strong')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <header> element from the document.",
+                              "data": "<header>Header Content</header><header>Header Content 2</header>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('header')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <footer> element from the document.",
+                              "data": "<footer>Footer Content 1</footer><footer>Footer Content 2</footer>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('footer')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <input> element with type 'text' from the document.",
+                              "data": "<input type='text'><input type='password'><input type='text'>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('input[type=text]')",
+                              "category": "DOM"
+                            },
+                            {
+                              "question": "Select the first <div> element with the id 'container' from the document.",
+                              "data": "<div id='container'>Container Content</div><div id='wrapper'>Wrapper Content</div>",
+                              "expected_result": "",
+                              "solution": "document.querySelector('#container')",
+                              "category": "DOM"
+                            },
+                            
+                              {
+                                "question": "Select all elements with the class 'header' from the document.",
+                                "data": "<div class='header'>Header 1</div><div class='header'>Header 2</div><div class='header'>Header 3</div>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('.header')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <p> elements from the document.",
+                                "data": "<p>Paragraph 1</p><p>Paragraph 2</p><p>Paragraph 3</p>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('p')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <button> elements from the document.",
+                                "data": "<button>Button 1</button><button>Button 2</button><button>Button 3</button>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('button')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <a> elements from the document.",
+                                "data": "<a href='#'>Link 1</a><a href='#'>Link 2</a><a href='#'>Link 3</a>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('a')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <ul> elements from the document.",
+                                "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li></ul>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('ul')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all elements with the class 'active' from the document.",
+                                "data": "<div class='active'>Active 1</div><div class='inactive'>Inactive 1</div><div class='active'>Active 2</div>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('.active')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <form> elements from the document.",
+                                "data": "<form><input type='text'></form><form><input type='password'></form><form><input type='email'></form>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('form')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <img> elements from the document.",
+                                "data": "<img src='image1.jpg'><img src='image2.jpg'><img src='image3.jpg'>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('img')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all elements with the id 'main' from the document.",
+                                "data": "<div id='main'>Main Content 1</div><div id='secondary'>Secondary Content</div><div id='main'>Main Content 2</div>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('#main')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <h1> elements from the document.",
+                                "data": "<h1>Heading 1</h1><h1>Heading 2</h1><h1>Heading 3</h1>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('h1')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <span> elements from the document.",
+                                "data": "<span>Text 1</span><span>Text 2</span><span>Text 3</span>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('span')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all elements with the class 'footer' from the document.",
+                                "data": "<footer class='footer'>Footer 1</footer><footer class='footer'>Footer 2</footer><footer class='footer'>Footer 3</footer>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('.footer')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <table> elements from the document.",
+                                "data": "<table><tr><td>Row 1</td></tr></table><table><tr><td>Row A</td></tr></table><table><tr><td>Row X</td></tr></table>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('table')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <li> elements from the document.",
+                                "data": "<ul><li>Item 1</li><li>Item 2</li></ul><ul><li>Item A</li><li>Item B</li><ul><li>Item X</li><li>Item Y</li></ul>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('li')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <strong> elements from the document.",
+                                "data": "<strong>Important 1</strong><strong>Important 2</strong><strong>Important 3</strong>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('strong')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Select all <footer> elements from the document.",
+                                "data": "<footer>Footer 1</footer><footer>Footer 2</footer><footer>Footer 3</footer>",
+                                "expected_result": "",
+                                "solution": "document.querySelectorAll('footer')",
+                                "category": "DOM"
+                              },
+                            
+                            
+                          
+                          
                         
                         
                       
