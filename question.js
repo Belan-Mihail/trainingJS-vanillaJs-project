@@ -3090,861 +3090,978 @@ export const question = [
     solution: "data.slice(-8)",
     category: "slice",
   },
+
+  {
+    question:
+      'Extract the substring from index 0 to index 3 of the string "Hello"',
+    data: "Hello",
+    expected_result: "Hell",
+    solution: "data.substring(0, 4)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 2 to index 5 of the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "va",
+    solution: "data.substring(2, 5)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 3 to the end of the string "abcdef"',
+    data: "abcdef",
+    expected_result: "def",
+    solution: "data.substring(3)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 4 to index 7 of the string "supercalifragilisticexpialidocious"',
+    data: "supercalifragilisticexpialidocious",
+    expected_result: "cali",
+    solution: "data.substring(4, 8)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 1 to index 6 of the string "wonderful"',
+    data: "wonderful",
+    expected_result: "onder",
+    solution: "data.substring(1, 6)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 5 to index 10 of the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "Scrip",
+    solution: "data.substring(5, 10)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 0 to index 3 of the string "Programming"',
+    data: "Programming",
+    expected_result: "Prog",
+    solution: "data.substring(0, 4)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 3 to index 7 of the string "incredible"',
+    data: "incredible",
+    expected_result: "cred",
+    solution: "data.substring(3, 7)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 2 to index 5 of the string "development"',
+    data: "development",
+    expected_result: "velo",
+    solution: "data.substring(2, 6)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 1 to index 4 of the string "environment"',
+    data: "environment",
+    expected_result: "nvi",
+    solution: "data.substring(1, 4)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 4 to the end of the string "unbelievable"',
+    data: "unbelievable",
+    expected_result: "lievable",
+    solution: "data.substring(4)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 3 to index 9 of the string "exceptional"',
+    data: "exceptional",
+    expected_result: "eptio",
+    solution: "data.substring(3, 9)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 2 to index 7 of the string "fantastic"',
+    data: "fantastic",
+    expected_result: "ntas",
+    solution: "data.substring(2, 7)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 0 to index 5 of the string "imagination"',
+    data: "imagination",
+    expected_result: "imagi",
+    solution: "data.substring(0, 5)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring from index 6 to index 12 of the string "explanation"',
+    data: "explanation",
+    expected_result: "natio",
+    solution: "data.substring(6, 12)",
+    category: "substring",
+  },
+  {
+    question:
+      'Extract the substring starting from index 0 with a length of 3 from the string "Hello"',
+    data: "Hello",
+    expected_result: "Hel",
+    solution: "data.substr(0, 3)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 2 with a length of 4 from the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "vaSc",
+    solution: "data.substr(2, 4)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 4 with a length of 3 from the string "abcdef"',
+    data: "abcdef",
+    expected_result: "def",
+    solution: "data.substr(4, 3)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 5 with a length of 4 from the string "supercalifragilisticexpialidocious"',
+    data: "supercalifragilisticexpialidocious",
+    expected_result: "cali",
+    solution: "data.substr(5, 4)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 2 with a length of 3 from the string "wonderful"',
+    data: "wonderful",
+    expected_result: "nde",
+    solution: "data.substr(2, 3)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 0 with a length of 4 from the string "JavaScript"',
+    data: "JavaScript",
+    expected_result: "Java",
+    solution: "data.substr(0, 4)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 3 with a length of 5 from the string "incredible"',
+    data: "incredible",
+    expected_result: "cred",
+    solution: "data.substr(3, 5)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 2 with a length of 4 from the string "development"',
+    data: "development",
+    expected_result: "velo",
+    solution: "data.substr(2, 4)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 1 with a length of 5 from the string "environment"',
+    data: "environment",
+    expected_result: "nvir",
+    solution: "data.substr(1, 5)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 4 with a length of 7 from the string "unbelievable"',
+    data: "unbelievable",
+    expected_result: "lievabl",
+    solution: "data.substr(4, 7)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 3 with a length of 6 from the string "exceptional"',
+    data: "exceptional",
+    expected_result: "eptio",
+    solution: "data.substr(3, 6)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 2 with a length of 5 from the string "fantastic"',
+    data: "fantastic",
+    expected_result: "ntas",
+    solution: "data.substr(2, 5)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 0 with a length of 6 from the string "imagination"',
+    data: "imagination",
+    expected_result: "imagin",
+    solution: "data.substr(0, 6)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index 6 with a length of 4 from the string "explanation"',
+    data: "explanation",
+    expected_result: "nati",
+    solution: "data.substr(6, 4)",
+    category: "substr",
+  },
+  {
+    question:
+      'Extract the substring starting from index -4 with a length of 3 from the string "superstar"',
+    data: "superstar",
+    expected_result: "tar",
+    solution: "data.substr(-4, 3)",
+    category: "substr",
+  },
+
+  {
+    question: 'Concatenate the string "Hello" with " World!"',
+    data: "Hello",
+    expected_result: "Hello World!",
+    solution: 'data.concat(" World!")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Java" with "Script"',
+    data: "Java",
+    expected_result: "JavaScript",
+    solution: 'data.concat("Script")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Good" with " Morning"',
+    data: "Good",
+    expected_result: "Good Morning",
+    solution: 'data.concat(" Morning")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Hi" with " there"',
+    data: "Hi",
+    expected_result: "Hi there",
+    solution: 'data.concat(" there")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Java" with " is fun"',
+    data: "Java",
+    expected_result: "Java is fun",
+    solution: 'data.concat(" is fun")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "I" with " am" and " learning"',
+    data: "I",
+    expected_result: "I am learning",
+    solution: 'data.concat(" am", " learning")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Have" with " a great day"',
+    data: "Have",
+    expected_result: "Have a great day",
+    solution: 'data.concat(" a great day")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Learn" with " coding"',
+    data: "Learn",
+    expected_result: "Learn coding",
+    solution: 'data.concat(" coding")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "C" with "ode"',
+    data: "C",
+    expected_result: "Code",
+    solution: 'data.concat("ode")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Python" with " Rocks"',
+    data: "Python",
+    expected_result: "Python Rocks",
+    solution: 'data.concat(" Rocks")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "I" with " love JavaScript"',
+    data: "I",
+    expected_result: "I love JavaScript",
+    solution: 'data.concat(" love JavaScript")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Concatenation" with " is easy!"',
+    data: "Concatenation",
+    expected_result: "Concatenation is easy!",
+    solution: 'data.concat(" is easy!")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "First" with " Second" and " part"',
+    data: "First",
+    expected_result: "First Second part",
+    solution: 'data.concat(" Second", " part")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "String" with " concatenation"',
+    data: "String",
+    expected_result: "String concatenation",
+    solution: 'data.concat(" concatenation")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Concatenate" with " with" and " space"',
+    data: "Concatenate",
+    expected_result: "Concatenate with space",
+    solution: 'data.concat(" with", " space")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Morning" with " everyone"',
+    data: "Morning",
+    expected_result: "Morning everyone",
+    solution: 'data.concat(" everyone")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "I" with " am" and " here"',
+    data: "I",
+    expected_result: "I am here",
+    solution: 'data.concat(" am", " here")',
+    category: "concat",
+  },
+  {
+    question: 'Concatenate the string "Let" with " us" and " begin"',
+    data: "Let",
+    expected_result: "Let us begin",
+    solution: 'data.concat(" us", " begin")',
+    category: "concat",
+  },
+
+  {
+    question: 'Split the string "apple,banana,orange" by commas.',
+    data: "apple,banana,orange",
+    expected_result: ["apple", "banana", "orange"],
+    solution: 'data.split(",")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "Hello World" by a space.',
+    data: "Hello World",
+    expected_result: ["Hello", "World"],
+    solution: 'data.split(" ")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "123-456-789" by dashes.',
+    data: "123-456-789",
+    expected_result: ["123", "456", "789"],
+    solution: 'data.split("-")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "one two three four" by spaces.',
+    data: "one two three four",
+    expected_result: ["one", "two", "three", "four"],
+    solution: 'data.split(" ")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "a,b,c,d,e" by commas.',
+    data: "a,b,c,d,e",
+    expected_result: ["a", "b", "c", "d", "e"],
+    solution: 'data.split(",")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "this is a test" by spaces.',
+    data: "this is a test",
+    expected_result: ["this", "is", "a", "test"],
+    solution: 'data.split(" ")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "apple/banana/orange" by slashes.',
+    data: "apple/banana/orange",
+    expected_result: ["apple", "banana", "orange"],
+    solution: 'data.split("/")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "2025-02-06" by dashes.',
+    data: "2025-02-06",
+    expected_result: ["2025", "02", "06"],
+    solution: 'data.split("-")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "cat|dog|rabbit" by pipe characters.',
+    data: "cat|dog|rabbit",
+    expected_result: ["cat", "dog", "rabbit"],
+    solution: 'data.split("|")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "apple,banana,grape,pear" by commas.',
+    data: "apple,banana,grape,pear",
+    expected_result: ["apple", "banana", "grape", "pear"],
+    solution: 'data.split(",")',
+    category: "split",
+  },
+  {
+    question:
+      'Split the string "one two three" by spaces and limit to 2 parts.',
+    data: "one two three",
+    expected_result: ["one", "two three"],
+    solution: 'data.split(" ", 2)',
+    category: "split",
+  },
+  {
+    question:
+      'Split the string "hello,world,how,are,you" by commas and limit to 3 parts.',
+    data: "hello,world,how,are,you",
+    expected_result: ["hello", "world", "how,are,you"],
+    solution: 'data.split(",", 3)',
+    category: "split",
+  },
+  {
+    question: 'Split the string "apple@orange@banana" by the @ symbol.',
+    data: "apple@orange@banana",
+    expected_result: ["apple", "orange", "banana"],
+    solution: 'data.split("@")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "one-two-three-four" by dashes.',
+    data: "one-two-three-four",
+    expected_result: ["one", "two", "three", "four"],
+    solution: 'data.split("-")',
+    category: "split",
+  },
+  {
+    question: 'Split the string "this is, an example" by spaces and comma.',
+    data: "this is, an example",
+    expected_result: ["this", "is", ", an", "example"],
+    solution: "data.split(/[s,]+/)",
+    category: "split",
+  },
+
+  {
+    question: 'Check if the string "Hello, World!" contains the word "Hello".',
+    data: "Hello, World!",
+    expected_result: true,
+    solution: 'data.includes("Hello")',
+    category: "includes",
+  },
+  {
+    question:
+      'Check if the string "JavaScript is awesome" contains the word "awesome".',
+    data: "JavaScript is awesome",
+    expected_result: true,
+    solution: 'data.includes("awesome")',
+    category: "includes",
+  },
+  {
+    question: 'Check if the string "I love coding" contains the word "love".',
+    data: "I love coding",
+    expected_result: true,
+    solution: 'data.includes("love")',
+    category: "includes",
+  },
+  {
+    question:
+      'Check if the string "apple, orange, banana" contains the word "orange".',
+    data: "apple, orange, banana",
+    expected_result: true,
+    solution: 'data.includes("orange")',
+    category: "includes",
+  },
+  {
+    question:
+      'Check if the string "I am learning JavaScript" contains the word "Python".',
+    data: "I am learning JavaScript",
+    expected_result: false,
+    solution: 'data.includes("Python")',
+    category: "includes",
+  },
+  {
+    question:
+      'Check if the string "Good morning, everyone!" contains the word "everyone".',
+    data: "Good morning, everyone!",
+    expected_result: true,
+    solution: 'data.includes("everyone")',
+    category: "includes",
+  },
+  {
+    question:
+      'Check if the string "The quick brown fox" contains the word "fox".',
+    data: "The quick brown fox",
+    expected_result: true,
+    solution: 'data.includes("fox")',
+    category: "includes",
+  },
+  {
+    question:
+      'Check if the string "Learn JavaScript and Python" contains the word "Ruby".',
+    data: "Learn JavaScript and Python",
+    expected_result: false,
+    solution: 'data.includes("Ruby")',
+    category: "includes",
+  },
+  {
+    question: 'Check if the string "abc123" contains the substring "123".',
+    data: "abc123",
+    expected_result: true,
+    solution: 'data.includes("123")',
+    category: "includes",
+  },
+  {
+    question:
+      'Check if the string "Hello, how are you?" contains the word "how".',
+    data: "Hello, how are you?",
+    expected_result: true,
+    solution: 'data.includes("how")',
+    category: "includes",
+  },
+
+  {
+    question:
+      'Replace the first occurrence of "apple" with "orange" in the string "apple, banana, apple".',
+    data: "apple, banana, apple",
+    expected_result: "orange, banana, apple",
+    solution: 'data.replace("apple", "orange")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace "JavaScript" with "TypeScript" in the string "I love JavaScript!".',
+    data: "I love JavaScript!",
+    expected_result: "I love TypeScript!",
+    solution: 'data.replace("JavaScript", "TypeScript")',
+    category: "replace",
+  },
+  {
+    question: 'Replace "dog" with "cat" in the string "I have a dog.".',
+    data: "I have a dog.",
+    expected_result: "I have a cat.",
+    solution: 'data.replace("dog", "cat")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace "apple" with "banana" in the string "apple pie, apple tart".',
+    data: "apple pie, apple tart",
+    expected_result: "banana pie, apple tart",
+    solution: 'data.replace("apple", "banana")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace the first occurrence of "is" with "was" in the string "This is a test."',
+    data: "This is a test.",
+    expected_result: "This was a test.",
+    solution: 'data.replace("is", "was")',
+    category: "replace",
+  },
+  {
+    question: 'Replace "red" with "blue" in the string "red car, red house".',
+    data: "red car, red house",
+    expected_result: "blue car, red house",
+    solution: 'data.replace("red", "blue")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace "dog" with "cat" globally in the string "dog, dog, dog".',
+    data: "dog, dog, dog",
+    expected_result: "cat, cat, cat",
+    solution: 'data.replace(/dog/g, "cat")',
+    category: "replace",
+  },
+  {
+    question: 'Replace "cat" with "lion" in the string "cat and dog".',
+    data: "cat and dog",
+    expected_result: "lion and dog",
+    solution: 'data.replace("cat", "lion")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace the first occurrence of "hello" with "hi" in the string "hello world, hello universe".',
+    data: "hello world, hello universe",
+    expected_result: "hi world, hello universe",
+    solution: 'data.replace("hello", "hi")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace "good" with "great" in the string "Good morning, good night".',
+    data: "Good morning, good night",
+    expected_result: "Great morning, good night",
+    solution: 'data.replace("good", "great")',
+    category: "replace",
+  },
+  {
+    question: 'Replace "hello" with "hi" in the string "hello there! hello!".',
+    data: "hello there! hello!",
+    expected_result: "hi there! hello!",
+    solution: 'data.replace("hello", "hi")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace all digits with "#" in the string "My number is 123456789".',
+    data: "My number is 123456789",
+    expected_result: "My number is #########",
+    solution: 'data.replace(/d/g, "#")',
+    category: "replace",
+  },
+  {
+    question: 'Replace "sun" with "moon" in the string "The sun is shining".',
+    data: "The sun is shining",
+    expected_result: "The moon is shining",
+    solution: 'data.replace("sun", "moon")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace the first occurrence of "test" with "exam" in the string "This is a test, test, test".',
+    data: "This is a test, test, test",
+    expected_result: "This is a exam, test, test",
+    solution: 'data.replace("test", "exam")',
+    category: "replace",
+  },
+  {
+    question:
+      'Replace all occurrences of "yes" with "no" in the string "yes yes yes".',
+    data: "yes yes yes",
+    expected_result: "no no no",
+    solution: 'data.replace(/yes/g, "no")',
+    category: "replace",
+  },
+
+  {
+    question:
+      'Replace all occurrences of "cat" with "dog" in the string "cat, cat, cat".',
+    data: "cat, cat, cat",
+    expected_result: "dog, dog, dog",
+    solution: 'data.replaceAll("cat", "dog")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "apple" with "orange" in the string "apple, apple, apple".',
+    data: "apple, apple, apple",
+    expected_result: "orange, orange, orange",
+    solution: 'data.replaceAll("apple", "orange")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "hello" with "hi" in the string "hello world, hello everyone".',
+    data: "hello world, hello everyone",
+    expected_result: "hi world, hi everyone",
+    solution: 'data.replaceAll("hello", "hi")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "red" with "blue" in the string "red, red, red".',
+    data: "red, red, red",
+    expected_result: "blue, blue, blue",
+    solution: 'data.replaceAll("red", "blue")',
+    category: "replaceAll",
+  },
+  {
+    question: 'Replace all spaces with hyphens in the string "hello world".',
+    data: "hello world",
+    expected_result: "hello-world",
+    solution: 'data.replaceAll(" ", "-")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "test" with "exam" in the string "test test test".',
+    data: "test test test",
+    expected_result: "exam exam exam",
+    solution: 'data.replaceAll("test", "exam")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of digits with "*" in the string "123-456-789".',
+    data: "123-456-789",
+    expected_result: "***-***-***",
+    solution: 'data.replaceAll(/d/g, "*")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "dog" with "cat" in the string "dog, dog, dog".',
+    data: "dog, dog, dog",
+    expected_result: "cat, cat, cat",
+    solution: 'data.replaceAll("dog", "cat")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all commas with semicolons in the string "apple, banana, cherry".',
+    data: "apple, banana, cherry",
+    expected_result: "apple; banana; cherry",
+    solution: 'data.replaceAll(",", ";")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all lowercase letters with uppercase letters in the string "hello world".',
+    data: "hello world",
+    expected_result: "HELLO WORLD",
+    solution: "data.replaceAll(/[a-z]/g, letter => letter.toUpperCase())",
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "sun" with "moon" in the string "The sun is shining, the sun is bright".',
+    data: "The sun is shining, the sun is bright",
+    expected_result: "The moon is shining, the moon is bright",
+    solution: 'data.replaceAll("sun", "moon")',
+    category: "replaceAll",
+  },
+  {
+    question: 'Replace all occurrences of "a" with "o" in the string "apple".',
+    data: "apple",
+    expected_result: "opple",
+    solution: 'data.replaceAll("a", "o")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "I" with "You" in the string "I am I".',
+    data: "I am I",
+    expected_result: "You am You",
+    solution: 'data.replaceAll("I", "You")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all periods with exclamation marks in the string "Hello. How are you.".',
+    data: "Hello. How are you.",
+    expected_result: "Hello! How are you!",
+    solution: 'data.replaceAll(".", "!")',
+    category: "replaceAll",
+  },
+  {
+    question:
+      'Replace all occurrences of "quick" with "slow" in the string "The quick brown fox".',
+    data: "The quick brown fox",
+    expected_result: "The slow brown fox",
+    solution: 'data.replaceAll("quick", "slow")',
+    category: "replaceAll",
+  },
+
+  {
+    question:
+      'Remove leading and trailing spaces from the string "   Hello World   ".',
+    data: "   Hello World   ",
+    expected_result: "Hello World",
+    solution: "data.trim()",
+    category: "trim",
+  },
+  {
+    question:
+      'Remove leading and trailing spaces from the string "   JavaScript   ".',
+    data: "   JavaScript   ",
+    expected_result: "JavaScript",
+    solution: "data.trim()",
+    category: "trim",
+  },
+  {
+    question: 'Remove spaces from the string "    abc    ".',
+    data: "    abc    ",
+    expected_result: "abc",
+    solution: "data.trim()",
+    category: "trim",
+  },
+  {
+    question:
+      'Remove leading and trailing spaces from the string "    hello    world    ".',
+    data: "    hello    world    ",
+    expected_result: "hello    world",
+    solution: "data.trim()",
+    category: "trim",
+  },
+  {
+    question: 'Remove spaces from the string "     12345     ".',
+    data: "     12345     ",
+    expected_result: "12345",
+    solution: "data.trim()",
+    category: "trim",
+  },
+
+  {
+    question: 'Remove leading spaces from the string "   Hello World".',
+    data: "   Hello World",
+    expected_result: "Hello World",
+    solution: "data.trimStart()",
+    category: "trimStart",
+  },
+  {
+    question: 'Remove leading spaces from the string "   JavaScript".',
+    data: "   JavaScript",
+    expected_result: "JavaScript",
+    solution: "data.trimStart()",
+    category: "trimStart",
+  },
+  {
+    question: 'Remove leading spaces from the string "   abc".',
+    data: "   abc",
+    expected_result: "abc",
+    solution: "data.trimStart()",
+    category: "trimStart",
+  },
+  {
+    question: 'Remove leading spaces from the string "    hello world".',
+    data: "    hello world",
+    expected_result: "hello world",
+    solution: "data.trimStart()",
+    category: "trimStart",
+  },
+  {
+    question: 'Remove leading spaces from the string "     12345".',
+    data: "     12345",
+    expected_result: "12345",
+    solution: "data.trimStart()",
+    category: "trimStart",
+  },
+
+  {
+    question: 'Remove trailing spaces from the string "Hello World   ".',
+    data: "Hello World   ",
+    expected_result: "Hello World",
+    solution: "data.trimEnd()",
+    category: "trimEnd",
+  },
+  {
+    question: 'Remove trailing spaces from the string "JavaScript   ".',
+    data: "JavaScript   ",
+    expected_result: "JavaScript",
+    solution: "data.trimEnd()",
+    category: "trimEnd",
+  },
+  {
+    question: 'Remove trailing spaces from the string "abc    ".',
+    data: "abc    ",
+    expected_result: "abc",
+    solution: "data.trimEnd()",
+    category: "trimEnd",
+  },
+  {
+    question: 'Remove trailing spaces from the string "hello world    ".',
+    data: "hello world    ",
+    expected_result: "hello world",
+    solution: "data.trimEnd()",
+    category: "trimEnd",
+  },
+  {
+    question: 'Remove trailing spaces from the string "12345     ".',
+    data: "12345     ",
+    expected_result: "12345",
+    solution: "data.trimEnd()",
+    category: "trimEnd",
+  },
+    {
+      "question": "Pad the string 'Java' with leading zeros to a total length of 6.",
+      "data": "Java",
+      "expected_result": "00Java",
+      "solution": "data.padStart(6, '0')",
+      "category": "padStart"
+    },
+    {
+      "question": "Pad the string 'cat' with leading asterisks to a total length of 5.",
+      "data": "cat",
+      "expected_result": "**cat",
+      "solution": "data.padStart(5, '*')",
+      "category": "padStart"
+    },
+    {
+      "question": "Pad the string '123' with leading dashes to a total length of 8.",
+      "data": "123",
+      "expected_result": "----123",
+      "solution": "data.padStart(8, '-')",
+      "category": "padStart"
+    },
+    {
+      "question": "Pad the string 'hello' with leading spaces to a total length of 10.",
+      "data": "hello",
+      "expected_result": "     hello",
+      "solution": "data.padStart(10, ' ')",
+      "category": "padStart"
+    },
+    {
+      "question": "Pad the string 'short' with leading exclamation marks to a total length of 8.",
+      "data": "short",
+      "expected_result": "!!short",
+      "solution": "data.padStart(8, '!')",
+      "category": "padStart"
+    },
+    {
+      "question": "Pad the string 'abc' with trailing spaces to a total length of 6.",
+      "data": "abc",
+      "expected_result": "abc   ",
+      "solution": "data.padEnd(6, ' ')",
+      "category": "padEnd"
+    },
+    {
+      "question": "Pad the string 'dog' with trailing stars to a total length of 7.",
+      "data": "dog",
+      "expected_result": "dog****",
+      "solution": "data.padEnd(7, '*')",
+      "category": "padEnd"
+    },
+    {
+      "question": "Pad the string 'test' with trailing dashes to a total length of 10.",
+      "data": "test",
+      "expected_result": "test------",
+      "solution": "data.padEnd(10, '-')",
+      "category": "padEnd"
+    },
+    {
+      "question": "Pad the string 'hello' with trailing underscores to a total length of 12.",
+      "data": "hello",
+      "expected_result": "hello______",
+      "solution": "data.padEnd(12, '_')",
+      "category": "padEnd"
+    },
+    {
+      "question": "Pad the string 'openai' with trailing question marks to a total length of 10.",
+      "data": "openai",
+      "expected_result": "openai????",
+      "solution": "data.padEnd(10, '?')",
+      "category": "padEnd"
+    },
+    
   
-    {
-        question: 'Extract the substring from index 0 to index 3 of the string "Hello"',
-        data: 'Hello',
-        expected_result: 'Hell',
-        solution: 'data.substring(0, 4)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 2 to index 5 of the string "JavaScript"',
-        data: 'JavaScript',
-        expected_result: 'va',
-        solution: 'data.substring(2, 5)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 3 to the end of the string "abcdef"',
-        data: 'abcdef',
-        expected_result: 'def',
-        solution: 'data.substring(3)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 4 to index 7 of the string "supercalifragilisticexpialidocious"',
-        data: 'supercalifragilisticexpialidocious',
-        expected_result: 'cali',
-        solution: 'data.substring(4, 8)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 1 to index 6 of the string "wonderful"',
-        data: 'wonderful',
-        expected_result: 'onder',
-        solution: 'data.substring(1, 6)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 5 to index 10 of the string "JavaScript"',
-        data: 'JavaScript',
-        expected_result: 'Scrip',
-        solution: 'data.substring(5, 10)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 0 to index 3 of the string "Programming"',
-        data: 'Programming',
-        expected_result: 'Prog',
-        solution: 'data.substring(0, 4)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 3 to index 7 of the string "incredible"',
-        data: 'incredible',
-        expected_result: 'cred',
-        solution: 'data.substring(3, 7)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 2 to index 5 of the string "development"',
-        data: 'development',
-        expected_result: 'velo',
-        solution: 'data.substring(2, 6)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 1 to index 4 of the string "environment"',
-        data: 'environment',
-        expected_result: 'nvi',
-        solution: 'data.substring(1, 4)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 4 to the end of the string "unbelievable"',
-        data: 'unbelievable',
-        expected_result: 'lievable',
-        solution: 'data.substring(4)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 3 to index 9 of the string "exceptional"',
-        data: 'exceptional',
-        expected_result: 'eptio',
-        solution: 'data.substring(3, 9)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 2 to index 7 of the string "fantastic"',
-        data: 'fantastic',
-        expected_result: 'ntas',
-        solution: 'data.substring(2, 7)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 0 to index 5 of the string "imagination"',
-        data: 'imagination',
-        expected_result: 'imagi',
-        solution: 'data.substring(0, 5)',
-        category: 'substring'
-    },
-    {
-        question: 'Extract the substring from index 6 to index 12 of the string "explanation"',
-        data: 'explanation',
-        expected_result: 'natio',
-        solution: 'data.substring(6, 12)',
-        category: 'substring'
-    },
-        {
-            question: 'Extract the substring starting from index 0 with a length of 3 from the string "Hello"',
-            data: 'Hello',
-            expected_result: 'Hel',
-            solution: 'data.substr(0, 3)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 2 with a length of 4 from the string "JavaScript"',
-            data: 'JavaScript',
-            expected_result: 'vaSc',
-            solution: 'data.substr(2, 4)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 4 with a length of 3 from the string "abcdef"',
-            data: 'abcdef',
-            expected_result: 'def',
-            solution: 'data.substr(4, 3)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 5 with a length of 4 from the string "supercalifragilisticexpialidocious"',
-            data: 'supercalifragilisticexpialidocious',
-            expected_result: 'cali',
-            solution: 'data.substr(5, 4)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 2 with a length of 3 from the string "wonderful"',
-            data: 'wonderful',
-            expected_result: 'nde',
-            solution: 'data.substr(2, 3)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 0 with a length of 4 from the string "JavaScript"',
-            data: 'JavaScript',
-            expected_result: 'Java',
-            solution: 'data.substr(0, 4)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 3 with a length of 5 from the string "incredible"',
-            data: 'incredible',
-            expected_result: 'cred',
-            solution: 'data.substr(3, 5)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 2 with a length of 4 from the string "development"',
-            data: 'development',
-            expected_result: 'velo',
-            solution: 'data.substr(2, 4)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 1 with a length of 5 from the string "environment"',
-            data: 'environment',
-            expected_result: 'nvir',
-            solution: 'data.substr(1, 5)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 4 with a length of 7 from the string "unbelievable"',
-            data: 'unbelievable',
-            expected_result: 'lievabl',
-            solution: 'data.substr(4, 7)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 3 with a length of 6 from the string "exceptional"',
-            data: 'exceptional',
-            expected_result: 'eptio',
-            solution: 'data.substr(3, 6)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 2 with a length of 5 from the string "fantastic"',
-            data: 'fantastic',
-            expected_result: 'ntas',
-            solution: 'data.substr(2, 5)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 0 with a length of 6 from the string "imagination"',
-            data: 'imagination',
-            expected_result: 'imagin',
-            solution: 'data.substr(0, 6)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index 6 with a length of 4 from the string "explanation"',
-            data: 'explanation',
-            expected_result: 'nati',
-            solution: 'data.substr(6, 4)',
-            category: 'substr'
-        },
-        {
-            question: 'Extract the substring starting from index -4 with a length of 3 from the string "superstar"',
-            data: 'superstar',
-            expected_result: 'tar',
-            solution: 'data.substr(-4, 3)',
-            category: 'substr'
-        },
-        
-            {
-                question: 'Concatenate the string "Hello" with " World!"',
-                data: 'Hello',
-                expected_result: 'Hello World!',
-                solution: 'data.concat(" World!")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Java" with "Script"',
-                data: 'Java',
-                expected_result: 'JavaScript',
-                solution: 'data.concat("Script")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Good" with " Morning"',
-                data: 'Good',
-                expected_result: 'Good Morning',
-                solution: 'data.concat(" Morning")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Hi" with " there"',
-                data: 'Hi',
-                expected_result: 'Hi there',
-                solution: 'data.concat(" there")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Java" with " is fun"',
-                data: 'Java',
-                expected_result: 'Java is fun',
-                solution: 'data.concat(" is fun")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "I" with " am" and " learning"',
-                data: 'I',
-                expected_result: 'I am learning',
-                solution: 'data.concat(" am", " learning")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Have" with " a great day"',
-                data: 'Have',
-                expected_result: 'Have a great day',
-                solution: 'data.concat(" a great day")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Learn" with " coding"',
-                data: 'Learn',
-                expected_result: 'Learn coding',
-                solution: 'data.concat(" coding")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "C" with "ode"',
-                data: 'C',
-                expected_result: 'Code',
-                solution: 'data.concat("ode")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Python" with " Rocks"',
-                data: 'Python',
-                expected_result: 'Python Rocks',
-                solution: 'data.concat(" Rocks")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "I" with " love JavaScript"',
-                data: 'I',
-                expected_result: 'I love JavaScript',
-                solution: 'data.concat(" love JavaScript")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Concatenation" with " is easy!"',
-                data: 'Concatenation',
-                expected_result: 'Concatenation is easy!',
-                solution: 'data.concat(" is easy!")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "First" with " Second" and " part"',
-                data: 'First',
-                expected_result: 'First Second part',
-                solution: 'data.concat(" Second", " part")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "String" with " concatenation"',
-                data: 'String',
-                expected_result: 'String concatenation',
-                solution: 'data.concat(" concatenation")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Concatenate" with " with" and " space"',
-                data: 'Concatenate',
-                expected_result: 'Concatenate with space',
-                solution: 'data.concat(" with", " space")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Morning" with " everyone"',
-                data: 'Morning',
-                expected_result: 'Morning everyone',
-                solution: 'data.concat(" everyone")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "I" with " am" and " here"',
-                data: 'I',
-                expected_result: 'I am here',
-                solution: 'data.concat(" am", " here")',
-                category: 'concat'
-            },
-            {
-                question: 'Concatenate the string "Let" with " us" and " begin"',
-                data: 'Let',
-                expected_result: 'Let us begin',
-                solution: 'data.concat(" us", " begin")',
-                category: 'concat'
-            },
-            
-                {
-                    question: 'Split the string "apple,banana,orange" by commas.',
-                    data: 'apple,banana,orange',
-                    expected_result: ['apple', 'banana', 'orange'],
-                    solution: 'data.split(",")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "Hello World" by a space.',
-                    data: 'Hello World',
-                    expected_result: ['Hello', 'World'],
-                    solution: 'data.split(" ")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "123-456-789" by dashes.',
-                    data: '123-456-789',
-                    expected_result: ['123', '456', '789'],
-                    solution: 'data.split("-")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "one two three four" by spaces.',
-                    data: 'one two three four',
-                    expected_result: ['one', 'two', 'three', 'four'],
-                    solution: 'data.split(" ")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "a,b,c,d,e" by commas.',
-                    data: 'a,b,c,d,e',
-                    expected_result: ['a', 'b', 'c', 'd', 'e'],
-                    solution: 'data.split(",")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "this is a test" by spaces.',
-                    data: 'this is a test',
-                    expected_result: ['this', 'is', 'a', 'test'],
-                    solution: 'data.split(" ")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "apple/banana/orange" by slashes.',
-                    data: 'apple/banana/orange',
-                    expected_result: ['apple', 'banana', 'orange'],
-                    solution: 'data.split("/")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "2025-02-06" by dashes.',
-                    data: '2025-02-06',
-                    expected_result: ['2025', '02', '06'],
-                    solution: 'data.split("-")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "cat|dog|rabbit" by pipe characters.',
-                    data: 'cat|dog|rabbit',
-                    expected_result: ['cat', 'dog', 'rabbit'],
-                    solution: 'data.split("|")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "apple,banana,grape,pear" by commas.',
-                    data: 'apple,banana,grape,pear',
-                    expected_result: ['apple', 'banana', 'grape', 'pear'],
-                    solution: 'data.split(",")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "one two three" by spaces and limit to 2 parts.',
-                    data: 'one two three',
-                    expected_result: ['one', 'two three'],
-                    solution: 'data.split(" ", 2)',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "hello,world,how,are,you" by commas and limit to 3 parts.',
-                    data: 'hello,world,how,are,you',
-                    expected_result: ['hello', 'world', 'how,are,you'],
-                    solution: 'data.split(",", 3)',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "apple@orange@banana" by the @ symbol.',
-                    data: 'apple@orange@banana',
-                    expected_result: ['apple', 'orange', 'banana'],
-                    solution: 'data.split("@")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "one-two-three-four" by dashes.',
-                    data: 'one-two-three-four',
-                    expected_result: ['one', 'two', 'three', 'four'],
-                    solution: 'data.split("-")',
-                    category: 'split'
-                },
-                {
-                    question: 'Split the string "this is, an example" by spaces and comma.',
-                    data: 'this is, an example',
-                    expected_result: ['this', 'is', ', an', 'example'],
-                    solution: 'data.split(/[\s,]+/)',
-                    category: 'split'
-                },
-                
-                    {
-                        question: 'Check if the string "Hello, World!" contains the word "Hello".',
-                        data: 'Hello, World!',
-                        expected_result: true,
-                        solution: 'data.includes("Hello")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "JavaScript is awesome" contains the word "awesome".',
-                        data: 'JavaScript is awesome',
-                        expected_result: true,
-                        solution: 'data.includes("awesome")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "I love coding" contains the word "love".',
-                        data: 'I love coding',
-                        expected_result: true,
-                        solution: 'data.includes("love")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "apple, orange, banana" contains the word "orange".',
-                        data: 'apple, orange, banana',
-                        expected_result: true,
-                        solution: 'data.includes("orange")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "I am learning JavaScript" contains the word "Python".',
-                        data: 'I am learning JavaScript',
-                        expected_result: false,
-                        solution: 'data.includes("Python")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "Good morning, everyone!" contains the word "everyone".',
-                        data: 'Good morning, everyone!',
-                        expected_result: true,
-                        solution: 'data.includes("everyone")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "The quick brown fox" contains the word "fox".',
-                        data: 'The quick brown fox',
-                        expected_result: true,
-                        solution: 'data.includes("fox")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "Learn JavaScript and Python" contains the word "Ruby".',
-                        data: 'Learn JavaScript and Python',
-                        expected_result: false,
-                        solution: 'data.includes("Ruby")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "abc123" contains the substring "123".',
-                        data: 'abc123',
-                        expected_result: true,
-                        solution: 'data.includes("123")',
-                        category: 'includes'
-                    },
-                    {
-                        question: 'Check if the string "Hello, how are you?" contains the word "how".',
-                        data: 'Hello, how are you?',
-                        expected_result: true,
-                        solution: 'data.includes("how")',
-                        category: 'includes'
-                    },
-                    
-                        {
-                            question: 'Replace the first occurrence of "apple" with "orange" in the string "apple, banana, apple".',
-                            data: 'apple, banana, apple',
-                            expected_result: 'orange, banana, apple',
-                            solution: 'data.replace("apple", "orange")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "JavaScript" with "TypeScript" in the string "I love JavaScript!".',
-                            data: 'I love JavaScript!',
-                            expected_result: 'I love TypeScript!',
-                            solution: 'data.replace("JavaScript", "TypeScript")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "dog" with "cat" in the string "I have a dog.".',
-                            data: 'I have a dog.',
-                            expected_result: 'I have a cat.',
-                            solution: 'data.replace("dog", "cat")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "apple" with "banana" in the string "apple pie, apple tart".',
-                            data: 'apple pie, apple tart',
-                            expected_result: 'banana pie, apple tart',
-                            solution: 'data.replace("apple", "banana")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace the first occurrence of "is" with "was" in the string "This is a test."',
-                            data: 'This is a test.',
-                            expected_result: 'This was a test.',
-                            solution: 'data.replace("is", "was")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "red" with "blue" in the string "red car, red house".',
-                            data: 'red car, red house',
-                            expected_result: 'blue car, red house',
-                            solution: 'data.replace("red", "blue")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "dog" with "cat" globally in the string "dog, dog, dog".',
-                            data: 'dog, dog, dog',
-                            expected_result: 'cat, cat, cat',
-                            solution: 'data.replace(/dog/g, "cat")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "cat" with "lion" in the string "cat and dog".',
-                            data: 'cat and dog',
-                            expected_result: 'lion and dog',
-                            solution: 'data.replace("cat", "lion")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace the first occurrence of "hello" with "hi" in the string "hello world, hello universe".',
-                            data: 'hello world, hello universe',
-                            expected_result: 'hi world, hello universe',
-                            solution: 'data.replace("hello", "hi")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "good" with "great" in the string "Good morning, good night".',
-                            data: 'Good morning, good night',
-                            expected_result: 'Great morning, good night',
-                            solution: 'data.replace("good", "great")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "hello" with "hi" in the string "hello there! hello!".',
-                            data: 'hello there! hello!',
-                            expected_result: 'hi there! hello!',
-                            solution: 'data.replace("hello", "hi")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace all digits with "#" in the string "My number is 123456789".',
-                            data: 'My number is 123456789',
-                            expected_result: 'My number is #########',
-                            solution: 'data.replace(/\d/g, "#")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace "sun" with "moon" in the string "The sun is shining".',
-                            data: 'The sun is shining',
-                            expected_result: 'The moon is shining',
-                            solution: 'data.replace("sun", "moon")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace the first occurrence of "test" with "exam" in the string "This is a test, test, test".',
-                            data: 'This is a test, test, test',
-                            expected_result: 'This is a exam, test, test',
-                            solution: 'data.replace("test", "exam")',
-                            category: 'replace'
-                        },
-                        {
-                            question: 'Replace all occurrences of "yes" with "no" in the string "yes yes yes".',
-                            data: 'yes yes yes',
-                            expected_result: 'no no no',
-                            solution: 'data.replace(/yes/g, "no")',
-                            category: 'replace'
-                        },
-                        
-                            {
-                                question: 'Replace all occurrences of "cat" with "dog" in the string "cat, cat, cat".',
-                                data: 'cat, cat, cat',
-                                expected_result: 'dog, dog, dog',
-                                solution: 'data.replaceAll("cat", "dog")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "apple" with "orange" in the string "apple, apple, apple".',
-                                data: 'apple, apple, apple',
-                                expected_result: 'orange, orange, orange',
-                                solution: 'data.replaceAll("apple", "orange")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "hello" with "hi" in the string "hello world, hello everyone".',
-                                data: 'hello world, hello everyone',
-                                expected_result: 'hi world, hi everyone',
-                                solution: 'data.replaceAll("hello", "hi")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "red" with "blue" in the string "red, red, red".',
-                                data: 'red, red, red',
-                                expected_result: 'blue, blue, blue',
-                                solution: 'data.replaceAll("red", "blue")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all spaces with hyphens in the string "hello world".',
-                                data: 'hello world',
-                                expected_result: 'hello-world',
-                                solution: 'data.replaceAll(" ", "-")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "test" with "exam" in the string "test test test".',
-                                data: 'test test test',
-                                expected_result: 'exam exam exam',
-                                solution: 'data.replaceAll("test", "exam")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of digits with "*" in the string "123-456-789".',
-                                data: '123-456-789',
-                                expected_result: '***-***-***',
-                                solution: 'data.replaceAll(/\d/g, "*")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "dog" with "cat" in the string "dog, dog, dog".',
-                                data: 'dog, dog, dog',
-                                expected_result: 'cat, cat, cat',
-                                solution: 'data.replaceAll("dog", "cat")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all commas with semicolons in the string "apple, banana, cherry".',
-                                data: 'apple, banana, cherry',
-                                expected_result: 'apple; banana; cherry',
-                                solution: 'data.replaceAll(",", ";")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all lowercase letters with uppercase letters in the string "hello world".',
-                                data: 'hello world',
-                                expected_result: 'HELLO WORLD',
-                                solution: 'data.replaceAll(/[a-z]/g, letter => letter.toUpperCase())',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "sun" with "moon" in the string "The sun is shining, the sun is bright".',
-                                data: 'The sun is shining, the sun is bright',
-                                expected_result: 'The moon is shining, the moon is bright',
-                                solution: 'data.replaceAll("sun", "moon")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "a" with "o" in the string "apple".',
-                                data: 'apple',
-                                expected_result: 'opple',
-                                solution: 'data.replaceAll("a", "o")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "I" with "You" in the string "I am I".',
-                                data: 'I am I',
-                                expected_result: 'You am You',
-                                solution: 'data.replaceAll("I", "You")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all periods with exclamation marks in the string "Hello. How are you.".',
-                                data: 'Hello. How are you.',
-                                expected_result: 'Hello! How are you!',
-                                solution: 'data.replaceAll(".", "!")',
-                                category: 'replaceAll'
-                            },
-                            {
-                                question: 'Replace all occurrences of "quick" with "slow" in the string "The quick brown fox".',
-                                data: 'The quick brown fox',
-                                expected_result: 'The slow brown fox',
-                                solution: 'data.replaceAll("quick", "slow")',
-                                category: 'replaceAll'
-                            },
-                            
-                                {
-                                    question: 'Remove leading and trailing spaces from the string "   Hello World   ".',
-                                    data: '   Hello World   ',
-                                    expected_result: 'Hello World',
-                                    solution: 'data.trim()',
-                                    category: 'trim'
-                                },
-                                {
-                                    question: 'Remove leading and trailing spaces from the string "   JavaScript   ".',
-                                    data: '   JavaScript   ',
-                                    expected_result: 'JavaScript',
-                                    solution: 'data.trim()',
-                                    category: 'trim'
-                                },
-                                {
-                                    question: 'Remove spaces from the string "    abc    ".',
-                                    data: '    abc    ',
-                                    expected_result: 'abc',
-                                    solution: 'data.trim()',
-                                    category: 'trim'
-                                },
-                                {
-                                    question: 'Remove leading and trailing spaces from the string "    hello    world    ".',
-                                    data: '    hello    world    ',
-                                    expected_result: 'hello    world',
-                                    solution: 'data.trim()',
-                                    category: 'trim'
-                                },
-                                {
-                                    question: 'Remove spaces from the string "     12345     ".',
-                                    data: '     12345     ',
-                                    expected_result: '12345',
-                                    solution: 'data.trim()',
-                                    category: 'trim'
-                                },
-                                
-                                    {
-                                        question: 'Remove leading spaces from the string "   Hello World".',
-                                        data: '   Hello World',
-                                        expected_result: 'Hello World',
-                                        solution: 'data.trimStart()',
-                                        category: 'trimStart'
-                                    },
-                                    {
-                                        question: 'Remove leading spaces from the string "   JavaScript".',
-                                        data: '   JavaScript',
-                                        expected_result: 'JavaScript',
-                                        solution: 'data.trimStart()',
-                                        category: 'trimStart'
-                                    },
-                                    {
-                                        question: 'Remove leading spaces from the string "   abc".',
-                                        data: '   abc',
-                                        expected_result: 'abc',
-                                        solution: 'data.trimStart()',
-                                        category: 'trimStart'
-                                    },
-                                    {
-                                        question: 'Remove leading spaces from the string "    hello world".',
-                                        data: '    hello world',
-                                        expected_result: 'hello world',
-                                        solution: 'data.trimStart()',
-                                        category: 'trimStart'
-                                    },
-                                    {
-                                        question: 'Remove leading spaces from the string "     12345".',
-                                        data: '     12345',
-                                        expected_result: '12345',
-                                        solution: 'data.trimStart()',
-                                        category: 'trimStart'
-                                    },
-                                    
-                                        {
-                                            question: 'Remove trailing spaces from the string "Hello World   ".',
-                                            data: 'Hello World   ',
-                                            expected_result: 'Hello World',
-                                            solution: 'data.trimEnd()',
-                                            category: 'trimEnd'
-                                        },
-                                        {
-                                            question: 'Remove trailing spaces from the string "JavaScript   ".',
-                                            data: 'JavaScript   ',
-                                            expected_result: 'JavaScript',
-                                            solution: 'data.trimEnd()',
-                                            category: 'trimEnd'
-                                        },
-                                        {
-                                            question: 'Remove trailing spaces from the string "abc    ".',
-                                            data: 'abc    ',
-                                            expected_result: 'abc',
-                                            solution: 'data.trimEnd()',
-                                            category: 'trimEnd'
-                                        },
-                                        {
-                                            question: 'Remove trailing spaces from the string "hello world    ".',
-                                            data: 'hello world    ',
-                                            expected_result: 'hello world',
-                                            solution: 'data.trimEnd()',
-                                            category: 'trimEnd'
-                                        },
-                                        {
-                                            question: 'Remove trailing spaces from the string "12345     ".',
-                                            data: '12345     ',
-                                            expected_result: '12345',
-                                            solution: 'data.trimEnd()',
-                                            category: 'trimEnd'
-                                        },
-                                    
-                                    
-                                
-                                
-                            
-                            
-                        
-                        
-                    
-                    
-                
-                
-            
-            
-
-        
-        
-    
-    
-
-
+  
 
 ];
