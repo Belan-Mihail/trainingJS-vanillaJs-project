@@ -4470,7 +4470,151 @@ export const question = [
                 "solution": "data.includes('z')",
                 "category": "includes"
               },
-            
+              
+                {
+                  "question": "Create a Date object for the current date and time.",
+                  "data": "new Date()",
+                  "expected_result": "Current date and time",
+                  "solution": "new Date()",
+                  "category": "Date"
+                },
+                {
+                  "question": "Create a Date object for January 1, 2025, 12:00:00 AM.",
+                  "data": "new Date('2025-01-01T00:00:00')",
+                  "expected_result": "Thu Jan 01 2025 00:00:00 GMT...",
+                  "solution": "new Date('2025-01-01T00:00:00')",
+                  "category": "Date"
+                },
+                {
+                  "question": "Create a Date object for the Unix Epoch (January 1, 1970, 00:00:00 UTC).",
+                  "data": "new Date(0)",
+                  "expected_result": "Thu Jan 01 1970 00:00:00 GMT...",
+                  "solution": "new Date(0)",
+                  "category": "Date"
+                },
+                {
+                  "question": "Get the current year from a Date object.",
+                  "data": "new Date()",
+                  "expected_result": "2025",
+                  "solution": "new Date().getFullYear()",
+                  "category": "Date"
+                },
+                {
+                  "question": "Get the current month (0-based) from a Date object.",
+                  "data": "new Date()",
+                  "expected_result": "1",
+                  "solution": "new Date().getMonth()",
+                  "category": "Date"
+                },
+                {
+                  "question": "Get the current day of the month from a Date object.",
+                  "data": "new Date()",
+                  "expected_result": "12",
+                  "solution": "new Date().getDate()",
+                  "category": "Date"
+                },
+                {
+                  "question": "Get the current day of the week (0-Sunday, 6-Saturday) from a Date object.",
+                  "data": "new Date()",
+                  "expected_result": "1",
+                  "solution": "new Date().getDay()",
+                  "category": "Date"
+                },
+                {
+                  "question": "Get the current hours from a Date object.",
+                  "data": "new Date()",
+                  "expected_result": "16",
+                  "solution": "new Date().getHours()",
+                  "category": "Date"
+                },
+                {
+                  "question": "Get the current minutes from a Date object.",
+                  "data": "new Date()",
+                  "expected_result": "25",
+                  "solution": "new Date().getMinutes()",
+                  "category": "Date"
+                },
+                {
+                  "question": "Create a Date object for the date 'March 15, 2022'.",
+                  "data": "new Date('2022-03-15')",
+                  "expected_result": "Tue Mar 15 2022 00:00:00 GMT...",
+                  "solution": "new Date('2022-03-15')",
+                  "category": "Date"
+                },
+                
+                  {
+                    "question": "Convert the current date into a string using toString().",
+                    "data": "new Date()",
+                    "expected_result": "Wed Feb 12 2025 16:30:45 GMT+0000 (Coordinated Universal Time)",
+                    "solution": "new Date().toString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert the current date into a string using toDateString().",
+                    "data": "new Date()",
+                    "expected_result": "Wed Feb 12 2025",
+                    "solution": "new Date().toDateString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert the current date into a string using toLocaleDateString().",
+                    "data": "new Date()",
+                    "expected_result": "2/12/2025",
+                    "solution": "new Date().toLocaleDateString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert the current date into a string using toISOString().",
+                    "data": "new Date()",
+                    "expected_result": "2025-02-12T16:30:45.000Z",
+                    "solution": "new Date().toISOString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert the current date into a string using toUTCString().",
+                    "data": "new Date()",
+                    "expected_result": "Wed, 12 Feb 2025 16:30:45 GMT",
+                    "solution": "new Date().toUTCString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert the current date into a string using toTimeString().",
+                    "data": "new Date()",
+                    "expected_result": "16:30:45 GMT+0000 (Coordinated Universal Time)",
+                    "solution": "new Date().toTimeString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert the current date into a string using toLocaleTimeString().",
+                    "data": "new Date()",
+                    "expected_result": "4:30:45 PM",
+                    "solution": "new Date().toLocaleTimeString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert a specific date '2025-01-01' into a string using toDateString().",
+                    "data": "new Date('2025-01-01')",
+                    "expected_result": "Thu Jan 01 2025",
+                    "solution": "new Date('2025-01-01').toDateString()",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert the current date into a string in 'en-US' locale using toLocaleDateString().",
+                    "data": "new Date()",
+                    "expected_result": "2/12/2025",
+                    "solution": "new Date().toLocaleDateString('en-US')",
+                    "category": "Date to String"
+                  },
+                  {
+                    "question": "Convert a specific date '2025-03-15' into a string using toISOString().",
+                    "data": "new Date('2025-03-15')",
+                    "expected_result": "2025-03-15T00:00:00.000Z",
+                    "solution": "new Date('2025-03-15').toISOString()",
+                    "category": "Date to String"
+                  },
+                
+                
+              
             
           
           
