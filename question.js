@@ -4399,6 +4399,79 @@ export const question = [
               "solution": "data.search(/\\d+/)",
               "category": "search"
             },
+            
+              {
+                "question": "Check if the string 'JavaScript' includes 'Script'.",
+                "data": "JavaScript",
+                "expected_result": "true",
+                "solution": "data.includes('Script')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'Hello world' includes 'world'.",
+                "data": "Hello world",
+                "expected_result": "true",
+                "solution": "data.includes('world')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'abcdef' includes 'abc'.",
+                "data": "abcdef",
+                "expected_result": "true",
+                "solution": "data.includes('abc')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'hello' includes 'e'.",
+                "data": "hello",
+                "expected_result": "true",
+                "solution": "data.includes('e')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'apple' includes 'z'.",
+                "data": "apple",
+                "expected_result": "false",
+                "solution": "data.includes('z')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'The year is 2025' includes '2025'.",
+                "data": "The year is 2025",
+                "expected_result": "true",
+                "solution": "data.includes('2025')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'openai' includes 'ai'.",
+                "data": "openai",
+                "expected_result": "true",
+                "solution": "data.includes('ai')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'openai' includes 'open'.",
+                "data": "openai",
+                "expected_result": "true",
+                "solution": "data.includes('open')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'hello' includes 'l'.",
+                "data": "hello",
+                "expected_result": "true",
+                "solution": "data.includes('l')",
+                "category": "includes"
+              },
+              {
+                "question": "Check if the string 'hello' includes 'z'.",
+                "data": "hello",
+                "expected_result": "false",
+                "solution": "data.includes('z')",
+                "category": "includes"
+              },
+            
+            
           
           
         
