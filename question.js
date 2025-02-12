@@ -5213,6 +5213,156 @@ export const question = [
                                 "solution": "document.querySelectorAll('footer')",
                                 "category": "DOM"
                               },
+                              {
+                                "question": "Create a <div> element.",
+                                "data": "",
+                                "expected_result": "<div></div>",
+                                "solution": "document.createElement('div')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <p> element.",
+                                "data": "",
+                                "expected_result": "<p></p>",
+                                "solution": "document.createElement('p')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <button> element.",
+                                "data": "",
+                                "expected_result": "<button></button>",
+                                "solution": "document.createElement('button')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create an <a> element.",
+                                "data": "",
+                                "expected_result": "<a></a>",
+                                "solution": "document.createElement('a')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create an <img> element.",
+                                "data": "",
+                                "expected_result": "<img />",
+                                "solution": "document.createElement('img')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <ul> element.",
+                                "data": "",
+                                "expected_result": "<ul></ul>",
+                                "solution": "document.createElement('ul')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <form> element.",
+                                "data": "",
+                                "expected_result": "<form></form>",
+                                "solution": "document.createElement('form')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <section> element.",
+                                "data": "",
+                                "expected_result": "<section></section>",
+                                "solution": "document.createElement('section')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <header> element.",
+                                "data": "",
+                                "expected_result": "<header></header>",
+                                "solution": "document.createElement('header')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <footer> element.",
+                                "data": "",
+                                "expected_result": "<footer></footer>",
+                                "solution": "document.createElement('footer')",
+                                "category": "DOM"
+                              },
+                              {
+                                "question": "Create a <span> element.",
+                                "data": "",
+                                "expected_result": "<span></span>",
+                                "solution": "document.createElement('span')",
+                                "category": "DOM"
+                              },
+                              
+                                {
+                                  "question": "Create a <div> element and append it inside the first <section> element.",
+                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+                                  "expected_result": "<section><p>Section 1</p><div></div></section><section><p>Section 2</p></section>",
+                                  "solution": "const div = document.createElement('div'); document.querySelector('section').appendChild(div);",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create a <button> element and append it inside the <header> element.",
+                                  "data": "<header><h1>Site Header</h1></header><footer>Footer</footer>",
+                                  "expected_result": "<header><h1>Site Header</h1><button></button></header><footer>Footer</footer>",
+                                  "solution": "const button = document.createElement('button'); document.querySelector('header').appendChild(button);",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create a <ul> element and append it inside the first <section> element.",
+                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+                                  "expected_result": "<section><p>Section 1</p><ul></ul></section><section><p>Section 2</p></section>",
+                                  "solution": "const ul = document.createElement('ul'); document.querySelector('section').appendChild(ul);",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create a <span> element and append it inside the second <section> element.",
+                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+                                  "expected_result": "<section><p>Section 1</p></section><section><p>Section 2<span></span></p></section>",
+                                  "solution": "const span = document.createElement('span'); document.querySelectorAll('section')[1].querySelector('p').appendChild(span);",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create an <img> element and append it inside the <footer> element.",
+                                  "data": "<footer>Footer Content</footer>",
+                                  "expected_result": "<footer>Footer Content<img /></footer>",
+                                  "solution": "const img = document.createElement('img'); document.querySelector('footer').appendChild(img);",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create an <h2> element and insert it before the first <p> element inside the first <section>.",
+                                  "data": "<section><p>Section 1</p></section><section><p>Section 2</p></section>",
+                                  "expected_result": "<section><h2></h2><p>Section 1</p></section><section><p>Section 2</p></section>",
+                                  "solution": "const h2 = document.createElement('h2'); document.querySelector('section').insertBefore(h2, document.querySelector('section').querySelector('p'));",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create a <nav> element and insert it after the <header> element.",
+                                  "data": "<header><h1>Site Header</h1></header><footer>Footer</footer>",
+                                  "expected_result": "<header><h1>Site Header</h1></header><nav></nav><footer>Footer</footer>",
+                                  "solution": "const nav = document.createElement('nav'); document.querySelector('header').parentNode.insertBefore(nav, document.querySelector('footer'));",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create an <article> element and append it inside the <main> element.",
+                                  "data": "<main><p>Main Content</p></main>",
+                                  "expected_result": "<main><p>Main Content</p><article></article></main>",
+                                  "solution": "const article = document.createElement('article'); document.querySelector('main').appendChild(article);",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create a <table> element and insert it as the first child of the <body> element.",
+                                  "data": "<body><div>Some content</div></body>",
+                                  "expected_result": "<body><table></table><div>Some content</div></body>",
+                                  "solution": "const table = document.createElement('table'); document.body.insertBefore(table, document.body.firstChild);",
+                                  "category": "DOM"
+                                },
+                                {
+                                  "question": "Create a <footer> element and append it as the last child inside the <div> with id 'content'.",
+                                  "data": "<div id='content'><p>Content here</p></div>",
+                                  "expected_result": "<div id='content'><p>Content here</p><footer></footer></div>",
+                                  "solution": "const footer = document.createElement('footer'); document.querySelector('#content').appendChild(footer);",
+                                  "category": "DOM"
+                                },
+                              
+                              
                             
                             
                           
