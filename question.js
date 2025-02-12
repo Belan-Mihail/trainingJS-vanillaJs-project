@@ -4612,6 +4612,152 @@ export const question = [
                     "solution": "new Date('2025-03-15').toISOString()",
                     "category": "Date to String"
                   },
+                  
+                    {
+                      "question": "Select the element with id 'header' from the document.",
+                      "data": "<div id='header'>Welcome</div>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('header')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'main-content' from the document.",
+                      "data": "<div id='main-content'>This is the main content</div>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('main-content')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'footer' from the document.",
+                      "data": "<footer id='footer'>Footer content here</footer>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('footer')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'submit-button' from the document.",
+                      "data": "<button id='submit-button'>Submit</button>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('submit-button')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'username' from the document.",
+                      "data": "<input id='username' type='text' placeholder='Enter username'>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('username')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'main-heading' from the document.",
+                      "data": "<h1 id='main-heading'>Main Heading</h1>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('main-heading')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'email' from the document.",
+                      "data": "<input id='email' type='email' placeholder='Enter email'>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('email')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'navigation' from the document.",
+                      "data": "<nav id='navigation'><ul><li>Home</li><li>About</li></ul></nav>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('navigation')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'login-form' from the document.",
+                      "data": "<form id='login-form'><input type='text' placeholder='Username'><input type='password' placeholder='Password'></form>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('login-form')",
+                      "category": "DOM"
+                    },
+                    {
+                      "question": "Select the element with id 'search-bar' from the document.",
+                      "data": "<div id='search-bar'><input type='text' placeholder='Search...'></div>",
+                      "expected_result": "",
+                      "solution": "document.getElementById('search-bar')",
+                      "category": "DOM"
+                    },
+                    
+                      {
+                        "question": "Select the element with id 'banner' from the document.",
+                        "data": "<div id='banner'>Welcome to our website!</div>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('banner')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'profile-picture' from the document.",
+                        "data": "<img id='profile-picture' src='profile.jpg' alt='Profile Picture'>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('profile-picture')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'alert-box' from the document.",
+                        "data": "<div id='alert-box'>This is an alert box!</div>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('alert-box')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'carousel' from the document.",
+                        "data": "<div id='carousel'><img src='image1.jpg'><img src='image2.jpg'></div>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('carousel')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'shopping-cart' from the document.",
+                        "data": "<div id='shopping-cart'>Items: 3</div>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('shopping-cart')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'header-image' from the document.",
+                        "data": "<img id='header-image' src='header.jpg' alt='Header Image'>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('header-image')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'subscribe-button' from the document.",
+                        "data": "<button id='subscribe-button'>Subscribe</button>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('subscribe-button')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'newsletter' from the document.",
+                        "data": "<div id='newsletter'><input type='email' placeholder='Enter email'> <button>Subscribe</button></div>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('newsletter')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'contact-form' from the document.",
+                        "data": "<form id='contact-form'><input type='text' placeholder='Name'><input type='email' placeholder='Email'></form>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('contact-form')",
+                        "category": "DOM"
+                      },
+                      {
+                        "question": "Select the element with id 'faq-section' from the document.",
+                        "data": "<div id='faq-section'><h2>FAQs</h2><p>Answer 1</p><p>Answer 2</p></div>",
+                        "expected_result": "",
+                        "solution": "document.getElementById('faq-section')",
+                        "category": "DOM"
+                      },
+                    
+                    
+                  
+                  
                 
                 
               
