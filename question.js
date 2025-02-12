@@ -4171,7 +4171,167 @@ export const question = [
         "expected_result": "false",
         "solution": "data.endsWith('h')",
         "category": "endsWith"
-      }
+      },
+      
+        {
+          "question": "Repeat the string 'abc' 3 times.",
+          "data": "abc",
+          "expected_result": "abcabcabc",
+          "solution": "data.repeat(3)",
+          "category": "repeat"
+        },
+        {
+          "question": "Repeat the string '!' 5 times.",
+          "data": "!",
+          "expected_result": "!!!!!",
+          "solution": "data.repeat(5)",
+          "category": "repeat"
+        },
+        {
+          "question": "Repeat the string 'hello' 2 times.",
+          "data": "hello",
+          "expected_result": "hellohello",
+          "solution": "data.repeat(2)",
+          "category": "repeat"
+        },
+        {
+          "question": "Repeat the string '123' 4 times.",
+          "data": "123",
+          "expected_result": "123123123123",
+          "solution": "data.repeat(4)",
+          "category": "repeat"
+        },
+        {
+          "question": "Repeat the string 'openai' 1 time.",
+          "data": "openai",
+          "expected_result": "openai",
+          "solution": "data.repeat(1)",
+          "category": "repeat"
+        },
+        
+          {
+            "question": "Find the first occurrence of 'a' in the string 'JavaScript'.",
+            "data": "JavaScript",
+            "expected_result": "1",
+            "solution": "data.indexOf('a')",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the first occurrence of 'S' in the string 'JavaScript'.",
+            "data": "JavaScript",
+            "expected_result": "4",
+            "solution": "data.indexOf('S')",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the first occurrence of 'o' in the string 'Hello world'.",
+            "data": "Hello world",
+            "expected_result": "4",
+            "solution": "data.indexOf('o')",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the first occurrence of 'e' in the string 'abcdef'.",
+            "data": "abcdef",
+            "expected_result": "1",
+            "solution": "data.indexOf('e')",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the first occurrence of 'l' in the string 'hello'.",
+            "data": "hello",
+            "expected_result": "2",
+            "solution": "data.indexOf('l')",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the first occurrence of 'z' in the string 'apple'.",
+            "data": "apple",
+            "expected_result": "-1",
+            "solution": "data.indexOf('z')",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'a' in the string 'JavaScript'.",
+            "data": "JavaScript",
+            "expected_result": "3",
+            "solution": "data.lastIndexOf('a')",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'o' in the string 'Hello world'.",
+            "data": "Hello world",
+            "expected_result": "7",
+            "solution": "data.lastIndexOf('o')",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'l' in the string 'hello'.",
+            "data": "hello",
+            "expected_result": "3",
+            "solution": "data.lastIndexOf('l')",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'e' in the string 'abcdef'.",
+            "data": "abcdef",
+            "expected_result": "1",
+            "solution": "data.lastIndexOf('e')",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'l' in the string 'balloon'.",
+            "data": "balloon",
+            "expected_result": "4",
+            "solution": "data.lastIndexOf('l')",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'a' in the string 'apple'.",
+            "data": "apple",
+            "expected_result": "0",
+            "solution": "data.lastIndexOf('a')",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'e' in the string 'apple'.",
+            "data": "apple",
+            "expected_result": "4",
+            "solution": "data.lastIndexOf('e')",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the first occurrence of 'a' starting from index 2 in the string 'banana'.",
+            "data": "banana",
+            "expected_result": "3",
+            "solution": "data.indexOf('a', 2)",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the first occurrence of 'n' starting from index 3 in the string 'banana'.",
+            "data": "banana",
+            "expected_result": "4",
+            "solution": "data.indexOf('n', 3)",
+            "category": "indexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'a' starting from index 3 in the string 'banana'.",
+            "data": "banana",
+            "expected_result": "5",
+            "solution": "data.lastIndexOf('a', 3)",
+            "category": "lastIndexOf"
+          },
+          {
+            "question": "Find the last occurrence of 'n' starting from index 4 in the string 'banana'.",
+            "data": "banana",
+            "expected_result": "4",
+            "solution": "data.lastIndexOf('n', 4)",
+            "category": "lastIndexOf"
+          },
+        
+        
+      
+      
     
     
 
