@@ -5684,7 +5684,78 @@ export const question = [
     solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
     category: "object merging"
   },
+  {
+    question: "Freeze an object using Object.freeze()",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: { name: "Alice", age: 25, city: "New York" },
+    solution: "const frozen = Object.freeze(data); console.log(frozen);",
+    category: "object freezing"
+  },
+  {
+    question: "Try to modify a property of a frozen object",
+    data: { name: "Bob", age: 30, city: "Paris" },
+    expected_result: { name: "Bob", age: 30, city: "Paris" },
+    solution: "const frozen = Object.freeze(data); data.age = 31; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Check if a frozen object can have new properties added",
+    data: { name: "Charlie", age: 35 },
+    expected_result: { name: "Charlie", age: 35 },
+    solution: "const frozen = Object.freeze(data); data.city = 'London'; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Verify that Object.freeze() only freezes the top level of an object",
+    data: { name: "David", address: { city: "Berlin", postalCode: 10115 } },
+    expected_result: { name: "David", address: { city: "Berlin", postalCode: 10115 } },
+    solution: "const frozen = Object.freeze(data); data.address.city = 'Munich'; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Check that nested objects inside a frozen object are not frozen by default",
+    data: { name: "Eve", address: { city: "London", postalCode: 20001 } },
+    expected_result: { name: "Eve", address: { city: "Berlin", postalCode: 20001 } },
+    solution: "const frozen = Object.freeze(data); data.address.city = 'Berlin'; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Use Object.freeze() to prevent modification of an object's properties",
+    data: { name: "Frank", age: 40 },
+    expected_result: { name: "Frank", age: 40 },
+    solution: "const frozen = Object.freeze(data); data.name = 'John'; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Check if Object.freeze() affects arrays",
+    data: [1, 2, 3],
+    expected_result: [1, 2, 3],
+    solution: "const frozen = Object.freeze(data); data[0] = 5; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Try to delete a property from a frozen object",
+    data: { name: "Grace", age: 26 },
+    expected_result: { name: "Grace", age: 26 },
+    solution: "const frozen = Object.freeze(data); delete data.age; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Check if Object.freeze() makes an object immutable by modifying its properties after freezing",
+    data: { name: "Hannah", city: "Berlin" },
+    expected_result: { name: "Hannah", city: "Berlin" },
+    solution: "const frozen = Object.freeze(data); data.city = 'Paris'; console.log(data);",
+    category: "object freezing"
+  },
+  {
+    question: "Verify if an object is frozen using Object.isFrozen()",
+    data: { name: "Isla", age: 22 },
+    expected_result: true,
+    solution: "const frozen = Object.freeze(data); console.log(Object.isFrozen(frozen));",
+    category: "object freezing"
+  },
   
+
 
 
 
