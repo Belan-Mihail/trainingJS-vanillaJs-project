@@ -4641,6 +4641,77 @@ export const question = [
     solution: "new Date('2025-03-15').toISOString()",
     category: "Date to String",
   },
+  {
+    question: "Access a property of an object using dot notation",
+    data: { name: "John", age: 30 },
+    expected_result: "John",
+    solution: "data.name",
+    category: "object property access"
+  },
+  {
+    question: "Access a property of an object using bracket notation",
+    data: { name: "Jane", age: 25 },
+    expected_result: "Jane",
+    solution: "data['name']",
+    category: "object property access"
+  },
+  {
+    question: "Access a property of an object with a dynamic key",
+    data: { firstName: "Alice", lastName: "Doe" },
+    expected_result: "Doe",
+    solution: "data[lastName]",
+    category: "object property access"
+  },
+  {
+    question: "Access a nested property of an object",
+    data: { user: { name: "Eve", address: { city: "Paris" } } },
+    expected_result: "Paris",
+    solution: "data.user.address.city",
+    category: "object property access"
+  },
+  {
+    question: "Access a property of an object with a key that includes spaces",
+    data: { "first name": "Charlie", "last name": "Brown" },
+    expected_result: "Charlie",
+    solution: "data['first name']",
+    category: "object property access"
+  },
+  {
+    question: "Check if a property exists in an object",
+    data: { brand: "Toyota", model: "Corolla" },
+    expected_result: true,
+    solution: "'model' in data",
+    category: "object property access"
+  },
+  {
+    question: "Access a property of an object with undefined key",
+    data: { color: "blue", size: "large" },
+    expected_result: undefined,
+    solution: "data['weight']",
+    category: "object property access"
+  },
+  {
+    question: "Access a property of an object using a variable",
+    data: { fruit: "apple", color: "green" },
+    expected_result: "apple",
+    solution: "const key = 'fruit'; data[key]",
+    category: "object property access"
+  },
+  {
+    question: "Access the first item in an array property of an object",
+    data: { fruits: ["apple", "banana", "cherry"] },
+    expected_result: "apple",
+    solution: "data.fruits[0]",
+    category: "object property access"
+  },
+  {
+    question: "Access a property in a nested object with multiple levels",
+    data: { user: { profile: { name: "Sam", age: 22 } } },
+    expected_result: "Sam",
+    solution: "data.user.profile.name",
+    category: "object property access"
+  },
+  
 
     
         
