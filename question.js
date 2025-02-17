@@ -5124,6 +5124,112 @@ export const question = [
     solution: "for (const key in data) { console.log([key, data[key]]); }",
     category: "object property iteration"
   },
+  {
+    question: "Iterate over an object's keys using Object.keys()",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: ["name", "age", "city"],
+    solution: "Object.keys(data).forEach(key => console.log(key));",
+    category: "object property iteration"
+  },
+  {
+    question: "Get the values of an object using Object.keys()",
+    data: { name: "Bob", city: "Paris" },
+    expected_result: ["Bob", "Paris"],
+    solution: "Object.keys(data).forEach(key => console.log(data[key]));",
+    category: "object property iteration"
+  },
+  {
+    question: "Create an array of keys from an object using Object.keys()",
+    data: { name: "Charlie", age: 30 },
+    expected_result: ["name", "age"],
+    solution: "const keys = Object.keys(data); console.log(keys);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to check if a property exists in an object",
+    data: { name: "David", age: 40 },
+    expected_result: true,
+    solution: "Object.keys(data).includes('age')",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to count the number of properties in an object",
+    data: { name: "Eve", city: "London", age: 22 },
+    expected_result: 3,
+    solution: "Object.keys(data).length",
+    category: "object property iteration"
+  },
+  {
+    question: "Filter keys using Object.keys() and a condition",
+    data: { name: "Frank", age: 35, city: "Berlin" },
+    expected_result: ["name", "age"],
+    solution: "Object.keys(data).filter(key => key !== 'city')",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to iterate over an object and access both key and value",
+    data: { name: "Grace", age: 26 },
+    expected_result: [["name", "Grace"], ["age", 26]],
+    solution: "Object.keys(data).forEach(key => console.log([key, data[key]]));",
+    category: "object property iteration"
+  },
+  {
+    question: "Create a new object by copying only certain properties using Object.keys()",
+    data: { name: "Henry", age: 40, city: "Berlin" },
+    expected_result: { name: "Henry", city: "Berlin" },
+    solution: "const filteredObj = {}; Object.keys(data).forEach(key => { if (key !== 'age') filteredObj[key] = data[key]; }); console.log(filteredObj);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to iterate over an object and add properties to a new array",
+    data: { name: "Isla", city: "Seattle" },
+    expected_result: ["name", "city"],
+    solution: "const keysArray = Object.keys(data); console.log(keysArray);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to check if an object is empty",
+    data: { name: "Jack" },
+    expected_result: false,
+    solution: "Object.keys(data).length === 0",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to filter properties based on values",
+    data: { name: "Kara", age: 22, city: "Tokyo" },
+    expected_result: ["age"],
+    solution: "Object.keys(data).filter(key => typeof data[key] === 'number')",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to get keys of an object and sort them alphabetically",
+    data: { name: "Liam", age: 30, city: "Paris" },
+    expected_result: ["age", "city", "name"],
+    solution: "Object.keys(data).sort()",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to iterate over an object and modify its values",
+    data: { name: "Mia", age: 22 },
+    expected_result: { name: "Mia", age: 23 },
+    solution: "Object.keys(data).forEach(key => { if (key === 'age') data[key] = 23; }); console.log(data);",
+    category: "object property iteration"
+  },
+  {
+    question: "Check if Object.keys() returns the keys in the correct order for an object",
+    data: { b: 1, a: 2, c: 3 },
+    expected_result: ["b", "a", "c"],
+    solution: "console.log(Object.keys(data));",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.keys() to create a new array of the values of specific properties",
+    data: { name: "Nina", country: "Germany", age: 25 },
+    expected_result: ["Nina", 25],
+    solution: "const selectedValues = Object.keys(data).filter(key => key === 'name' || key === 'age').map(key => data[key]); console.log(selectedValues);",
+    category: "object property iteration"
+  },
+  
 
 
     
