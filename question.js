@@ -5754,7 +5754,77 @@ export const question = [
     solution: "const frozen = Object.freeze(data); console.log(Object.isFrozen(frozen));",
     category: "object freezing"
   },
-  
+  {
+    question: "Seal an object using Object.seal()",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: { name: "Alice", age: 25, city: "New York" },
+    solution: "const sealed = Object.seal(data); console.log(sealed);",
+    category: "object sealing"
+  },
+  {
+    question: "Try to add a new property to a sealed object",
+    data: { name: "Bob", age: 30, city: "Paris" },
+    expected_result: { name: "Bob", age: 30, city: "Paris" },
+    solution: "const sealed = Object.seal(data); data.country = 'France'; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Try to delete a property from a sealed object",
+    data: { name: "Charlie", age: 35, city: "London" },
+    expected_result: { name: "Charlie", age: 35, city: "London" },
+    solution: "const sealed = Object.seal(data); delete data.city; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Check if a sealed object can have its properties modified",
+    data: { name: "David", age: 40, city: "Berlin" },
+    expected_result: { name: "David", age: 41, city: "Berlin" },
+    solution: "const sealed = Object.seal(data); data.age = 41; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Check if nested objects inside a sealed object can be modified",
+    data: { name: "Eve", address: { city: "London", postalCode: 20001 } },
+    expected_result: { name: "Eve", address: { city: "Berlin", postalCode: 20001 } },
+    solution: "const sealed = Object.seal(data); data.address.city = 'Berlin'; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Check if a sealed object prevents new properties from being added",
+    data: { name: "Frank", age: 40 },
+    expected_result: { name: "Frank", age: 40 },
+    solution: "const sealed = Object.seal(data); data.city = 'Paris'; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Verify that Object.seal() does not freeze existing properties of an object",
+    data: { name: "Grace", age: 26 },
+    expected_result: { name: "Grace", age: 26 },
+    solution: "const sealed = Object.seal(data); data.name = 'Grace'; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Use Object.seal() to seal an array and prevent modifications",
+    data: [1, 2, 3],
+    expected_result: [1, 2, 3],
+    solution: "const sealed = Object.seal(data); data[0] = 5; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Check if Object.seal() prevents deletion of a property but allows modification",
+    data: { name: "Hannah", age: 22 },
+    expected_result: { name: "Hannah", age: 23 },
+    solution: "const sealed = Object.seal(data); data.age = 23; delete data.name; console.log(data);",
+    category: "object sealing"
+  },
+  {
+    question: "Check if an object is sealed using Object.isSealed()",
+    data: { name: "Isla", age: 22 },
+    expected_result: true,
+    solution: "const sealed = Object.seal(data); console.log(Object.isSealed(sealed));",
+    category: "object sealing"
+  },
+
 
 
 
