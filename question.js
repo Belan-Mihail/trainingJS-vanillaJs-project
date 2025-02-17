@@ -4879,6 +4879,76 @@ export const question = [
     solution: "delete data.property",
     category: "delete object properties"
   },
+  {
+    question: "Check if a property exists in an object using 'in' operator",
+    data: { name: "Alice", age: 25 },
+    expected_result: true,
+    solution: "'age' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object using 'hasOwnProperty()' method",
+    data: { name: "Bob", city: "Paris" },
+    expected_result: true,
+    solution: "data.hasOwnProperty('city')",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object using 'in' for a non-existing property",
+    data: { name: "Charlie", age: 30 },
+    expected_result: false,
+    solution: "'country' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object with a dynamic key",
+    data: { name: "David", age: 40 },
+    expected_result: true,
+    solution: "const key = 'name'; key in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object using 'hasOwnProperty()' for a non-existing property",
+    data: { name: "Eve", city: "New York" },
+    expected_result: false,
+    solution: "data.hasOwnProperty('country')",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object with a key containing spaces",
+    data: { "first name": "Frank", age: 35 },
+    expected_result: true,
+    solution: "'first name' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an empty object",
+    data: {},
+    expected_result: false,
+    solution: "'name' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists using 'in' for a nested property",
+    data: { user: { name: "Grace", age: 26 } },
+    expected_result: true,
+    solution: "'user' in data && 'name' in data.user",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object with a null value",
+    data: { name: "Henry", address: null },
+    expected_result: true,
+    solution: "'address' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists when the property is undefined",
+    data: { name: "Isla", age: undefined },
+    expected_result: true,
+    solution: "'age' in data",
+    category: "check property existence"
+  },
 
 
     
