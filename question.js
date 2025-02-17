@@ -4809,6 +4809,76 @@ export const question = [
     solution: "data.birthdate = '1995-12-05'",
     category: "add or modify object properties"
   },
+  {
+    question: "Remove a property from an object using delete",
+    data: { name: "Alice", age: 25 },
+    expected_result: { age: 25 },
+    solution: "delete data.name",
+    category: "delete object properties"
+  },
+  {
+    question: "Remove a property from an object using bracket notation",
+    data: { name: "Bob", city: "Paris" },
+    expected_result: { city: "Paris" },
+    solution: "delete data['name']",
+    category: "delete object properties"
+  },
+  {
+    question: "Delete a nested property from an object",
+    data: { user: { name: "Charlie", age: 30 } },
+    expected_result: { user: { age: 30 } },
+    solution: "delete data.user.name",
+    category: "delete object properties"
+  },
+  {
+    question: "Check if a property exists before deleting it",
+    data: { name: "David", city: "London" },
+    expected_result: { name: "David" },
+    solution: "if ('city' in data) { delete data.city; }",
+    category: "delete object properties"
+  },
+  {
+    question: "Remove a property from an object using a variable key",
+    data: { name: "Eve", age: 22 },
+    expected_result: { age: 22 },
+    solution: "const key = 'name'; delete data[key]",
+    category: "delete object properties"
+  },
+  {
+    question: "Delete a property from an object with a key containing spaces",
+    data: { "first name": "Frank", age: 35 },
+    expected_result: { age: 35 },
+    solution: "delete data['first name']",
+    category: "delete object properties"
+  },
+  {
+    question: "Delete a property from an object that doesn't exist",
+    data: { name: "Grace", age: 26 },
+    expected_result: { name: "Grace", age: 26 },
+    solution: "delete data.city",
+    category: "delete object properties"
+  },
+  {
+    question: "Remove multiple properties from an object",
+    data: { name: "Henry", age: 40, city: "Berlin" },
+    expected_result: { name: "Henry" },
+    solution: "delete data.age; delete data.city",
+    category: "delete object properties"
+  },
+  {
+    question: "Remove the first property from an object (no direct way to access first property)",
+    data: { name: "Isla", country: "USA", age: 28 },
+    expected_result: { country: "USA", age: 28 },
+    solution: "delete data.name",
+    category: "delete object properties"
+  },
+  {
+    question: "Delete a property from an empty object",
+    data: {},
+    expected_result: {},
+    solution: "delete data.property",
+    category: "delete object properties"
+  },
 
 
     
