@@ -5439,6 +5439,111 @@ export const question = [
     solution: "const selectedEntries = Object.entries(data).filter(([key]) => key === 'name' || key === 'city'); const newObj = Object.fromEntries(selectedEntries); console.log(newObj);",
     category: "object property iteration"
   },
+  {
+    question: "Create a copy of an object using the spread operator",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: { name: "Alice", age: 25, city: "New York" },
+    solution: "const copy = { ...data }; console.log(copy);",
+    category: "spread operator"
+  },
+  {
+    question: "Merge two objects into one using the spread operator",
+    data: [{ name: "Bob", age: 30 }, { city: "Paris", country: "France" }],
+    expected_result: { name: "Bob", age: 30, city: "Paris", country: "France" },
+    solution: "const merged = { ...data[0], ...data[1] }; console.log(merged);",
+    category: "spread operator"
+  },
+  {
+    question: "Create a new object by adding a property to an existing object using the spread operator",
+    data: { name: "Charlie", age: 35 },
+    expected_result: { name: "Charlie", age: 35, city: "London" },
+    solution: "const newObject = { ...data, city: 'London' }; console.log(newObject);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to update a property in an object",
+    data: { name: "David", age: 40 },
+    expected_result: { name: "David", age: 41 },
+    solution: "const updated = { ...data, age: 41 }; console.log(updated);",
+    category: "spread operator"
+  },
+  {
+    question: "Combine an object and an array into a new object using the spread operator",
+    data: [{ name: "Eve", city: "Berlin" }, { age: 28, country: "Germany" }],
+    expected_result: { name: "Eve", city: "Berlin", age: 28, country: "Germany" },
+    solution: "const combined = { ...data[0], ...data[1] }; console.log(combined);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to clone a nested object",
+    data: { name: "Frank", address: { city: "Berlin", postalCode: 10115 } },
+    expected_result: { name: "Frank", address: { city: "Berlin", postalCode: 10115 } },
+    solution: "const clone = { ...data }; console.log(clone);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to copy and modify a nested object",
+    data: { name: "Grace", address: { city: "London", postalCode: 20001 } },
+    expected_result: { name: "Grace", address: { city: "London", postalCode: 10001 } },
+    solution: "const modified = { ...data, address: { ...data.address, postalCode: 10001 } }; console.log(modified);",
+    category: "spread operator"
+  },
+  {
+    question: "Merge multiple objects with the spread operator and preserve the last object’s properties",
+    data: [{ a: 1 }, { b: 2 }, { c: 3 }],
+    expected_result: { a: 1, b: 2, c: 3 },
+    solution: "const merged = { ...data[0], ...data[1], ...data[2] }; console.log(merged);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to copy only some properties from an object",
+    data: { name: "Isla", age: 22, city: "Seattle" },
+    expected_result: { name: "Isla", city: "Seattle" },
+    solution: "const partialCopy = { ...data, age: undefined }; console.log(partialCopy);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to create an object by copying an array and adding new properties",
+    data: [{ a: 1, b: 2 }],
+    expected_result: { a: 1, b: 2, c: 3 },
+    solution: "const newObject = { ...data[0], c: 3 }; console.log(newObject);",
+    category: "spread operator"
+  },
+  {
+    question: "Merge two objects where the second object has a property with the same name as the first object using the spread operator",
+    data: [{ name: "Jack", age: 28 }, { name: "Jake", city: "New York" }],
+    expected_result: { name: "Jake", age: 28, city: "New York" },
+    solution: "const merged = { ...data[0], ...data[1] }; console.log(merged);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to merge objects and add a new property to the merged object",
+    data: [{ name: "Kara", age: 26 }, { country: "Canada" }],
+    expected_result: { name: "Kara", age: 26, country: "Canada", city: "Toronto" },
+    solution: "const merged = { ...data[0], ...data[1], city: 'Toronto' }; console.log(merged);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to remove a property from an object by setting it to undefined",
+    data: { name: "Liam", city: "Paris", age: 30 },
+    expected_result: { name: "Liam", city: "Paris" },
+    solution: "const newObject = { ...data, age: undefined }; console.log(newObject);",
+    category: "spread operator"
+  },
+  {
+    question: "Use the spread operator to clone an object and then modify a nested array inside it",
+    data: { name: "Mia", hobbies: ["reading", "hiking"] },
+    expected_result: { name: "Mia", hobbies: ["reading", "cycling"] },
+    solution: "const cloned = { ...data, hobbies: [...data.hobbies, 'cycling'] }; console.log(cloned);",
+    category: "spread operator"
+  },
+  {
+    question: "Combine properties from multiple objects and modify a specific property using the spread operator",
+    data: [{ name: "Nina", age: 24 }, { city: "Berlin", age: 25 }],
+    expected_result: { name: "Nina", age: 25, city: "Berlin" },
+    solution: "const combined = { ...data[0], ...data[1] }; console.log(combined);",
+    category: "spread operator"
+  },
 
 
 
