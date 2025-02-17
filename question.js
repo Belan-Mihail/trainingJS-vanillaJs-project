@@ -5614,6 +5614,76 @@ export const question = [
     solution: "const newObject = Object.assign({}, data, { age: undefined }); console.log(newObject);",
     category: "object cloning"
   },
+  {
+    question: "Merge two objects using Object.assign()",
+    data: [{ name: "Alice", age: 25 }, { city: "New York", country: "USA" }],
+    expected_result: { name: "Alice", age: 25, city: "New York", country: "USA" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge multiple objects with Object.assign()",
+    data: [{ name: "Bob", age: 30 }, { city: "Paris" }, { country: "France" }],
+    expected_result: { name: "Bob", age: 30, city: "Paris", country: "France" },
+    solution: "const merged = Object.assign({}, data[0], data[1], data[2]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge two objects and override a property using Object.assign()",
+    data: [{ name: "Charlie", age: 35 }, { name: "Charlie", city: "London" }],
+    expected_result: { name: "Charlie", age: 35, city: "London" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge two objects where the second object has new properties using Object.assign()",
+    data: [{ name: "David", age: 40 }, { city: "Berlin", country: "Germany" }],
+    expected_result: { name: "David", age: 40, city: "Berlin", country: "Germany" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge two objects with conflicting properties and preserve the last object's values using Object.assign()",
+    data: [{ a: 1, b: 2 }, { b: 3, c: 4 }],
+    expected_result: { a: 1, b: 3, c: 4 },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge three objects with Object.assign() and preserve all properties",
+    data: [{ name: "Eve", age: 26 }, { city: "London" }, { country: "UK" }],
+    expected_result: { name: "Eve", age: 26, city: "London", country: "UK" },
+    solution: "const merged = Object.assign({}, data[0], data[1], data[2]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge two objects where the first object has a nested object using Object.assign()",
+    data: [{ name: "Frank", address: { city: "Berlin", postalCode: 10115 } }, { country: "Germany" }],
+    expected_result: { name: "Frank", address: { city: "Berlin", postalCode: 10115 }, country: "Germany" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge two objects with the same property name using Object.assign() and ensure the last one overrides the first",
+    data: [{ name: "Grace", age: 30 }, { name: "Grace", city: "Paris" }],
+    expected_result: { name: "Grace", age: 30, city: "Paris" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge two objects, and if a property is undefined in the second object, keep the value from the first object using Object.assign()",
+    data: [{ name: "Henry", age: 25 }, { age: undefined, city: "Berlin" }],
+    expected_result: { name: "Henry", age: 25, city: "Berlin" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
+  {
+    question: "Merge two objects with different properties and add a new property to the merged object using Object.assign()",
+    data: [{ name: "Isla", age: 22 }, { city: "Seattle", country: "USA" }],
+    expected_result: { name: "Isla", age: 22, city: "Seattle", country: "USA" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object merging"
+  },
   
 
 
