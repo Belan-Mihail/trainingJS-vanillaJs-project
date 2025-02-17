@@ -5334,6 +5334,111 @@ export const question = [
     solution: "Object.values(data).filter(value => typeof value === 'number')",
     category: "object property iteration"
   },
+  {
+    question: "Iterate over an object's entries (key-value pairs) using Object.entries()",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: [["name", "Alice"], ["age", 25], ["city", "New York"]],
+    solution: "Object.entries(data).forEach(([key, value]) => console.log(key, value));",
+    category: "object property iteration"
+  },
+  {
+    question: "Get the entries (key-value pairs) of an object using Object.entries()",
+    data: { name: "Bob", city: "Paris" },
+    expected_result: [["name", "Bob"], ["city", "Paris"]],
+    solution: "const entries = Object.entries(data); console.log(entries);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to create a new array of keys from an object",
+    data: { name: "Charlie", age: 30 },
+    expected_result: [["name", "Charlie"], ["age", 30]],
+    solution: "const entries = Object.entries(data); console.log(entries);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to check if a specific property exists in an object",
+    data: { name: "David", age: 40 },
+    expected_result: true,
+    solution: "const exists = Object.entries(data).some(([key, value]) => key === 'age'); console.log(exists);",
+    category: "object property iteration"
+  },
+  {
+    question: "Count the number of properties in an object using Object.entries()",
+    data: { name: "Eve", city: "London", age: 22 },
+    expected_result: 3,
+    solution: "const count = Object.entries(data).length; console.log(count);",
+    category: "object property iteration"
+  },
+  {
+    question: "Filter entries using Object.entries() and a condition",
+    data: { name: "Frank", age: 35, city: "Berlin" },
+    expected_result: [["name", "Frank"], ["age", 35]],
+    solution: "const filteredEntries = Object.entries(data).filter(([key, value]) => typeof value === 'string'); console.log(filteredEntries);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to iterate over an object and modify its values",
+    data: { name: "Grace", age: 26 },
+    expected_result: { name: "Grace", age: 27 },
+    solution: "Object.entries(data).forEach(([key, value]) => { if (key === 'age') data[key] = 27; }); console.log(data);",
+    category: "object property iteration"
+  },
+  {
+    question: "Create a new object by copying selected properties using Object.entries()",
+    data: { name: "Henry", age: 40, city: "Berlin" },
+    expected_result: { name: "Henry", city: "Berlin" },
+    solution: "const filteredObj = {}; Object.entries(data).forEach(([key, value]) => { if (key !== 'age') filteredObj[key] = value; }); console.log(filteredObj);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to check for an empty value in an object",
+    data: { name: "Isla", city: "Seattle", active: true },
+    expected_result: false,
+    solution: "const hasEmpty = Object.entries(data).some(([key, value]) => value === ''); console.log(hasEmpty);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to create an array of values and filter out null values",
+    data: { name: "Jack", age: null, city: "Berlin" },
+    expected_result: [["name", "Jack"], ["city", "Berlin"]],
+    solution: "const filteredEntries = Object.entries(data).filter(([key, value]) => value !== null); console.log(filteredEntries);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to sort the entries of an object alphabetically by key",
+    data: { b: 1, a: 2, c: 3 },
+    expected_result: [["a", 2], ["b", 1], ["c", 3]],
+    solution: "const sortedEntries = Object.entries(data).sort(([keyA], [keyB]) => keyA.localeCompare(keyB)); console.log(sortedEntries);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to get the keys and values and create a new array with modified values",
+    data: { name: "Liam", age: 30, city: "Paris" },
+    expected_result: [["name", "Liam"], ["age", 31], ["city", "Paris"]],
+    solution: "const modifiedEntries = Object.entries(data).map(([key, value]) => key === 'age' ? [key, value + 1] : [key, value]); console.log(modifiedEntries);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to check if a specific value exists in an object",
+    data: { name: "Mia", city: "Berlin", age: 22 },
+    expected_result: true,
+    solution: "const exists = Object.entries(data).some(([key, value]) => value === 'Berlin'); console.log(exists);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to filter out numeric values from an object",
+    data: { name: "Nina", age: 25, city: "Germany" },
+    expected_result: [["name", "Nina"], ["city", "Germany"]],
+    solution: "const filteredEntries = Object.entries(data).filter(([key, value]) => typeof value === 'string'); console.log(filteredEntries);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.entries() to create a new object from selected entries",
+    data: { name: "Olivia", city: "Los Angeles", age: 28 },
+    expected_result: { name: "Olivia", city: "Los Angeles" },
+    solution: "const selectedEntries = Object.entries(data).filter(([key]) => key === 'name' || key === 'city'); const newObj = Object.fromEntries(selectedEntries); console.log(newObj);",
+    category: "object property iteration"
+  },
 
 
 
