@@ -5824,6 +5824,132 @@ export const question = [
     solution: "const sealed = Object.seal(data); console.log(Object.isSealed(sealed));",
     category: "object sealing"
   },
+  {
+    question: "Convert an object to a JSON string using JSON.stringify()",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: '{"name":"Alice","age":25,"city":"New York"}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with a nested object to a JSON string",
+    data: { name: "Bob", address: { city: "Paris", country: "France" } },
+    expected_result: '{"name":"Bob","address":{"city":"Paris","country":"France"}}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an array of objects to a JSON string",
+    data: [{ name: "Charlie", age: 35 }, { name: "David", age: 40 }],
+    expected_result: '[{"name":"Charlie","age":35},{"name":"David","age":40}]',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with undefined properties to JSON",
+    data: { name: "Eve", age: undefined, city: "London" },
+    expected_result: '{"name":"Eve","city":"London"}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with a function as a property to JSON",
+    data: { name: "Frank", greet: function() { return 'Hello'; } },
+    expected_result: '{"name":"Frank"}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with a circular reference to JSON",
+    data: {},
+    expected_result: "TypeError: Converting circular structure to JSON",
+    solution: "const circular = {}; circular.self = circular; const jsonString = JSON.stringify(circular); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an array with non-JSON-safe values (such as Infinity) to JSON",
+    data: [1, Infinity, 2],
+    expected_result: '[1,null,2]',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object to JSON with a custom replacer function",
+    data: { name: "Grace", age: 26 },
+    expected_result: '{"name":"Grace","age":30}',
+    solution: "const replacer = (key, value) => (key === 'age' ? 30 : value); const jsonString = JSON.stringify(data, replacer); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object to JSON with an array of keys to include",
+    data: { name: "Hannah", age: 22, city: "Berlin" },
+    expected_result: '{"name":"Hannah","city":"Berlin"}',
+    solution: "const jsonString = JSON.stringify(data, ['name', 'city']); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object to JSON and include only specific properties",
+    data: { name: "Isla", age: 22, city: "Seattle" },
+    expected_result: '{"name":"Isla","city":"Seattle"}',
+    solution: "const jsonString = JSON.stringify(data, (key, value) => key === 'name' || key === 'city' ? value : undefined); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert a deeply nested object to JSON",
+    data: { person: { name: "Jack", address: { city: "Tokyo", postalCode: 100-0001 } } },
+    expected_result: '{"person":{"name":"Jack","address":{"city":"Tokyo","postalCode":"100-0001"}}}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with a date property to JSON",
+    data: { name: "Kathy", birthDate: new Date('1995-06-15') },
+    expected_result: '{"name":"Kathy","birthDate":"1995-06-15T00:00:00.000Z"}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object to JSON with special characters in properties",
+    data: { name: "Liam", description: "He's a \"developer\"" },
+    expected_result: '{"name":"Liam","description":"He\'s a \\"developer\\"" }',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an array with mixed types (numbers, strings, objects) to JSON",
+    data: [1, "hello", { name: "Maya", age: 28 }],
+    expected_result: '[1,"hello",{"name":"Maya","age":28}]',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with a symbol property to JSON",
+    data: { [Symbol('id')]: 123, name: "Nina" },
+    expected_result: '{"name":"Nina"}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with NaN and undefined properties to JSON",
+    data: { a: NaN, b: undefined, c: 5 },
+    expected_result: '{"a":null,"c":5}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Use JSON.stringify() to serialize an object with a getter property",
+    data: { name: "Oliver", get age() { return 30; } },
+    expected_result: '{"name":"Oliver"}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
+  {
+    question: "Convert an object with a null value property to JSON",
+    data: { name: "Paul", city: null },
+    expected_result: '{"name":"Paul","city":null}',
+    solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
+    category: "object to JSON"
+  },
 
 
 
