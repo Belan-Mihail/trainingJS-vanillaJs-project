@@ -5544,6 +5544,77 @@ export const question = [
     solution: "const combined = { ...data[0], ...data[1] }; console.log(combined);",
     category: "spread operator"
   },
+  {
+    question: "Clone an object using Object.assign()",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: { name: "Alice", age: 25, city: "New York" },
+    solution: "const clone = Object.assign({}, data); console.log(clone);",
+    category: "object cloning"
+  },
+  {
+    question: "Merge two objects using Object.assign()",
+    data: [{ name: "Bob", age: 30 }, { city: "Paris", country: "France" }],
+    expected_result: { name: "Bob", age: 30, city: "Paris", country: "France" },
+    solution: "const merged = Object.assign({}, data[0], data[1]); console.log(merged);",
+    category: "object cloning"
+  },
+  {
+    question: "Clone an object and add a new property using Object.assign()",
+    data: { name: "Charlie", age: 35 },
+    expected_result: { name: "Charlie", age: 35, city: "London" },
+    solution: "const newObject = Object.assign({}, data, { city: 'London' }); console.log(newObject);",
+    category: "object cloning"
+  },
+  {
+    question: "Clone an object and modify a property using Object.assign()",
+    data: { name: "David", age: 40 },
+    expected_result: { name: "David", age: 41 },
+    solution: "const updated = Object.assign({}, data, { age: 41 }); console.log(updated);",
+    category: "object cloning"
+  },
+  {
+    question: "Use Object.assign() to clone an object with nested properties",
+    data: { name: "Eve", address: { city: "London", postalCode: 20001 } },
+    expected_result: { name: "Eve", address: { city: "London", postalCode: 20001 } },
+    solution: "const clone = Object.assign({}, data); console.log(clone);",
+    category: "object cloning"
+  },
+  {
+    question: "Clone an object and modify a nested property using Object.assign()",
+    data: { name: "Frank", address: { city: "Berlin", postalCode: 10115 } },
+    expected_result: { name: "Frank", address: { city: "Berlin", postalCode: 10001 } },
+    solution: "const modified = Object.assign({}, data, { address: { ...data.address, postalCode: 10001 } }); console.log(modified);",
+    category: "object cloning"
+  },
+  {
+    question: "Use Object.assign() to clone and add multiple properties to an object",
+    data: { name: "Grace", age: 26 },
+    expected_result: { name: "Grace", age: 26, city: "London", country: "UK" },
+    solution: "const newObject = Object.assign({}, data, { city: 'London', country: 'UK' }); console.log(newObject);",
+    category: "object cloning"
+  },
+  {
+    question: "Clone an object and preserve the last object's properties when merging objects using Object.assign()",
+    data: [{ a: 1 }, { b: 2 }, { c: 3 }],
+    expected_result: { a: 1, b: 2, c: 3 },
+    solution: "const merged = Object.assign({}, data[0], data[1], data[2]); console.log(merged);",
+    category: "object cloning"
+  },
+  {
+    question: "Check if cloning an object using Object.assign() creates a shallow copy",
+    data: { name: "Hannah", details: { age: 22, city: "Seattle" } },
+    expected_result: { name: "Hannah", details: { age: 22, city: "Seattle" } },
+    solution: "const clone = Object.assign({}, data); console.log(clone.details === data.details);",
+    category: "object cloning"
+  },
+  {
+    question: "Use Object.assign() to clone an object and remove a property by setting it to undefined",
+    data: { name: "Isla", city: "Seattle", age: 22 },
+    expected_result: { name: "Isla", city: "Seattle" },
+    solution: "const newObject = Object.assign({}, data, { age: undefined }); console.log(newObject);",
+    category: "object cloning"
+  },
+  
 
 
 
