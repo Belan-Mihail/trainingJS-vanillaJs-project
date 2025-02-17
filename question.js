@@ -4711,7 +4711,105 @@ export const question = [
     solution: "data.user.profile.name",
     category: "object property access"
   },
-  
+  {
+    question: "Add a new property to an object",
+    data: { name: "Alice", age: 25 },
+    expected_result: { name: "Alice", age: 25, city: "New York" },
+    solution: "data.city = 'New York'",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Modify an existing property of an object",
+    data: { name: "Bob", age: 30 },
+    expected_result: { name: "Bob", age: 35 },
+    solution: "data.age = 35",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add a property to an object using bracket notation",
+    data: { name: "Charlie", age: 28 },
+    expected_result: { name: "Charlie", age: 28, country: "USA" },
+    solution: "data['country'] = 'USA'",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Modify a property of an object using bracket notation",
+    data: { name: "David", city: "Paris" },
+    expected_result: { name: "David", city: "London" },
+    solution: "data['city'] = 'London'",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add a property with a dynamic key",
+    data: { name: "Eve", age: 22 },
+    expected_result: { name: "Eve", age: 22, 'favorite color': 'blue' },
+    solution: "const key = 'favorite color'; data[key] = 'blue'",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add multiple properties to an object",
+    data: { name: "Frank" },
+    expected_result: { name: "Frank", age: 40, city: "Berlin" },
+    solution: "data.age = 40; data.city = 'Berlin'",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Modify a property inside a nested object",
+    data: { user: { name: "Grace", age: 26 } },
+    expected_result: { user: { name: "Grace", age: 27 } },
+    solution: "data.user.age = 27",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add a property to an empty object",
+    data: {},
+    expected_result: { hobby: "reading" },
+    solution: "data.hobby = 'reading'",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add a property with a number value",
+    data: { name: "Henry" },
+    expected_result: { name: "Henry", salary: 50000 },
+    solution: "data.salary = 50000",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Modify a property with a boolean value",
+    data: { name: "Isla", isActive: true },
+    expected_result: { name: "Isla", isActive: false },
+    solution: "data.isActive = false",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add a method to an object",
+    data: { name: "Jack" },
+    expected_result: { name: "Jack", greet: function() { return 'Hello!'; } },
+    solution: "data.greet = function() { return 'Hello!'; }",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add a property with a null value",
+    data: { name: "Kara" },
+    expected_result: { name: "Kara", address: null },
+    solution: "data.address = null",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Change the value of a property to an array",
+    data: { name: "Liam" },
+    expected_result: { name: "Liam", skills: ["JavaScript", "Python"] },
+    solution: "data.skills = ['JavaScript', 'Python']",
+    category: "add or modify object properties"
+  },
+  {
+    question: "Add a property with a date value",
+    data: { name: "Mia" },
+    expected_result: { name: "Mia", birthdate: "1995-12-05" },
+    solution: "data.birthdate = '1995-12-05'",
+    category: "add or modify object properties"
+  },
+
 
     
         
