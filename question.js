@@ -4949,6 +4949,181 @@ export const question = [
     solution: "'age' in data",
     category: "check property existence"
   },
+  {
+    question: "Check if a property exists using 'in' for a property with an undefined value",
+    data: { name: "Jack", country: undefined },
+    expected_result: true,
+    solution: "'country' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object that was deleted",
+    data: { name: "Liam", age: 27 },
+    expected_result: false,
+    solution: "delete data.age; 'age' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object using 'in' for a property with an empty string value",
+    data: { name: "Mia", city: "" },
+    expected_result: true,
+    solution: "'city' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists using 'in' for a property with a boolean value",
+    data: { active: true, name: "Nina" },
+    expected_result: true,
+    solution: "'active' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in a nested object using 'in'",
+    data: { user: { profile: { name: "Olivia", age: 30 } } },
+    expected_result: true,
+    solution: "'profile' in data.user",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object with a property set to null",
+    data: { name: "Paul", hobby: null },
+    expected_result: true,
+    solution: "'hobby' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists using 'in' for a property with a zero value",
+    data: { count: 0, name: "Quinn" },
+    expected_result: true,
+    solution: "'count' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object after adding a new property dynamically",
+    data: { name: "Rachel" },
+    expected_result: true,
+    solution: "data.city = 'Seattle'; 'city' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists using 'in' for an array property in an object",
+    data: { fruits: ["apple", "banana", "cherry"] },
+    expected_result: true,
+    solution: "'fruits' in data",
+    category: "check property existence"
+  },
+  {
+    question: "Check if a property exists in an object when using a variable key and the property exists",
+    data: { name: "Sam", age: 32 },
+    expected_result: true,
+    solution: "const key = 'name'; key in data",
+    category: "check property existence"
+  },
+  {
+    question: "Iterate over an object's properties using for...in",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: ["name", "age", "city"],
+    solution: "for (const key in data) { console.log(key); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Iterate over an object's properties and print values using for...in",
+    data: { name: "Bob", city: "Paris" },
+    expected_result: ["Bob", "Paris"],
+    solution: "for (const key in data) { console.log(data[key]); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Use for...in to iterate over an object and check if a property exists",
+    data: { name: "Charlie", age: 30 },
+    expected_result: true,
+    solution: "let exists = false; for (const key in data) { if (key === 'age') { exists = true; } } console.log(exists);",
+    category: "object property iteration"
+  },
+  {
+    question: "Skip a property during for...in iteration",
+    data: { name: "David", city: "London", age: 40 },
+    expected_result: ["name", "city"],
+    solution: "for (const key in data) { if (key !== 'age') { console.log(key); } }",
+    category: "object property iteration"
+  },
+  {
+    question: "Check if a property is directly on the object (not inherited) during for...in iteration",
+    data: { name: "Eve", age: 22 },
+    expected_result: ["name", "age"],
+    solution: "for (const key in data) { if (data.hasOwnProperty(key)) { console.log(key); } }",
+    category: "object property iteration"
+  },
+  {
+    question: "Iterate over an object with a method property using for...in",
+    data: { name: "Frank", greet: function() { return 'Hello'; } },
+    expected_result: ["name", "greet"],
+    solution: "for (const key in data) { console.log(key); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Use for...in to iterate over an object with properties that are arrays",
+    data: { fruits: ["apple", "banana", "cherry"], city: "Berlin" },
+    expected_result: ["fruits", "city"],
+    solution: "for (const key in data) { console.log(key); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Use for...in to iterate over an object and perform a calculation on its values",
+    data: { a: 5, b: 10, c: 15 },
+    expected_result: [15, 20, 25],
+    solution: "for (const key in data) { console.log(data[key] + 10); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Iterate over an object that has a property with an undefined value using for...in",
+    data: { name: "Grace", age: undefined },
+    expected_result: ["name", "age"],
+    solution: "for (const key in data) { console.log(key); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Use for...in to iterate over an object and check for an empty value",
+    data: { name: "Henry", city: "" },
+    expected_result: ["name", "city"],
+    solution: "for (const key in data) { if (data[key] === '') { console.log(key); } }",
+    category: "object property iteration"
+  },
+  {
+    question: "Iterate over an object with nested objects using for...in",
+    data: { person: { name: "Isla", age: 28 }, city: "Seattle" },
+    expected_result: ["person", "city"],
+    solution: "for (const key in data) { console.log(key); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Use for...in to iterate over an object with mixed data types",
+    data: { name: "Jack", active: true, age: 35 },
+    expected_result: ["name", "active", "age"],
+    solution: "for (const key in data) { console.log(key); }",
+    category: "object property iteration"
+  },
+  {
+    question: "Iterate over an object and create a new object with the same keys and values using for...in",
+    data: { name: "Kara", city: "Tokyo" },
+    expected_result: { name: "Kara", city: "Tokyo" },
+    solution: "let newObj = {}; for (const key in data) { newObj[key] = data[key]; } console.log(newObj);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use for...in to iterate over an object and delete specific properties",
+    data: { name: "Liam", age: 40, city: "Berlin" },
+    expected_result: { name: "Liam", city: "Berlin" },
+    solution: "for (const key in data) { if (key === 'age') { delete data[key]; } } console.log(data);",
+    category: "object property iteration"
+  },
+  {
+    question: "Iterate over an object and access both the key and the value using for...in",
+    data: { name: "Mia", age: 22 },
+    expected_result: [["name", "Mia"], ["age", 22]],
+    solution: "for (const key in data) { console.log([key, data[key]]); }",
+    category: "object property iteration"
+  },
 
 
     
