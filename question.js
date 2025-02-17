@@ -5896,8 +5896,8 @@ export const question = [
   },
   {
     question: "Convert a deeply nested object to JSON",
-    data: { person: { name: "Jack", address: { city: "Tokyo", postalCode: 100-0001 } } },
-    expected_result: '{"person":{"name":"Jack","address":{"city":"Tokyo","postalCode":"100-0001"}}}',
+    data: { person: { name: "Jack", address: { city: "Tokyo", postalCode: 100 } } },
+    expected_result: '{"person":{"name":"Jack","address":{"city":"Tokyo","postalCode":"100"}}}',
     solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
     category: "object to JSON"
   },
@@ -5949,6 +5949,139 @@ export const question = [
     expected_result: '{"name":"Paul","city":null}',
     solution: "const jsonString = JSON.stringify(data); console.log(jsonString);",
     category: "object to JSON"
+  },
+  {
+    question: "Parse a JSON string into an object using JSON.parse()",
+    data: '{"name":"Alice","age":25,"city":"New York"}',
+    expected_result: { name: "Alice", age: 25, city: "New York" },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with nested objects",
+    data: '{"name":"Bob","address":{"city":"Paris","country":"France"}}',
+    expected_result: { name: "Bob", address: { city: "Paris", country: "France" } },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with an array of objects",
+    data: '[{"name":"Charlie","age":35},{"name":"David","age":40}]',
+    expected_result: [{ name: "Charlie", age: 35 }, { name: "David", age: 40 }],
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with undefined values (undefined will be excluded)",
+    data: '{"name":"Eve","age":undefined,"city":"London"}',
+    expected_result: { name: "Eve", city: "London" },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with a function property (functions are not supported)",
+    data: '{"name":"Frank","greet":"function() { return \'Hello\'; }"}',
+    expected_result: { name: "Frank", greet: "function() { return 'Hello'; }" },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Try to parse an invalid JSON string",
+    data: '{"name":"Grace",age:26,"city":"Berlin"',
+    expected_result: "SyntaxError: Unexpected string in JSON at position 31",
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with a circular reference (will throw an error)",
+    data: '{"name":"Hannah","address":{"city":"Tokyo"}}',
+    expected_result: "SyntaxError: Unexpected token o in JSON at position 1",
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Use a reviver function to modify values during JSON parsing",
+    data: '{"name":"Isla","age":22,"city":"Seattle"}',
+    expected_result: { name: "Isla", age: 25, city: "Seattle" },
+    solution: "const reviver = (key, value) => key === 'age' ? 25 : value; const parsedData = JSON.parse(data, reviver); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with numeric values",
+    data: '{"price":99.99,"quantity":10}',
+    expected_result: { price: 99.99, quantity: 10 },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with a date (date will be a string)",
+    data: '{"name":"Jack","birthDate":"1995-06-15T00:00:00.000Z"}',
+    expected_result: { name: "Jack", birthDate: "1995-06-15T00:00:00.000Z" },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with null values",
+    data: '{"name":"Kathy","city":null}',
+    expected_result: { name: "Kathy", city: null },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with special characters in the properties",
+    data: '{"name":"Liam","description":"He\'s a \\"developer\\"" }',
+    expected_result: { name: "Liam", description: 'He\'s a "developer"' },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with numeric strings",
+    data: '{"a":"10","b":"20"}',
+    expected_result: { a: "10", b: "20" },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with an empty array",
+    data: '[]',
+    expected_result: [],
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with a symbol property (symbols are excluded in JSON)",
+    data: '{"[Symbol(id)]":123,"name":"Maya"}',
+    expected_result: { name: "Maya" },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with a NaN value (NaN is converted to null)",
+    data: '{"value":NaN}',
+    expected_result: { value: null },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with Infinity value (Infinity is converted to null)",
+    data: '{"value":Infinity}',
+    expected_result: { value: null },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with a complex nested structure",
+    data: '{"person":{"name":"Oliver","address":{"city":"London","zip":"W1A"}}}',
+    expected_result: { person: { name: "Oliver", address: { city: "London", zip: "W1A" } } },
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
+  },
+  {
+    question: "Parse a JSON string with mixed data types in an array",
+    data: '[1,"hello",{"name":"Maya","age":28}]',
+    expected_result: [1, "hello", { name: "Maya", age: 28 }],
+    solution: "const parsedData = JSON.parse(data); console.log(parsedData);",
+    category: "JSON to object"
   },
 
 
