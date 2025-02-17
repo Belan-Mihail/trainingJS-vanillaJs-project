@@ -5229,7 +5229,112 @@ export const question = [
     solution: "const selectedValues = Object.keys(data).filter(key => key === 'name' || key === 'age').map(key => data[key]); console.log(selectedValues);",
     category: "object property iteration"
   },
-  
+  {
+    question: "Iterate over an object's values using Object.values()",
+    data: { name: "Alice", age: 25, city: "New York" },
+    expected_result: ["Alice", 25, "New York"],
+    solution: "Object.values(data).forEach(value => console.log(value));",
+    category: "object property iteration"
+  },
+  {
+    question: "Get the values of an object and print them with Object.values()",
+    data: { name: "Bob", city: "Paris" },
+    expected_result: ["Bob", "Paris"],
+    solution: "Object.values(data).forEach(value => console.log(value));",
+    category: "object property iteration"
+  },
+  {
+    question: "Create an array of values from an object using Object.values()",
+    data: { name: "Charlie", age: 30 },
+    expected_result: ["Charlie", 30],
+    solution: "const values = Object.values(data); console.log(values);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to find a specific value in an object",
+    data: { name: "David", age: 40 },
+    expected_result: true,
+    solution: "Object.values(data).includes(40)",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to count the number of values in an object",
+    data: { name: "Eve", city: "London", age: 22 },
+    expected_result: 3,
+    solution: "Object.values(data).length",
+    category: "object property iteration"
+  },
+  {
+    question: "Filter values using Object.values() and a condition",
+    data: { name: "Frank", age: 35, city: "Berlin" },
+    expected_result: ["Frank", 35],
+    solution: "Object.values(data).filter(value => typeof value === 'string')",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to iterate over an object and access each value",
+    data: { name: "Grace", age: 26 },
+    expected_result: ["Grace", 26],
+    solution: "Object.values(data).forEach(value => console.log(value));",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to create a new object with selected values",
+    data: { name: "Henry", age: 40, city: "Berlin" },
+    expected_result: { name: "Henry", city: "Berlin" },
+    solution: "const filteredObj = {}; Object.values(data).forEach((value, index) => { if (index !== 1) filteredObj[Object.keys(data)[index]] = value; }); console.log(filteredObj);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to check if any value is a specific type",
+    data: { name: "Isla", city: "Seattle", active: true },
+    expected_result: true,
+    solution: "Object.values(data).some(value => typeof value === 'boolean')",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to check if the object has an empty value",
+    data: { name: "Jack", city: "" },
+    expected_result: true,
+    solution: "Object.values(data).includes('')",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to filter out values that are numbers",
+    data: { name: "Kara", age: 22, city: "Tokyo" },
+    expected_result: ["Kara", "Tokyo"],
+    solution: "Object.values(data).filter(value => typeof value === 'string')",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to sort values alphabetically",
+    data: { name: "Liam", age: 30, city: "Paris" },
+    expected_result: [30, "Liam", "Paris"],
+    solution: "Object.values(data).sort()",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to create an array of values and find their sum",
+    data: { a: 5, b: 10, c: 15 },
+    expected_result: 30,
+    solution: "const sum = Object.values(data).reduce((acc, curr) => acc + curr, 0); console.log(sum);",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to find values that are not null",
+    data: { name: "Mia", age: null, city: "Berlin" },
+    expected_result: ["Mia", "Berlin"],
+    solution: "Object.values(data).filter(value => value !== null)",
+    category: "object property iteration"
+  },
+  {
+    question: "Use Object.values() to create a new array of values based on a condition",
+    data: { name: "Nina", age: 25, country: "Germany" },
+    expected_result: [25],
+    solution: "Object.values(data).filter(value => typeof value === 'number')",
+    category: "object property iteration"
+  },
+
 
 
     
